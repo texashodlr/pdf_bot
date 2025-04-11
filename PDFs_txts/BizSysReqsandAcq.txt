@@ -1,0 +1,5679 @@
+1 
+BY ORDER OF THE 
+     DoDI 5000.75_DAFI63-144 
+SECRETARY OF THE AIR FORCE 
+   26 JANUARY 2023  
+Acquisition / Logistics 
+BUSINESS SYSTEMS REQUIREMENTS AND ACQUISITION 
+COMPLIANCE WITH THIS PUBLICATION IS MANDATORY 
+ACCESSIBILITY: Publications and forms are available on the e-Publishing website at 
+www.e-publishing.af.mil for downloading or ordering. 
+RELEASABILITY:  There are no releasability restrictions on this publication. 
+OPR: SAF/AQXS 
+Certified by: SAF/AQX 
+(Mr. William Bailey) 
+Supersedes:  AFMAN 63-144, 25 July 2018 
+Pages:  97 
+This supplement implements Air Force Policy Directive (AFPD) 63-1_20-1, Integrated Life 
+Cycle Management, and supplements guidance in Department of Defense (DoD) Instruction 
+(DoDI) 5000.75, Business Systems Requirements and Acquisition. The DoDI is printed word-
+for-word in regular font without editorial review.  Air Force supplementary material is 
+printed in bold font and indicated by “(Added)(DAF).” This publication applies to all civilian 
+employees and uniformed members of the Regular Air Force, Air Force Reserve, Air 
+National Guard (ANG), United States Space Force (USSF), and those who are contractually 
+obligated to comply with Department of the Air Force (DAF) publications. ANG Note: This 
+policy does not apply to ANG/assets unless ordered to federal duty or subject to the approval 
+of The Adjutant General of the Several States. This DAFI does not request support from 
+ANG to take any action that incurs a manpower, or any other cost not already incurred 
+internally, had a Functional Sponsor provided a requirement and/or funding to initiate or 
+continue a DBS program. This policy does not require any ANG action until ANG internally 
+has decided it has a requirement and funding to initiate or continue such a DBS program. 
+This publication may be supplemented at any level, but all supplements must be routed to 
+the Office of Primary Responsibility (OPR) listed above for coordination prior to 
+certification and approval.  Refer recommended changes and questions about this 
+publication to the OPR listed above using the DAF Form 847, Recommendation for Change 
+of Publication; route DAF Forms 847 from the field through the appropriate chain of 
+command.  The authorities to waive wing, unit, delta, or garrison level requirements that are 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+2 
+outside of the acquisition execution chain in this publication are identified with a Tier (“T-
+0, T-1, T-2, T-3”) number following the compliance statement. See DAF Manual (DAFMAN) 
+90-161, Publishing Processes and Procedures, for a description of the authorities associated
+with the Tier numbers and waiver processing procedures. Submit requests for waivers
+through the chain of command to the appropriate Tier waiver approval authority, or
+alternately, to the requestor’s commander for non-tiered, non-acquisition execution
+compliance items using a completed DAF Form 679, Air Force Publication Compliance Item
+Waiver Request/Approval (or equivalent information). Commanders or equivalent may
+waive non-tiered requirements, but must send a copy of the approved waiver to the
+publication OPR within 30 days of approval for situational awareness and process
+improvement consideration. Mandates to the acquisition execution chain as described in AFI
+63-101/20-101, Integrated Life Cycle Management, are not elevated through the
+organizational chain of authority; therefore, tiering in accordance with DAFMAN 90-161 is
+not applicable and the waiver authority is as specified.  Ensure all records generated as a
+result of processes prescribed in this publication adhere to Air Force Instruction 33-322,
+Records Management and Information Governance Program, and are disposed in
+accordance with the Air Force Records Disposition Schedule, which is located in the Air
+Force Records Information Management System.
+Summary Of Changes  
+This publication has been rewritten as a supplement and revised to reflect stand up of USSF, 
+incorporation of guidance on agile software development, introduce Business Mission Area 
+program types and use of a Business Service Catalog and address updated governance 
+processes. Changes include the elaboration of tailored approaches to different business 
+capability requests and a shift toward an enterprise approach governing the Business 
+Mission Area and Defense Business Systems.  
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+3 
+DOD INSTRUCTION 5000.75 
+BUSINESS SYSTEMS REQUIREMENTS AND
+ACQUISITION
+Originating Component: 
+Office of the Under Secretary of Defense for Acquisition and 
+Sustainment 
+Effective: 
+February 2, 2017 
+Change 2 Effective: 
+January 24, 2020 
+Releasability: 
+Cleared for public release.  Available on the Directives 
+Division Website at https://www.esd.whs.mil/DD/. 
+Incorporates and Cancels:   Enclosure 12 of DoD Instruction 5000.02, “Operation of the 
+Defense 
+Acquisition System,” January 7, 2015, as amended February 2, 
+2017 
+Cancels: 
+DoD Chief Information Officer (DoD CIO) Memorandum, 
+“Use of Enterprise Information Technology Standard 
+Business Case Analysis,” October 23, 2014, for business 
+systems 
+Approved by: 
+Frank Kendall, Under Secretary of Defense for Acquisition 
+Technology, and Logistics 
+Terry Halvorsen, Department of Defense Chief Information 
+Officer  
+David Tillotson III, Assistant Deputy Chief Management 
+Officer 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+4 
+Change 2 Approved by: 
+Ellen M. Lord, Under Secretary of Defense for Acquisition and 
+Sustainment 
+Dana S. Deasy, Department of Defense Chief 
+Information Officer Lisa W. Hershman, Chief 
+Management Officer 
+ANDREW P. HUNTER 
+Assistant Secretary of the Air Force 
+ (Acquisition, Technology & Logistics) 
+Purpose: In accordance with the authority in DoD Directives 5134.01, 5144.02, 5105.82, 
+5105.53, and 5000.01 and the July 11, 2014 and July 13, 2018 Deputy Secretary of Defense 
+Memorandums, this issuance: 
+•
+Implements the statutory requirements of Section 2222(c) “Issuance of Guidance” of Title
+10 United States Code (U.S.C.) and Section 883(e) “Guidance on Acquisition of Business
+Systems” of Public Law 114-92.
+•
+Establishes policy for the use of the business capability acquisition cycle (BCAC)
+for business systems requirements and acquisition. Implements the statutory
+requirements of Subtitle III of Title 40, United States Code (U.S.C.) and Section 811 of
+Public Law 106-398 (referred to in this issuance as the Clinger-Cohen Act (CCA)).
+•
+Supersedes all processes, procedures, and definitions in DoD Instruction (DoDI)
+5000.02T for all business system acquisition programs, including the definition of Major
+Automated Information System in DoDI 5000.02T’s Table 2, which does not apply to
+business systems.
+(Added)(DAF) Note:  DoDI 5000.02T was rescinded; reference DoDI 5000.85, Major 
+Capability Acquisition, for table defining acquisition categories. 
+(Added)(DAF) Note:  Chief Management Officer of the Department of Defense (DoD 
+CMO) responsibilities were reassigned to other DoD officials or organizations effective 
+October 1, 2021.  Reference section 901(b) of the William M. (Mac) Thornberry 
+National Defense Authorization Act for FY 2021 (Public Law 116-283). 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+5 
+TABLE OF CONTENTS 
+SECTION 1: GENERAL ISSUANCE INFORMATION ................................................................................8 
+1.1. Applicability .....................................................................................................................8 
+1.2. Policy ................................................................................................................................8 
+1.3. Summary of Change 2. ...................................................................................................10 
+SECTION 2: RESPONSIBILITIES ........................................................................................................11 
+2.1. Under Secretary of Defense for Acquisition and Sustainment (USD(A&S)). ...............11 
+2.2. Chief Management Officer of the Department of Defense (DoD CMO) .......................11 
+2.3. DoD Chief Information Officer (DoD CIO). .................................................................12 
+2.4. Director, Cost Assessment and Program Evaluation. ....................................................12 
+2.5. OSD and DOD Component Heads .................................................................................12 
+2.6.  (Added)(DAF) Assistant Secretary of the Air Force for Acquisition, Technology 
+and Logisitics (SAF/AQ) ……………………………………………………………….....12 
+2.7.  (Added)(DAF) Service Acquisition Executive (SAE)….…..……….………………12 
+2.8.  (Added)(DAF) Deputy Under Secretary of the Air Force for Management 
+(SAF/MG) ..……………………………………………………………….………………..13 
+2.9.  (Added)(DAF) The DAF Chief Information Officer (SAF/CN)……….……….….14 
+2.10. (Added)(DAF) The Director, Air Force Test and Evaluation (AF/TE).….……....14 
+2.11. (Added)(DAF) The Assistant Secretary of the Air Force for Financial Management 
+and Comptroller (SAF/FM).…………...…….………………………….………………...15 
+SECTION 3: ROLES ..........................................................................................................................16 
+3.1. General ...........................................................................................................................16 
+3.2. Roles in Business Systems Requirements and Acquisition. ..........................................17 
+3.3. Program Manager Relationship. .....................................................................................21 
+SECTION 4: PROCEDURES ................................................................................................................22 
+4.1. Overview ........................................................................................................................22 
+4.2. BCAC Phase Activities and Decision Points .................................................................28 
+APPENDIX 4A: SUPPORTING INFORMATION.....................................................................................37 
+APPENDIX 4B: CAPABILITY IMPLEMENTATION PLAN ......................................................................41 
+4B.1. Definition .....................................................................................................................41 
+4B.2. Content.........................................................................................................................41 
+4B.3.  Progression of Capability Implementation Plan Content ............................................44 
+APPENDIX 4C: CMO CERTIFICATION .............................................................................................47 
+4C.1. Responsibilities ............................................................................................................47 
+4C.2. CMO Certification. ......................................................................................................47 
+APPENDIX 4D: BUSINESS SYSTEM SOLUTION DOCUMENTATION .....................................................49 
+4D.1. Functional Requirements .............................................................................................49 
+4D.2.  Potential Business System Solution Selection ............................................................49 
+4D.3.  Business System Design Specifications ......................................................................49 
+4D.4.  Content of Business System Design Specifications ....................................................50 
+APPENDIX 4E: (ADDED)(DAF)  BCAC PHASES DETAILED PROCESSES .....................................51 
+4E.1. (ADDED)(DAF) BACKGROUND…..………..............................……………………….51 
+4E.2. (Added)(DAF) Phase 1: Capability Need Identification. ........................................52 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+6 
+4E.3. (Added)(DAF) Phase 2: Business Solution Analysis. ...............................................55 
+4E.4. (Added)(DAF) Phase 3: Business System Functional Requirements and 
+Acquisition Planning............................................................................................................59 
+4E.5. (Added)(DAF) Phase 4:  Business System Acquisition, Testing and Deployment.67 
+4E.6. (Added)(DAF) Phase 5:  Capability Support Phase………………………….……73 
+GLOSSARY ......................................................................................................................................88 
+G.1. Acronyms ......................................................................................................................88 
+G.2. Definitions .....................................................................................................................92 
+REFERENCES ...................................................................................................................................97 
+TABLES
+Table 1.  DoD Business System Categories…………………………………………………….16 
+Table 2.  Functional Lead and Program Manager Interaction…………………………………..21 
+Table 3. Decision Authorities ......................................................................................................37 
+Table 4. Statutory Requirements .................................................................................................37 
+Table 5.  Considerations for Decision Criteria .............................................................................38 
+Table 6. Progression of Capability Implementation Plan Content through BCAC Phases and 
+Decision Points ...........................................................................................................…………..45 
+Table 7. (Added)(DAF) Phase 1: Capability Needs Identification Actions...……………......50 
+Table 8. (Added)(DAF) Phase 2: Business Solution Analysis Actions..……………………..53 
+Table 9. (Added)(DAF) Phase3: Capability Implementation Plan Actions.……………….53 
+Table 10. (Added)(DAF) Phase 4: Business System Acquisition, Testing and Deployment 
+Actions ...……………………………………………………………………………………….54 
+Table 11. (Added)(DAF) Phase 5: Capability Support Phase Actions………………………54 
+Table 12. (Added)(DAF) Phase 2 Breakdown: Determine PM and MDA.………………...56 
+Table 13. (Added)(DAF) Phase 2 Breakdown: Refine Tailored CIP…..……….…………..58 
+Table 14. (Added)(DAF) Phase 2 Breakdown: ATP 2..………......………………………….59 
+Table 15. (Added)(DAF) Phase 3 Breakdown: Initiate Acquisition Planning..………….....60 
+Table 16. (Added)(DAF) Phase 3 Breakdown: Document Business Feature Backlog….....61 
+Table 17. (Added)(DAF) Phase 3 Breakdown: Document Report Features………….……62 
+Table 18. (Added)(DAF) Phase  3 Breakdown: Document Interface Features ………..……62 
+Table 19. (Added)(DAF) Phase 3 Breakdown: Document Data Features …………………..62 
+Table 20. (Added)(DAF) Phase 3 Breakdown: Document Infrastructure Features……….63 
+Table 21. (Added)(DAF) Phase3 Breakdown: Document Service Level Features …………63 
+Table 22. (Added)(DAF) Phase 3 Breakdown: Document Operational/COOP Features ….64 
+Table 23. (Added)(DAF) Phase 3 Breakdown: Document Cybersecurity Features ……….64 
+Table 24. (Added)(DAF) Phase 3 Breakdown: Document Solution Architectural 
+Features.………………………………………………………………………………………..65 
+Table 25. (Added)(DAF) Phase 3 Breakdown: Execute Acquisition Process ………….….65 
+Table 26. (Added)(DAF) Phase 3 Breakdown: ATP 3 ………….……………………..……66 
+Table 27. (Added)(DAF) Phase 4 Breakdown: Complete Contracting………….……….....68 
+Table28. (Added)(DAF) Phase 4 Breakdown: Conduct Tailored Program Execution …....69 
+Table 29. (Added)(DAF) Phase 4 Breakdown: Provision Infrastructure ………….…….…69 
+Table 30. (Added)(DAF)  Phase 4 Breakdown: Execute DevSecOps Process ………………70 
+Table 31. (Added)(DAF)  Phase 4 Breakdown: Convene Steering Committee ………….….70 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+7 
+Table 32. (Added)(DAF) Phase 4 Breakdown: Perform Data Migration and Conversion ..71 
+Table 33. (Added)(DAF) Phase 4 Breakdown: Perform Agile Testing and Evaluation …..71 
+Table 34. (Added)(DAF) Phase 4 Breakdown: Conduct Pre-Deployment Actions …….….72 
+Table 35. (Added)(DAF) Phase 4 Breakdown: Release into Production …………………..72 
+Table 36. (Added)(DAF) Phase 5 Breakdown: Conduct BMA Functional Portfolio 
+Management ....………………………………………………………………………………...76 
+Table 37. (Added)(DAF) Phase 5 Breakdown: Conduct Post Deployment Management 
+(Production) …………...……………………………………………………………………....77 
+Table 38. (Added)(DAF) Phase 5 Breakdown: Provide Production Support ……………..77 
+Table 39. (Added)(DAF) Phase 5 Breakdown: BCAC Execute Event Management ………78 
+Table 40. (Added)(DAF) Phase 5 Breakdown: Execute Incident Management ……………79 
+Table 41. (Added)(DAF) Phase 5 Breakdown: Execute Problem Management ……………80 
+Table 42. (Added)(DAF) Phase 5 Breakdown: Execute Cyber Risk Management ……….81 
+Table 43. (Added)(DAF) Phase 5 Breakdown: Conduct Program Management ………….82 
+Table 44. (Added)(DAF) Phase 5 Breakdown: Manage Capability Gaps ………………….83 
+Table 45. (Added)(DAF) Phase 5 Breakdown: Platform ……………………………………84 
+Table 46. (Added)(DAF) Phase 5 Breakdown: Network and Security …………………….84 
+Table 47. (Added)(DAF) Phase 5 Breakdown: API and Enterprise Service Bus (ESB) 
+Management …………………………………………………………………………………...85 
+Table 48. (Added)(DAF) Phase 5 Breakdown: User Access ………………………………..85 
+Table 49. (Added)(DAF) Phase 5 Breakdown: Enterprise Information Management .…..86 
+Table 50. (Added)(DAF)  Phase 5 Breakdown: Enterprise Services ………………………..86 
+Table 51. (Added)(DAF) Phase 5 Breakdown: Dashboard Services ……………………….86 
+Table 52. (Added)(DAF)  Phase 5 Breakdown: Business Intelligence Platform ……………87 
+FIGURES
+Figure 1.  Business Capability Acquisition Cycle…………………………………..…………....9 
+Figure 2.  High-Level BCAC Process…………………………………………….……………..28 
+Figure 3. (Added)(DAF) Phase 1 Actions: Macro View……………………………...……....52 
+Figure 4. (Added)(DAF) Phase 2 Actions: Macro View……………………..…….…………55 
+Figure 5. (Added)(DAF) Phase 3 Actions: Macro View…………………………….……....59 
+Figure 6. (Added)(DAF) Phase 4 Actions: Macro View……………………………….........68 
+Figure 7. (Added)(DAF) Phase 5 Actions: Macro View.…………………………………....75 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+8 
+SECTION 1: GENERAL ISSUANCE INFORMATION 
+1.1. APPLICABILITY. 
+This issuance applies to: 
+a. OSD, the Military Departments, the Office of the Chairman of the Joint Chiefs of
+Staff and the Joint Staff, the Combatant Commands, the Office of the Inspector General of 
+the Department of Defense, the Defense Agencies, the DoD Field Activities, and all other 
+organizational entities within the DoD (referred to collectively in this issuance as the 
+“DoD Components”). 
+b. All defense business capabilities and their supporting business systems, including those
+with “as-a-service” (aaS) solutions. Chief Management Officer (CMO) certification 
+requirements in this issuance apply to business systems only. 
+c. (Added)(DAF) The processes and requirements in this Supplement apply to all
+business capability and systems regardless of funding level and appropriation except those 
+developmental software efforts meeting the criteria for and choosing to implement using 
+DoDI 5000.87, Software Acquisition Pathway. Note: Statutory requirements that apply to 
+Defense Business Systems (DBS) will also apply to DBS programs using DoDI 5000.87 
+unless otherwise noted in statute. 
+d. (Added)(DAF) Business system programs may include the acquisition of services.
+Review AFI 63-138, The Acquisition of Services, for additional guidance. 
+1.2. POLICY. 
+It is DoD policy that: 
+a. DoD acquisition of business systems will be aligned to commercial or government
+best practices and will minimize the need for customization of commercial products to the 
+maximum extent practicable. Thorough industry analysis and market research of both process 
+and information technology (IT) are expected. 
+b. Business systems acquisition will facilitate business changes through doctrine,
+organization, training, materiel, leadership and education, personnel, facilities, and policy 
+to drive performance improvements, efficiencies, effectiveness, cyber resilience, and 
+audit compliance. 
+c. Business systems acquisition is the joint responsibility of the functional and the
+acquisition communities. Both communities are accountable for the successful delivery of 
+business capability, from business process design through business system deployment and 
+capability support. Functional and acquisition leadership emphasis on change management 
+is essential for success, and all leaders must drive toward commercial off-the-shelf 
+(COTS) and government off-the-shelf (GOTS) solutions, to the extent practicable. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+9 
+d. The acquisition pathway described in this issuance may be used for other non- 
+developmental, software intensive programs (including national security systems, productivity 
+solutions, and IT infrastructure), when approved in program acquisition strategies. Statutory 
+requirements for other types of IT capabilities developed in accordance with this issuance will 
+still apply. CMO certification requirements in this issuance apply to business systems only. 
+e. The authority to proceed (ATP) decision points of the BCAC portrayed in Figure 1
+provide the framework for acquisition and business decisions in the life cycle and may be tailored 
+as necessary to contribute to successful delivery of business capabilities.  
+Figure 1.  Business Capability Acquisition Cycle 
+f. Decision authorities in Table 3 of Appendix 4A of this issuance will tailor the application
+of regulatory requirements and procedures to best achieve capability outcomes, consistent with 
+established statutory requirements outlined in Table 4 of Appendix 4A. In addition, decision 
+authorities will reduce separate reviews and approvals by other organizations when confirmation 
+through direct collaboration is sufficient. 
+(1) (Added)(DAF) Capability initiatives will enter into the Capability Need
+Identification phase but may transition to other phases if the intent and exit criteria for 
+each phase is completed to the satisfaction of the authority to proceed (ATP) approval 
+authority. 
+(2) (Added)(DAF) Phases are not required to be done in sequence, the process is
+iterative and activities for one phase may be initiated or completed in parallel with another 
+phases.    
+(3) (Added)(DAF) In general, ATP decision points are exit events authorizing
+continuation into the next phase. For example a Functional Requirements ATP is 
+completed as part of the Business Solution Analysis phase to authorize entry to the 
+Functional Requirements and Acquisition Phase.   
+g. (Added)(DAF) CCA compliance will be accomplished as an iterative process as
+all information may not be available during early ATP decision points. Full CCA 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+10 
+compliance (i.e., compliance with all CCA criteria) is required no later than the first 
+Limited Deployment ATP. More information on CCA compliance is in Paragraph 2.9.a 
+and Table 4 of Appendix 4A. Reference AFMAN 17-1402, Clinger-Cohen Act (CCA) 
+Compliance and AFI 63-101/20-101 for additional information on CCA. 
+1.3. SUMMARY OF CHANGE 2. 
+This change clarifies policy, responsibilities, procedures, and definitions to address updates to 
+Section 2430(a) of Title 10, U.S.C., gaps in current business systems policy as a result of 
+lessons learned, evolving acquisition practices (including DoD’s Adaptive Acquisition 
+Framework and 5000-series initiatives), and changes to other business systems-relevant 
+issuances. This change also updates references and organizational symbols, and corrects other 
+administrative concerns. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+11 
+SECTION 2: RESPONSIBILITIES 
+2.1. UNDER SECRETARY OF DEFENSE FOR ACQUISITION AND 
+SUSTAINMENT (USD(A&S)). 
+The USD(A&S) is the Defense Acquisition Executive.  The USD(A&S): 
+a. Establishes policy and provides oversight for the business systems life cycle.
+b. Delegates milestone decision authority (MDA) for assigned business systems described
+in Table 1 of Section 3: 
+(1) To a DoD Component head, who then may delegate the authority to the
+Component Acquisition Executive (CAE), but no further for business system Category 
+(BCAT) I programs. 
+(2) To another OSD official as the USD(A&S) considers appropriate.
+2.2. CHIEF MANAGEMENT OFFICER OF THE DEPARTMENT OF DEFENSE 
+(DOD CMO). 
+The DoD CMO: 
+a. Establishes policy and provides oversight for planning and control of investments
+in business systems, to include certification of covered defense business systems in 
+accordance with Section 2222 of Title 10, U.S.C. 
+b. Maintains the Business Enterprise Architecture (BEA) and requires all
+functional strategies, capabilities, processes and systems to be reflected in the BEA. 
+c. Establishes policy and processes for:
+(1) Business system capability portfolio management and its appropriate linkage to the
+BEA. 
+(2) Validation of business needs and identification of capability requirements for
+business systems. 
+d. Validates capability requirements for assigned business systems in Table 1 of Section 3
+to align business capabilities to functional strategies. 
+e. Delegates requirements validation authority for BCAT I programs to a
+Military Department (MILDEP) CMO. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+12 
+2.3. DOD CHIEF INFORMATION OFFICER (DOD CIO). 
+The DoD CIO: 
+a. Establishes policy and provides oversight for CCA confirmation for business systems.
+b. Confirms CCA compliance for joint systems and delegates CCA compliance authority
+for all other business systems to the DoD Component CIO. 
+c. Approves:
+(1) Cybersecurity strategies mission-critical and mission-essential IT and
+BCAT I programs before ATP decision points or development contract awards. 
+(2) IT infrastructure and hosting solutions for joint and enterprise business systems
+and BCAT I programs. 
+2.4. DIRECTOR, COST ASSESSMENT AND PROGRAM EVALUATION. 
+The Director, Cost Assessment and Program Evaluation, establishes policies and procedures 
+for the collection of cost data, the conduct of cost estimates, and analysis of solution 
+approaches for the acquisition of business systems. 
+2.5. OSD AND DOD COMPONENT HEADS. 
+The OSD and DoD Component heads: 
+a. Provide policy and guidance relating to their functional area throughout the
+business systems life cycle. 
+b. When requested, advise the program, the MDA, and the appropriate CMO decision
+authority on matters relating to their functional area at or before decision points throughout 
+the business systems life cycle. 
+2.6. (Added)(DAF) Assistant Secretary of the Air Force for Acquisition, Technology, and 
+Logisitics (SAF/AQ). 
+(Added)(DAF) SAF/AQ, in consultation with the Assistant Secretary of the Air Force 
+for Space Acquisition and Integration (SAF/SQ), provides guidance, oversight, and 
+reporting requirements for the acquisition of DAF business systems, including acquisition 
+of USSF business systems. 
+2.7. (Added)(DAF) The Service Acquisition Executive (SAE). 
+a. (Added)(DAF) Note: The term “SAE” is equivalent to the term CAE used in DoD
+directives and instructions and refers to the Mission Directive assigned SAE.  The SAE: 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+13 
+b. (Added)(DAF) Ensures business system programs, to include business system
+modification programs, are properly defined and justified in budget documentation as 
+outlined in AFI 17-110, Information Technology Portfolio Management and Capital 
+Planning and Investment Control and DAFMAN 65-605V1, Budget Guidance and Technical 
+Procedures, 31 March 2021. 
+c. (Added)(DAF) Oversees acquisition of business systems <$250 million over the
+Future Years Defense Program (FYDP) and Business Category I (BCAT I) programs 
+delegated down from the USD(A&S). SAE may delegate this responsibility, reference 
+Section 3 of this supplement, AFI 63-101/20-101, and AFI 63-138 for additional delegation 
+information. 
+d. (Added)(DAF) Assumes primary responsibility for the business capability from
+the Functional Sponsor when the preferred solution analysis begins (middle of the 
+Functional Requirements and Acquisition Planning Phase.) 
+e. (Added)(DAF) Acts as or delegates the acquisition authority for the Functional
+Requirements, Acquisition, Limited Deployment(s), and Full Deployment decision points 
+(T-0). 
+2.8. (Added)(DAF) Deputy Under Secretary of the Air Force for Management (SAF/MG). 
+a. (Added)(DAF) SAF/MG, in its role of the AF Deputy Chief Management Officer,
+per delegated responsibilities from USecAF as listed in HAF MD 1-19, Deputy Under 
+Secretary of the Air Force, Management, is designated as the Pre-Certification Authority on 
+Air Force Priority Defense Business Systems and the Certification Authority on Covered 
+Defense Business Systems.  
+b. (Added)(DAF) SAF/MG role in the Business Enterprise Architecture (BEA)
+follows: 
+(1) (Added)(DAF) Assess current DAF business enterprise architecture (i.e.,
+systems, activities, processes, data exchanges, etc.), while leveraging the DoD Business 
+Enterprise Architecture, to identify similar or duplicate capabilities that solve the identified 
+problem and/or reduces the costs associated with building a new capability.  
+(2) (Added)(DAF) Conduct enterprise architecture analysis using available
+architectures, such as the DoD Business Enterprise Architecture, to identify potential reuse 
+of capabilities and processes; thus, maximizing the adoption of existing federal government 
+or commercial processes over new capabilities that require customization. 
+c. (Added)(DAF) Deputy Chief Management Officer will:
+(1) (Added)(DAF) Establish and ensure compliance with the Department of the
+Air Force defense business system strategy. 
+(2) (Added)(DAF) Guide and support the Functional Sponsor’s business
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+14 
+capability requirements definition work. 
+2.9. 
+(Added)(DAF) Department of the Air Force Chief Information Officer (SAF/CN). 
+a. (Added)(DAF) Is the approving authority for Defense Business Systems to be 
+compliant with IT statutory and regulatory requirements in support of ATP decisions, to 
+include but not limited to the following: Clinger-Cohen Act, Federal Information Security 
+Management Act of 2014, Privacy Act of 1974, records management, cybersecurity risk 
+management (e.g., Risk Management Framework) and Section 508 of the Rehabilitation 
+Act of 1973 (reference this supplement for additional information).  
+b. (Added)(DAF) Provides guidance and support to the Functional Lead and 
+Program Manager in determining compliance requirements as agreed upon by the DAF 
+CIO and the requesting organization. Provides input on alignment with the Information 
+Dominance Flight Plan, Digital AF, and the AF’s Strategic Master Plan as applicable. 
+c. (Added)(DAF) Approves and reviews of IT architecture, baseline, and 
+infrastructure including hosting solutions. 
+d. (Added)(DAF) Serves as the IT infrastructure architect to ensure compliance 
+with DoD-mandated standards, regulations and architecture for infrastructure and 
+platform capabilities in support of AF business systems. 
+e. (Added)(DAF) Participates in and coordinates on draft documents early in the 
+development process. 
+2.10. (Added)(DAF) Director, Air Force Test and Evaluation (AF/TE). 
+(Added)(DAF) The Director, Air Force Test and Evaluation (AF/TE), as the senior 
+Service official responsible for developmental and operational testing will:  
+a. (Added)(DAF) Provide guidance, direction, and oversight for the formulation, 
+review, and execution of Test and Evaluation (T&E) plans, policies, programs, and 
+budgets. 
+b. (Added)(DAF) Act as the final DAF review and authority and signatory for T&E 
+master plans or other test strategy documentation prior to SAE approval and signature for 
+business systems. 
+c. (Added)(DAF) Review and prepare release of T&E reports outside the DAF and 
+ensure test results are available to decision makers in a timely manner. 
+2.11. (Added)(DAF) Assistant Secretary of the Air Force for Financial Management and 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+15 
+Comptroller (SAF/FM) 
+(Added)(DAF) Assistant Secretary of the Air Force for Financial Management and 
+Comptroller (SAF/FM) will:  
+a. (Added)(DAF) Support funding for business system programs.  Funding requests are
+submitted using the Planning, Programming, and Budgeting Execution (PPBE) process 
+managed by the Department of the Air Force and Department of Defense.   
+b. (Added)(DAF) Support development of a Service Cost Position or a Non-Advocate
+Cost Assessment as required to support approved business system programs in accordance 
+with DODI 5000.73 and AFI 65-508, Cost Analysis Guidance and Procedures. Continue to 
+refine cost estimating practices to maintain responsiveness to business system acquisition 
+programs employing modern software development methods.  
+c. (Added)(DAF) Review and approve CCA-directed economic analysis IAW AFMAN
+65-506.  This responsibility may be delegated to lower-level FM organizations (e.g.,
+MAJCOM and Field Command (FLDCOM), Centers).
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+16 
+SECTION 3: ROLES 
+3.1. GENERAL. 
+a. The roles described in this section will be performed by OSD,
+MILDEP or DoD Component level leaders according to designated BCAT 
+and delegation of authority. 
+b. Table 1 defines BCAT based on systems covered by Section 2222 of Title
+10, U.S.C., along with minimum required decision authorities. 
+Table 1.  DoD Business System Categories 
+Business System Category / Reason for Designation 
+Decision Authorities 
+I 
+•
+Priority defense business system expected to have
+a total amount of budget authority over the period
+of the current Future Years Defense Program
+(FYDP) in excess of $250,000,000; or
+•
+DoD CMO designation as priority based on
+complexity, scope, and technical risk, and after
+notification to Congress.
+Requirements Validation / CMO Certification: 
+DoD CMO or as delegated 
+MDA: defense acquisition executive or as 
+delegated (not below CAE) 
+II 
+•
+Does not meet criteria for category I.
+•
+Expected to have a total amount of budget authority
+over the period of the current FYDP in excess    of
+$50,000,000.
+Requirements Validation / CMO Certification: 
+MILDEP CMO or as delegated; DoD CMO or 
+as delegated for all other DoD Components 
+MDA: CAE or as delegated 
+III 
+•
+Does not meet criteria for category II.
+Requirements Validation / CMO Certification: 
+DoD CMO or MILDEP CMO may designate 
+as requiring certification 
+MDA: Same as category II and further 
+delegation is encouraged 
+1.
+Transitions from lower to higher business system categories based on FYDP cost thresholds become
+effective no later than when the President’s Budget is submitted to Congress.
+2.
+Business systems will not transition automatically from higher to lower business system category even if
+FYDP costs no longer exceed thresholds for the higher category. The MDA, in coordination with the
+appropriate CMO decision authority, will make the decision to transition from a higher to lower category.
+(Added)(DAF) Note:  Chief Management Officer of the Department of Defense (DoD CMO) were
+reassigned to other DoD officials or organizations effective October 1, 2021.  Reference section 901(b)
+of the William M. (Mac) Thornberry National Defense Authorization Act for FY 2021 (Public Law
+116-283).
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+17 
+c. (Added)(AF) The DAF further identifies several categories (“Types”) of business
+capability requests that can enter the BCAC based on capability solution availability. Each 
+type follows a tailored path through the phases. Reference Appendix 4E for additional 
+information.  
+3.2. ROLES IN BUSINESS SYSTEMS REQUIREMENTS AND ACQUISITION. 
+a. Functional Sponsor.
+(1) The functional sponsor is the DoD or Component senior leader with business
+function responsibility seeking to improve mission performance. The functional sponsor 
+confirms the need for improved business operations and represents the user community 
+interests throughout the BCAC. The functional sponsor represents the DoD organization(s) 
+with a business problem or opportunity that may be addressed via the acquisition of a 
+business system, business process reengineering, or related business changes. 
+(2) The functional sponsor leads solution analysis and change management and
+creates a successful change environment.  The functional sponsor: 
+(a) Engages stakeholders to keep them actively involved in shaping the
+complete future solution. 
+(b) Makes resources available for each phase of requirements and acquisition
+to include stakeholders and subject matter experts. 
+(c) Programs and budgets for lifecycle costs of full business spectrum solutions.
+(d) Provides input, including market research, to the MDA for the development
+of the business system. 
+(e) Validates that deployed capabilities meet business requirements, deliver
+expected benefits, and provide return on investment. 
+(f) Designates the functional lead who will report to the functional sponsor
+and collaborate with the program manager. 
+(g) (Added)(DAF) Supports the identification and satisfaction of compliance
+requirements for a business capability in accordance with AFI 17-101, Risk Management 
+Framework (RMF) for Air Force Information Technology (IT). 
+(h) (Added)(DAF) Supports the upload of all architecture content into the
+authoritative AF architecture repository and the integration of new or modified 
+architecture into the DoD Business Enterprise Architecture. This would likely include 
+technical data and/or computer software as defined in DFARS 52.227-7013 to the extent 
+permissible by law and in accordance with any applicable data licenses and markings. (T-
+1). 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+18 
+(i) (Added)(DAF) Charters a Community of Interest, which is a
+collaboration environment, to engineer the information model, capture the 
+detailed information requirements and propose Authoritative Data Sources (T-3). 
+(j) (Added)(DAF) Shares responsibility for change management with
+the Program Manager (reference this supplement) (T-3). 
+(k) (Added)(DAF) Commences the process for an initiative to improve mission
+performance, provides the resources to begin Capability Need Identification phase (Phase 
+1), and advocates for the capability to the Deputy Chief Management Officer as part of 
+ATP 1 (T-0). 
+(l) (Added)(DAF) Ensures that all necessary funding that is within the control
+of the Functional Sponsor is identified and obtained in accordance with DoD Financial 
+Management Regulation and DAFMAN 65-605V1, Budget Guidance and Technical 
+Procedures. 
+(m) (Added)(DAF) Directs the involvement of functional Subject Matter
+Experts in all phases and activities described in this instruction. 
+(n) (Added)(DAF) Coordinates with the SAE to determine PEO assignment of a
+DBS to the appropriate PEO in accordance with the PEO Portfolio Assignment processes 
+in AFI 63-101/20-101. 
+b. CMO.
+The CMO role will be performed by the DoD CMO or MILDEP CMO identified as 
+the decision authority in Table 1 depending on the BCAT and any delegation.  The 
+CMO: 
+(1) Determines that business requirements are valid, capability requirements
+are achievable, and capability development efforts are appropriate. 
+(2) Determines that business systems in development are aligned to processes in
+the BEA and meet applicable enterprise standards. 
+(3) In accordance with Section 2222 of Title 10, U.S.C., and with the support from
+the functional sponsor and Service Acquisition Executive (SAE) as needed, determines if a 
+program is a business system. 
+(4) Certifies business system programs to fulfill the requirements of Section 2222
+of Title 10, U.S.C and may designate specific BCAT III systems as requiring 
+certification.  
+c. (Added)(DAF) The AF Deputy Chief Management Officer (DAF DCMO)
+(SAF/MG):
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+19 
+(1) (Added)(DAF) Validates the benefits of the future state business capabilities
+against the Functional Sponsor’s priorities, and ensures appropriate resource allocation 
+(T-0). 
+(2) (Added)(DAF)  Supports the Functional Sponsor in requesting designation of a
+Program Executive Officer (PEO) and Program Manager (PM) from the SAE in 
+accordance with the PEO Portfolio Assignment processes in AFI 63-101/20-101 upon 
+validation of the capability need and requirements.   
+(3) (Added)(DAF) Approves the proposed work planned for Business Solution
+Analysis Phase (T-0). 
+(4) (Added)(DAF) Evaluates and approves Community of Interests’ data
+requirements and information models to ensure consistency with the Business Enterprise 
+Architecture. Ensures appropriate stakeholder functionals are consulted on use of 
+Authoritative Data Sources and monitors compliance with the DAF Chief Data Officer’s 
+data architecture requirements; the Chief Data Officer is responsible for tracking and 
+cataloging data used in the Air Force. 
+d. Milestone Decision Authority (MDA).
+(1) Approves critical acquisition decisions for ATP decision points or concurs
+in contractual commitments. 
+(2) Oversees business system delivery within approved cost, schedule and
+performance parameters included in the baseline. 
+(3) Establishes oversight controls for programs, including procedures to report cost,
+schedule and performance variances and to address reported variances. The acquisition chain 
+of command supports the MDA by leading the program manager and program execution. 
+Specific leadership roles vary by organization but often include the CAE and Program 
+Executive Officer. 
+(4) In coordination with the appropriate CMO decision authority, designates BCAT
+in accordance with Table 1 of Section 3. 
+(5) In accordance with Paragraph 1.2.d, authorizes non-developmental, software
+intensive programs that are not business systems to use the acquisition processes and 
+procedures in this issuance and approves the program’s tailored acquisition approach. 
+(6) (Added)(DAF) Milestone Decision Authority for DAF BCAT II and BCAT
+III programs is delegated to the PEO Business and Enterprise Systems (PEO BES) by 
+this instruction unless otherwise delegated by the SAE, and will be documented in the 
+PEO assignment memorandum in accordance with AFI 63-101/20-101. PEO BES may 
+further delegate MDA responsibility for DAF BCAT II and BCAT III programs to an 
+appropriately qualified individual in accordance with AFI 63-101/20-101. BCAT 
+programs may be assigned to other PEOs by exception. If PEO BES does not have the 
+resources to execute a program, the governance structure will determine an alternate 
+course of action.  
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+20 
+e. Chief Information Officer (CIO).
+The CIO role will be performed by the DoD CIO or DoD Component CIO depending 
+upon the BCAT and any delegation.  The appropriate CIO: 
+(1) Confirms CCA compliance based on program manager input and supporting
+artifacts through proactive engagement, participating as early as practical in the life cycle. 
+This ensures a continuous monitoring approach for CCA and cybersecurity compliance 
+instead of conducting a checklist assessment at the end of each life cycle phase. CIO will 
+confirm that CCA compliance is on track during the early BCAC phases using a tailored 
+approach because not all information may be available yet and will base their decision on 
+information in the program’s capability implementation plan, defined in Appendix 4B. 
+(2) Assists with determination of cybersecurity controls and reviews and approves
+the cybersecurity strategy at the appropriate delegation level before ATP decision points or 
+development contract awards. 
+(3) Establishes standards and supports determination of program IT infrastructure
+solutions and hosting requirements, encouraging shared infrastructure solutions and cloud-
+based solutions first with the appropriate program executive officer or service provider. 
+(4) Works with the functional lead and program manager to ensure agile or
+incremental software development processes are used to the greatest extent practical. 
+f. Functional Lead.
+The functional lead: 
+(1) Leads business process reengineering and execution of business process changes.
+(2) Leads definition of functional requirements and training and deployment for
+the business capability. 
+(3) Reports to the functional sponsor and collaborates with the program manager.
+g. Program Manager.
+The program manager: 
+(1) Leads development and delivery of the business system that supports the delivery
+of business capability. 
+(2) Provides input to the functional sponsor on process design, requirements,
+training and other matters that may influence the acquisition strategy for business systems. 
+(3) (Added)(DAF) Identifies specific information and/or data associated with the
+business system, new capabilities, or integration that should be restricted from public 
+release and develop protection requirements (i.e., Controlled Unclassified). (T-1) 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+21 
+h. (Added)(DAF) Information Technology Portfolio Owner (also known as Functional
+CIO).
+(1) (Added)(DAF) Performs the responsibilities defined in AFI 17-110.
+(2) (Added)(DAF) Develops functional roadmap(s) that describe the portfolio
+target state to allow for visibility in how new capability integrates into the functional 
+portfolio. (T-1) 
+(3) (Added)(DAF) Provides guidance on the prioritization of business system
+initiatives within their portfolio. (T-2) 
+(4) (Added)(DAF) Prepares annual Organizational Execution Plan (OEP)
+submissions for programs within its functional portfolio (e.g., acquisition, finance, etc.)
+3.3. PROGRAM MANAGER RELATIONSHIP. 
+The relationship between the program manager and the functional lead is shown in Table 2. The 
+tasks each individual leads or supports are described by phase in Section 4. 
+Table 2.  Functional Lead and Program Manager Interaction 
+Activity 
+Paragraph 
+Functional 
+Lead 
+Program 
+Manager 
+Identify business capability needs 
+4.2.a 
+Lead 
+Support 
+Design future business processes & solutions 
+4.2.b 
+Lead 
+Support 
+Define functional requirements 
+4.2.c 
+Co-Lead 
+Co-Lead 
+Define solution approach 
+4.2.c 
+Co-Lead 
+Co-Lead 
+Evaluate solution selection 
+4.2.d 
+Support 
+Lead 
+Define detailed design specifications 
+4.2.d 
+Support 
+Lead 
+Develop and deliver business system 
+4.2.d 
+Support 
+Lead 
+Support business capability 
+4.2.e 
+Lead 
+Support 
+Manage configuration of the business system 
+4.2.e 
+Support 
+Lead 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+22 
+SECTION 4: PROCEDURES 
+4.1. OVERVIEW. 
+a. Tailoring.
+The procedures used to develop business capability requirements and supporting systems 
+will be tailored to the characteristics of the capability being acquired. Tailoring will focus on 
+application of best practices to the totality of circumstances associated with the program, 
+including affordability, urgency, return on investment, and risk factors, when the requirements 
+are not statutory. 
+(1) Tailoring should be considered throughout the life cycle from both the functional
+and acquisition perspective, to include program strategies and oversight, program information, 
+acquisition phase content, and the timing and scope of decision reviews and decision levels. 
+(2) The MDA may tailor acquisition content (i.e., acquisition strategy content) for
+all BCAC phases. Information requirements supporting requirements validation and the 
+CMO certification process cannot be tailored and must be provided to decision makers as 
+prescribed. 
+(3) Statutory requirements for business systems are outlined in Table 4 of Appendix
+4A and may not be waived or tailored unless the statute permits. 
+(4) (Added)(DAF) Appendix 4E outlines the DAF’s implementation of BCAC in
+five phases and prescribes mandatory steps within a tailorable framework. Each of these 
+steps can be tailored to provide only the essential information. 
+(5) (Added)(DAF) The appropriate Functional Sponsor or Program Manager
+reviews the tailoring, with approval given by the requisite decision authority for each 
+decision point. (T-0) 
+(6) (Added)(DAF) The tailoring procedures in DAF’s implementation of BCAC lay
+out mandatory steps for all initiatives and programs as well as additional steps dependent 
+upon the business capability request type. Each of these steps can be tailored to provide 
+only the essential required information. 
+b. ATP Decision Points.
+Decisions will be informed by measures that assess the readiness to proceed to the next 
+phase of the process. Decision-making will focus on executability and effectiveness of 
+planned activities, including cost, schedule, performance, acquisition strategy, incentive 
+structure and risk. 
+(1) Decisions are coordinated across key stakeholders and made in a collective forum
+so that the decision authority is fully informed by the stakeholders at each decision point. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+23 
+(2) Decision authority is determined by phase content and type of decision being
+made. Decision authorities are described in more detail by phase in this section and 
+summarized in Table 3 of Appendix 4A. 
+(3) After the Functional Requirements ATP, the timing and number of all
+subsequent decision points are established as part of the capability implementation plan, 
+defined in Appendix 4B. 
+(4) ATP decisions must be documented for the record. Approval is based upon
+component representation that it has satisfied all statutory, regulatory, and any additional 
+critical requirements unless otherwise stated. Information supporting the decision must be 
+maintained in accordance with DoD records management procedures. 
+(5) Considerations for decision criteria to use in support of ATP decision points
+are included in Table 5 of Appendix 4A. 
+(6) (Added)(DAF) The Functional Sponsor, Functional Portfolio Lead (Information
+Technology Portfolio Owner), or Program Manager may initiate the ATP process when 
+ready to submit the content required for that decision point to the decision 
+authority/authorities. 
+(7) (Added)(DAF) At each decision point the requester will provide the decision
+authorities a response to the content reviews with a description of the updates to the 
+content and the mitigation plan. The decision authorities decide to: allow the program to 
+proceed; proceed with conditions; direct that the program return to another point in the 
+process; or halt the program completely. All decisions are recorded in a decision 
+memorandum. (T-1) 
+(a) (Added)(DAF) Decisions should be data driven, not documentation based,
+and are tailorable based on the individual capability effort. Decisions will be presented to 
+the functional portfolio board.   
+(b) (Added)(DAF) ATP decisions coming from the functional portfolio board,
+including but not limited to tailoring considerations, compliance requirements, and other 
+agreements, will be documented in an ATP memorandum. (T-0)   
+c. Governance.
+Governance for business capabilities is not a one-size-fits-all model and must be adaptive, 
+transparent, and inclusive of key stakeholders to enable rapid decision making on key matters 
+such as requirements, cost, schedule, performance, and risk. Simplified and effective 
+governance driven by clear outcomes throughout the capability life cycle is encouraged, as is 
+delegating governance decisions to the lowest practical levels. 
+(1) (Added)(DAF) The Functional Portfolio Boards (PBs) are a collaborative
+forum for functional senior leadership to provide support and operational oversight for 
+their BMA portfolio. The PBs ensure key BMA-related decisions align with the Air 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+24 
+Force’s overall business direction and priorities as set by the BMA Council.  The 
+Functional PBs are partnerships with SAF/MG, SAF/CN, SAF/AQ, PEO BES, PEO 
+Command, Control, Intelligence, and Network (C3I&N), and other entities as 
+appropriate. PBs serve as the single point of authority for all functional portfolio-level 
+decisions. The PBs are the focal points for functional management review and decision-
+making risks that are beyond the authority of the program-level leadership. The 
+Functional Portfolio Boards provide oversight and guidance for their respective 
+Functional Program Review Groups. Additionally, the IT Portfolio Owner and others as 
+designated participate in the BMA Council sessions. 
+(2) (Added)(DAF) BMA Enterprise Review Groups (BERG) established at
+the Executive, Portfolio and Program levels, provide PEO and SAF/MG level 
+oversight for DAF Defense Business System ATP decisions. The BERGs are also a 
+vehicle for SAF/MG to request periodic status briefings on program progress 
+outside of an ATP review requirement.  The lead decision authority for each ATP 
+decision will determine the governance forum for each decision review.   
+(a) (Added)(DAF) Executive BERGs will review Business System
+Category content and serve as the Air Force-level Defense Business Council and 
+Defense Acquisition Board equivalent for Development and Modernization 
+requirements in accordance with the current annual DAF and MDA guidance 
+for programmatic oversight.  
+(b) (Added)(DAF) Portfolio and Program level BERGs will be comprised of the
+Program Manager(s), the PEO, the Milestone Decision Authority (MDA), SAF/MG, 
+SAF/CN, other appropriate stakeholders, and the functional portfolio owners. These can be 
+held in conjunction with functional portfolio meetings or as individual program BERG.    
+d. Change Management.
+Change management proactively prepares the functional community for upcoming 
+changes resulting from the delivery of a business capability, reduces risk, and increases user 
+adoption. Change management tasks span the lifecycle of the product’s delivery and include 
+the development and delivery of training materials and ongoing capability improvements 
+addressed in the capability support phase. The functional lead and program manager are 
+jointly responsible for change management. 
+e. Budgeting by Functional Capability and IT Portfolio.
+Every phase outlined in this document will be funded in the planning, programming, 
+budget, and execution process. To facilitate this, functional capability and IT portfolio 
+program elements will be established by Components to fund business need definition and 
+business solution design efforts.  Funding in the program objective memorandum will 
+represent the work to be done across the life cycle, starting with requirements development 
+through deployment and capability support. 
+f. Continuous Process Improvement.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+25 
+The functional sponsor will engage in continuous process improvement throughout all 
+phases of the BCAC, based on opportunities that emerge in analysis of existing capabilities, 
+processes, and supporting IT in use within the existing organization and at other organizations. 
+The functional sponsor will prioritize these continuous process improvement opportunities for 
+current and future initiatives. 
+g. Industry Analysis and Market Research.
+The functional sponsor and MDA must provide access to domain experts with functional 
+and technical knowledge to support analysis of processes from industry and government for 
+capability delivery options. These domain experts must guide the development of business 
+requirements without preferring business systems over business process improvements. 
+Market research will identify existing and emerging business systems available to support 
+future processes. 
+h. Prototyping and Demonstrations.
+To the extent that it benefits the program and at acceptable cost and risk, program 
+managers are encouraged to use prototyping and demonstrations to inform requirements, 
+support market research, and support selection of products and services.  Program managers 
+will provide the MDA with the expected benefits that these efforts will provide as well as the 
+approach for making any prototypes operational, as appropriate. 
+i. Delivery of Capability.
+Functional leads and program managers will apply commercial best practices and lessons 
+learned to prioritize and more rapidly develop and deploy useable, affordable subsets of 
+capability. 
+(1) A release is a manageable subset of functionality, such as minimum viable
+product, that provides utility in support of the business capability. Based on the program’s 
+particular baselining approach, releases will be baselined and documented in the capability 
+implementation plan, as defined in Appendix 4B. The utility provided by a release does not 
+have to fulfill the entire business capability. Additional utility may be added through iterative 
+releases based on user feedback to minimize risk and increase adoption. 
+(2) A deployment either introduces a new release into the production environment
+or expands the user base of existing functionality. Deployment includes training and 
+business systems operations activities such as help desk support. 
+j. Integrated Testing.
+The MDA will oversee an effective yet efficient testing approach that incorporates: 
+(1) Integrated testing, in which a single test activity can provide data to satisfy
+multiple objectives, as supported by an integrated testing strategy documented in the 
+capability implementation plan defined in Appendix 4B. Integrated testing may include 
+combined contractor and government developmental testing, as well as integrated 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+26 
+government developmental and operational testing. 
+(2) The use of test automation, to the greatest extent practical.
+(3) Involvement of users and testers throughout the entire life cycle.
+(4) When supported by the appropriate risk analysis, assessments will primarily use
+data from integrated test events rather than a dedicated independent operational test event. For 
+programs on the Director, Operational Test and Evaluation (DOT&E) Oversight List, the level 
+of test and use of integrated test data, test strategies, as well as dedicated operational test 
+events should be approved by DOT&E based upon Guidelines for Operational Test and 
+Evaluation of Information and Business Systems. 
+(5) (Added)(DAF) DAF Integrated Test Teams perform the responsibilities as
+defined in DoDI 5000.89_DAFI 99-103, Capabilities-Based Test and Evaluation. If a 
+project or program is authorized to enter the process anywhere other than the beginning 
+(e.g., entry at Phase 4), review all activities that would normally be accomplished prior to 
+that point and ensure any mandatory prerequisites are accomplished.  The Integrated 
+Test Team reviews and recommends a Lead Development Test and Evaluation 
+Organization to the Program Manager. (T-1)  
+k. Delegation.
+Decision authorities in Table 3 of Appendix 4A will evaluate remaining risk in 
+business system programs at each decision point and can delegate authority for specific 
+releases or all remaining program capability, to empower leaders to provide timely 
+guidance and make decisions at the lowest practical level. 
+l. Documentation and Deliverables.
+Information requirements will generally not be prepared solely for staff review and 
+approval. In addition to supporting decision making at ATP decision points, these products 
+should support program activities such as contracting actions or test events, or serve as 
+planning and management tools. The information produced will be specific to each program 
+and acquisition information (e.g., acquisition strategy content) will be tailored to meet 
+individual program needs. Details will be maintained by the program in a transparent and 
+timely manner, readily available for reviews as needed. 
+m. (Added)(DAF) Agile Implementation.
+(1) (Added)(DAF) Where appropriate under the process, PMs will tailor strategies,
+process, documentation, design, development, and test activities using agile acquisition 
+strategies and techniques. 
+(2) (Added)(DAF) PMs should use modern iterative software development
+methodologies and techniques as the default approach to the technical implementation of 
+business systems.  Iterative software development and DevSecOps methodologies support 
+the DoD objective of rapid delivery of capabilities to end user communities at frequent 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+27 
+intervals, not only for code development but also for configuration of COTS/GOTS/SaaS 
+and aPaaS products and non-IT acquisitions. 
+(a) (Added)(DAF) In situations where Agile is deemed not feasible, the chosen
+development methodology and justification should be noted in the program’s Capability 
+Implementation Plan (CIP) prior to ATP 2.  
+(b) (Added)(DAF) At ATP 3 the MDA for programs implmeneting agile
+methodologies may delegate ATP decision authority to the delivery manager to 
+continuously free flow between BCAC phases 3, 4, and 5 to further aid the use of agile 
+methodologies. 
+(c) (Added)(DAF) Agile methodologies encourage adapting to increase the
+efficiency of the effort. The development team and stakeholders will conduct post sprint 
+retrospectives and sprint metrics review to understand sprint velocity, planned vs. executed 
+stories and points, changes, and team morale. These metrics will be briefed to a Steering 
+Committee. Disciplined sprint metrics gathering and analysis will also help to understand 
+and forecast spending for future projects as early as BCAC Phase 2 to include minimum 
+viable product, ongoing feature development, backlogs, and future enhancements. 
+(3) (Added)(DAF) Business process re-engineering and other continuous process
+improvement methodologies will be considered and applied throughout all BCAC phases 
+when applying agile methodologies.  
+o. (Added)(DAF) Organizational Execution Plans (OEPs) and Out-of-Cycle (OOC)
+Requests. 
+(1) (Added)(DAF) The IT Portfolio Owner will submit an OEP annually to
+SAF/MG to support annual certification of business systems required in 10 United 
+States Code § 2222.  The OEP allows SAF/MG to oversee business mission area 
+integration, recommend improvement to business operations, and leverage 
+appropriate technologies to deliver agile, effective, and efficient business solutions to 
+the DAF.  The information necessary to support an OEP is generated as part of the 
+BCAC process and integrated into Program Objective Memorandum (POM) 
+submission. (T-0)  
+(2) (Added)(DAF) Each initiative or investment should be included in an OEP
+and undergo analysis during the portfolio management process to ensure: 
+(a) (Added)(DAF) The proposed investment is a priority for the DAF and the
+BMA community, and the proposed investment supports the BMA Strategy. 
+(b) (Added)(DAF) The proposed investment supports the functional strategy
+that governs the business domain of the initiative. 
+(c) (Added)(DAF) That there is no duplication of effort across initiatives and
+encourages reuse of business capabilities, business processes, or IT systems that may 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+28 
+already exist or are already under acquisition and deployment. 
+(3) (Added)(DAF) SAF/MG is the approval authority for the certification of
+funds for DBS.  SAF/MG certification provides the PM (and their reporting chain) 
+the legal authority to obligate up to (and not to exceed) the SAF/MG certified level 
+by program.  
+(4) (Added)(DAF) SAF/MG provides guidance pertaining to each year’s
+annual OEP and budget process to include updated requirements and projected 
+suspense’s. 
+(a) (Added)(DAF) If during the year of execution a program is seeking to
+exceed the certified level for the program, an Out-of-Cycle (OOC) request is 
+required regardless of the source of the funding (e.g., within the portfolio, external 
+customer-funded, etc.). The PM, working through their reporting chain and the 
+BMA IT Functional Portfolio Owner, will prepare an OOC package. (T-1)  
+(b) (Added)(DAF) If the funds are being moved between programs in the
+same portfolio, an OOC is required for both the program gaining the funds as well 
+as the program from which the funds are taken. The PM should consider sending a 
+draft package to their Functional CIO and SAF/MG portfolio lead for review prior 
+to entering formal coordination. SAF/MG conduct BMA Council meetings.  
+4.2. BCAC PHASE ACTIVITIES AND DECISION POINTS. 
+Figure 2 illustrates the five phases in the process. The BCAC is intended to be cyclical and 
+flexible with phases repeating as necessary to drive timely achievement of outcomes. 
+Figure 2.  High-Level BCAC Process 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+29 
+a. Capability Need Identification.
+The functional sponsor leads this phase with guidance and support from the appropriate 
+CMO decision authority. The objective is to establish a clear understanding of needed 
+business capabilities so that the functional sponsor and acquisition officials can decide to 
+invest time and resources into investigating business solutions. 
+(1) Phase Description.
+(a) The capability need is based on the desired end state in a business mission
+area, the problem(s) preventing it, and the future capabilities required to achieve it. 
+(b) Definition of the future capabilities will include analysis of other
+organizations with similar capability needs. 
+(2) Solution Analysis ATP.
+At this decision point, the appropriate CMO decision authority, with input from the functional 
+sponsor, validates the capability requirements, approves the work planned for the next phase, 
+and verifies the capability is aligned with the BEA as well as organizational or OSD 
+functional strategy and IT portfolio management goals. 
+(3) Information Requirements.
+(a) Business Processes. High-level business processes must be structured to focus on
+the work to be conducted and on the information used, not supporting IT. 
+(b) Capability Implementation Plan.
+See Appendix 4B for information on the capability implementation plan. Machine 
+searchable capability requirements must be provided for the Solution Analysis ATP.  Capability 
+requirements must include: 
+(a) A description of the business problem or opportunity and its impact on cost
+and mission performance. 
+(b) Prioritized business capabilities and their attributes, such as testable,
+quantifiable, and achievable, capability performance measures with associated current and 
+future values, including threshold and objective values for future capability performance. 
+(c) Pertinent law, regulations and policies that will either require modification
+or constrain solutions. 
+(d) (Added)(DAF) Data standards, to include data tagging and other data
+requirements as defined by the Chief Data Officer. 
+(4) (Added)(DAF) During the Capability Need Identification phase the DAF
+Deputy Chief Management Officer (DAF DCMO) (SAF/MG): 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+30 
+(a) (Added)(DAF) Validates the business needs and certifies the capability
+requirements for business systems (Reference current AF Organizational Execution 
+Plan (OEP) guidance and Sec 3.2.b.3 of this supplement). (T-0) 
+(b) (Added)(DAF) Validates the benefits of the future state business
+capabilities against the Functional Sponsor’s priorities, and ensures appropriate 
+resource allocation. 
+(c) (Added)(DAF) Upon validation of the capability need and requirements,
+request and recommend that a Program Executive Office (PEO) or Program Manager 
+(PM) be designated by SAF/AQ as the Office of Primary Responsibility (OPR) for aiding 
+the Functional Sponsor in the Solution Analysis phase and beyond. 
+(d) (Added)(DAF) Approves the proposed work planned for the Business
+Solution Analysis Phase (Phase 2). (T-0) 
+b. Solution Analysis.
+The functional sponsor leads this phase with guidance from the appropriate CMO decision 
+authority and support from the program manager and MDA. The objective of this phase is to 
+determine the high-level business processes supporting the future capabilities to maximize use 
+of existing business solutions and minimize creation of requirements that can only be satisfied 
+by a business system. 
+(1) Phase Description.
+(a) Future capabilities are based on reengineering the high-level future business
+processes that will deliver the capabilities. This includes selecting and tailoring commercial 
+best practices to meet the needs of the end user community. 
+(b) Definition of the future capabilities will include market analysis and research
+of other organizations with similar capabilities to identify processes that can be adopted. 
+(c) The functional sponsor must ensure funding is available to support the phase
+activities and must provide a plan for funding future phases, as appropriate. The availability 
+of funding must be validated by the appropriate resource official prior to the Functional 
+Requirements ATP. 
+(2) Functional Requirements
+ATP at this decision point: 
+(a) The appropriate CMO decision authority validates that sufficient
+business process reengineering has been conducted to determine whether a business 
+system is required. 
+(b) The MDA approves execution of the activities outlined in the
+capability implementation plan defined in Appendix 4B. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+31 
+(c) (Added)(DAF) The DAF Deputy Chief Management Officer (DAF DCMO)
+conducts reviews to assess that non-materiel activities/requirements are included in the 
+Implementation Plan. 
+(d) (Added)(DAF) The DAF DCMO validates that sufficient business process
+reengineering was conducted to determine the existing business process, the capability 
+gaps within that business process, and that a business system is required to satisfy that 
+capability gap, and, in conjunction with the MDA, confirms that sufficient market 
+research has been done to leverage existing AF investments. 
+(e) (Added)(DAF) DAF DCMO notifies DoD CIO if the solution results in a
+potential Business Category I program (unless delegated to the DAF). 
+(f) (Added)(DAF) The MDA will make the decision to pursue an IT Materiel
+Solution as part of the deployment of the business capabilities, and ensure that the 
+appropriate acquisition activities and requirements are included in the Capability 
+Implementation Plan (CIP). The MDA will approve the CIP. (T-0) 
+(g) (Added)(DAF) The Functional Sponsor will confirm a PEO Portfolio
+assignment process request (reference AFI 63-101/20-101) was initiated. (T-1) 
+(h) (Added)(DAF) The PEO will accept or reject program request, determine
+the Business Category level, establish an appropriate level of program office and identify a 
+Program Manager. (T-1) 
+(i) (Added)(DAF) The MDA will approve the number and type of subsequent
+ATP decision points. (T-0) 
+(j) (Added)(DAF) Provisions for DBS Deficiency Reporting will be addressed as
+part of the programs Capability Implementation Plan (CIP). See Appendix 4B for 
+information on the capability implementation plan. 
+(3) Information Requirements.
+(a) Business Processes.
+High-level business processes must be structured to focus on the work to 
+be conducted and on the information used, not supporting IT. 
+(b) Capability Implementation Plan.
+See Appendix 4B for information on the capability implementation plan. 
+c. Functional Requirements and Acquisition Planning.
+During this phase, the functional sponsor leads execution of approved business process 
+actions in the capability implementation plan, defines IT functional requirements, and assists 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+32 
+the program manager with assessing the overall solution approach (e.g., COTS, GOTS, “aaS,” 
+legacy modernization, or new development). Meanwhile, the MDA oversees development of 
+the acquisition strategy.  An objective of this phase is to establish the acquisition strategy and 
+identify the capability support approach required to meet the functional requirements. 
+(1) Phase Description.
+(a) Functional requirements describe how the business system will achieve the
+future business processes. 
+(b) The program manager engages further with industry (e.g., market research,
+benchmarking, requests for information, industry days) so that functional requirements 
+reflect the current state of practice and inform the acquisition strategy. Additional 
+information on functional requirements is included in Appendix 4D. 
+(c) The appropriate cost agency will support development of alternatives and
+determination of the solution approach that best fits the needs and organizational goals based 
+on economic analysis in accordance with DoDI 7041.03. 
+(d) The acquisition strategy included in the capability implementation plan
+reflects the solution approach and describes how the program manager will identify potential 
+business system solutions and perform solution selection. Additional information on criteria 
+for potential business system solutions is included in Appendix 4D. 
+(e) The program manager may, with the approval of the MDA, conduct design
+specification activities normally conducted after the Acquisition ATP to inform the 
+acquisition strategy. 
+. 
+(f) As appropriate, the program manager will partner with the contracting officer
+to develop draft request for proposals (RFPs) that align to the acquisition strategy for the 
+contract actions that follow the Acquisition ATP 
+(g) Before the Acquisition ATP is approved, the appropriate CMO decision
+authority will approve the initial certification based on the chosen solution approach. 
+Additional information on CMO certification is in Appendix 4C. 
+(2) Acquisition ATP.
+At this decision point, the MDA: 
+(a) Verifies the requirement is fully funded across the FYDP to support all
+the acquisition activities requested for approval. 
+(b) Authorizes execution of the acquisition strategy and approves
+continued execution of the capability implementation plan. 
+(c) (Added)(DAF) The Program Manager and Functional Lead will present
+the selected solution approach for review and approval to begin implementation. The MDA 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+33 
+will execute final decision ATP(s) with implementation and deployment, and AF Deputy 
+Chief Management Officer and DoD CIO will simultaneous certify and approve funds 
+expenditure. (T-0) 
+(d) (Added)(DAF) The Functional Lead will update and execute the non-
+material activities defined in the previous phase as it is documented in the Implementation 
+Plan. (T-0) 
+(e) (Added)(DAF) The Program Manager maintains oversight and control
+over the Implementation Plan and schedule, and will work with the Functional Lead to 
+adjust the materiel and non-materiel activities to ensure implementation and deployment 
+actions coincide. 
+(3) Information Requirements.
+See Appendix 4B for information about the capability implementation plan. 
+d. Acquisition, Testing, and Deployment.
+During this phase, the program manager leads execution of contract award, vendor 
+management, establishment of baselines, delivery of the business system, and risk 
+management. Meanwhile, the functional sponsor leads training and deployment. The 
+objective of this phase is to achieve organizational change through business process changes 
+and delivery of the supporting business system, with minimal customization. 
+(1) Phase Description.
+(a) Detailed fit-gap analysis follows solution selection based on the acquisition
+strategy. Fit-gap analysis will be based on the known capabilities of the COTS/GOTS 
+software in the selected business system solution. 
+(b) Design specifications will reflect fit-gap analysis and prioritization of features
+to allow for cost and schedule trades within scope. 
+(c) Development, delivery and support activities will be baselined and detailed in
+the implementation plan, expressed in terms of releases and deployments. 
+1. A limited deployment is any deployment before the Full Deployment ATP
+that provides a set of functionality to a set of users of the business system.  The functional 
+sponsor and program manager will recommend the functionality and number of users. Limited 
+deployments will be approved at a Limited Deployment ATP. 
+2. The MDA will require sufficient testing before Limited and Full
+Deployment ATPs. For business systems on the DOT&E Oversight List, DOT&E will 
+approve all operational test plans, and an Initial Operational Test and Evaluation will be 
+conducted before the Full Deployment ATP. 
+3. Full deployment is the delivery of full functionality planned to all
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+34 
+planned users of the business system in accordance with the Full Deployment ATP. 
+(d) The MDA will oversee establishment of cost, schedule and
+performance parameters for each release before development or delivery. 
+(2) Limited Deployment ATP(s).
+At this decision point, the MDA, in conjunction with the functional sponsor, 
+considers the results of testing, and approves deployment of the release to limited portions of 
+the end user community. Multiple limited deployments may be authorized at the same 
+decision point or delegated to a lower decision authority. ATP is executed upon concurrence 
+of the functional portfolio board. 
+(a) (Added)(DAF) The MDA approves or disapproves deployment to limited
+portions of the end user community based on the operational risk associated with the 
+release capability. While Limited Deployments do not provide full functionality to all 
+planned users of the BCAC, they do require acceptable performance and reliability 
+with adequate sustainment and support systems. (T-0) 
+(b) (Added)(DAF) The MDA, with support of the Functional Sponsor,
+ensures that all components of the materiel solution are properly installed and 
+operating; all end users participating in Limited Deployment are adequately trained; a 
+Help Desk capability is operational; and the platform environment is prepared to 
+support Limited Deployment. (T-1) 
+(3) Full Deployment ATP.
+At this decision point, the MDA, with the support of the functional sponsor and 
+appropriate CMO decision authority, considers the results of limited deployment(s) 
+and operational testing and approves deployment to the entire user community. This 
+ATP is executed upon concurrence of the functional portfolio board. 
+(a) (Added)(DAF) The MDA, with support of the Functional Sponsor and AF
+Deputy Chief Management Officer will assess the results documented in the Operational 
+Test Report of all Limited Deployments and operational testing and, based on operational 
+risk, approve/disapprove deployment to the entire user community. (T-0) 
+(b) (Added)(DAF) The Functional Sponsor ensures all elements of the BCAC
+solution described in the Capability Implementation Plan are ready to be implemented in 
+the operational environment. (T-0) 
+(c) (Added)(DAF) After Full Deployment ATP approval, the Program
+Manager will deploy all remaining capabilities, Non-Materiel Activities and the IT 
+Solution to all end users. (T-1) 
+(d) (Added)(DAF) The Program Manager and Functional Lead will develop the
+Capability Support Plan and present it at the Full Deployment ATP. (T-0) 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+35 
+(4) Capability Support ATP.
+At this decision point, the functional sponsor accepts full deployment of the system 
+and approves transition to capability support.  
+(1) (Added)(DAF) This ATP is executed upon concurrence of the functional
+portfolio board. 
+(2) (Added)(DAF) At this decision point, the Functional Sponsor approves the
+Support Plan, which documents the planning for this phase and will be updated 
+continuously throughout the program’s useful life. 
+(3) (Added)(DAF) This plan also details how the program meets materiel
+readiness and operational support performance requirements in the most cost-effective 
+manner over its life cycle. 
+(5) Information Requirements.
+See Appendix 4B for information about the capability implementation plan and 
+capability support plan. 
+e. Capability Support.
+During this phase, the functional sponsor manages and governs the business capability 
+and the program manager manages the technical implementation and configuration of the 
+business system. The objective of this phase is to provide support for the business 
+capability, including continued cybersecurity readiness and enduring support for and 
+appropriate upgrades to the business system. 
+(1) Phase Description.
+(a) The functional lead, with the support of the program manager, leads
+development of capability requirements, business process design and re-engineering, and 
+training for the business system in support of continuous process improvement. 
+(b) The functional lead and program manager jointly develop and execute
+tailored capability implementation plans for each new set of capability requirements 
+addressed in this phase. 
+(c) The functional lead and program manager will continue periodic assessments
+of opportunities available in the marketplace to determine changes necessary to reduce costs 
+and/or improve efficiencies to maintain the relevance of the capability and the business 
+system. 
+(d) The program manager will establish and manage cost, schedule, and
+performance metrics associated with upgrades to the approved baseline. 
+(2) Capability Support Reviews.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+36 
+Each DoD Component will determine the frequency, content, and format of these 
+reviews and will outline these details in the capability support plan. These reviews can occur at 
+either the program or portfolio level.  The following scenarios may prompt these reviews: 
+(a) Cost growth above the approved baseline;
+(b) Changes to program requirements; or
+(c) Upgrades to the business system in response to approved requirements changes.
+(d) (Added)(DAF) DAF Functional Portfolio Boards and BMA Enterprise
+Review Groups will be used to perform capability support reviews. 
+(3) Information Requirements.
+See Appendix 4B for information on information requirements for capability support. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+37 
+APPENDIX 4A: SUPPORTING INFORMATION 
+Table 3 describes decision authorities for each decision point by role. The decision authority 
+will be at the OSD or DoD Component level according to designated BCAT and delegation 
+of authority. Table 4 aligns statutory requirements to BCAC decision points. Table 5 
+provides considerations for decision criteria; it does not represent a mandatory checklist for 
+decision points.  
+(Added)(DAF) ATPs will be executed upon concurrence of the functional portfolio 
+board.  
+Table 3.  Decision Authorities 
+Decision Point 
+Decision Authority or Authorities 
+Solution Analysis ATP 
+OSD CIO 
+Functional Requirements ATP 
+OSD CIO (requirements 
+validation) MDA (materiel 
+Acquisition 
+ATP, 
+Contract 
+Award, Limited Deployment 
+ATP(s), Full Deployment ATP 
+MDA 
+Capability Support ATP 
+Functional sponsor 
+Capability Support Reviews (as 
+needed) 
+Determined in Capability Support Plan 
+Table 4.  Statutory Requirements 
+Decision Point 
+Statutory Requirements 
+Solution Analysis ATP 
+None 
+Functional Requirements ATP 
+None 
+Acquisition ATP 
+Section 2222 Title 10, U.S.C. information / CMO 
+certification1
+Solution approach (fulfills market research, 
+analysis of alternatives and economic analysis) 
+Cybersecurity strategy (for mission essential and 
+mission critical IT) 
+Contract Award 
+CCA Compliance 
+Limited Deployment ATP(s) 
+Full CCA compliance at first ATP2; confirmation 
+of compliance at additional ATPs 
+Full Deployment ATP 
+Confirmation of CCA compliance 
+Initial Operational Test and Evaluation Report (for 
+business systems on the DOT&E oversight list) 
+Capability Support ATP 
+None 
+Capability Support Reviews 
+(as needed) 
+None 
+1. CMO certification can occur during prior phases, but must occur before the
+Acquisition ATP is approved.
+2. Full CCA compliance can occur during prior ATP decision points, but must occur
+no later than the first Limited Deployment ATP. Separate documentation should
+not be needed to confirm CCA compliance.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+38 
+Table 5.  Considerations for Decision Criteria 
+Decision Point 
+Considerations for Decision Criteria 
+Solution 
+Analysis 
+ATP 1 
+•
+Concise business problem and desired end state, with cost and performance
+improvements.
+•
+Documented laws, regulations and policies.
+•
+Alignment with and submission to the BEA.
+•
+Validated capabilities and capability performance measures.
+•
+Affordable capability with compelling business case for committing
+organizational resources for work planned up to next decision point.
+Functional 
+Requirements 
+ATP 2 
+•
+High-level business processes include performance measures and supporting
+activities and tasks with inputs and outputs.
+•
+Business processes focus on work and not supporting systems or IT.
+•
+Clear understanding of the process and functional changes needed to achieve
+future business processes.
+•
+Key processes identified for improvement documented with changes in process
+models.
+•
+Business processes reflect knowledge of industry state of the art.
+•
+Business process actions identified, prioritized and included in the capability
+implementation plan.
+•
+ROM cost estimate for all business changes to achieve future business processes.
+•
+Affordability targets for business system with compelling business case for
+committing organizational resources for work planned up to next decision point.
+•
+Acquisition strategy outlines planned decision points and decision authorities.
+•
+Consistency with DoD Information Enterprise policies and architecture.
+•
+High-level understanding of capability support requirements.
+•
+Initial cybersecurity strategy consistent with DoD policies, standards, and
+architectures.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+39 
+Table 5.  Considerations for Decision Criteria, Continued 
+Decision Point 
+Considerations for Decision Criteria 
+Acquisition 
+ATP 3 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+Alternatives leverage market research on existing or emerging COTS and GOTS 
+products and services. 
+Potential business system solutions reflect traceability to functional requirements 
+and decomposition. 
+Potential business system solutions include trade space to minimize 
+customization. 
+Potentially expensive or high risk functional requirements are identified with 
+recommended alternative approaches. 
+Potential business system solutions address technical and lifecycle support 
+requirements. 
+Solution evaluation criteria include: economic analysis; satisfaction of functional 
+requirements and information assets; satisfaction of technical requirements and 
+lifecycle support requirements; and overall risk. 
+Solution evaluation criteria include (if needed): delivery schedule; evaluation of 
+trade space for functional requirements; and enterprise impacts. 
+Technical 
+management 
+strategy 
+identifies 
+lifecycle 
+methodology for 
+development and delivery of the business system, to include capability support. 
+Consistency with DoD Information Enterprise policies and architecture. 
+Cybersecurity strategy consistent with DoD policies, standards and architectures, 
+including interoperability requirements. 
+Auditability compliance is reviewed and confirmed, if necessary and appropriate 
+Certification under Section 2222 Title 10, U.S.C. 
+Limited 
+Deployment 
+ATP 4 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+Maturity of developed or configured software through pre-production assessment 
+of functional requirement coverage and defects impacting users. 
+Execution of change management, training and deployment plans. 
+Consistency with DoD Information Enterprise policies and architecture. 
+Test results (including cybersecurity tests) indicating adequate performance and 
+cybersecurity. 
+Program progress against baselined cost, schedule and performance. 
+Ensure CCA compliance 
+Actions necessary for capability support. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+40 
+Decision Point 
+Considerations for Decision Criteria 
+Full 
+Deployment 
+ATP 5 
+•
+Measured performance of operational software in support of future business
+processes and technical and lifecycle requirements.
+•
+Organizational readiness for continued deployment.
+•
+Consistency with DoD Information Enterprise policies and architecture.
+•
+Test results (including cybersecurity tests) indicating adequate performance and
+cybersecurity.
+•
+Program progress against baselined cost, schedule and performance.
+•
+Ensure CCA compliance.
+•
+Actions necessary for capability support.
+Capability 
+Support 
+ATP 6 
+•
+Measured performance of implemented future business processes.
+•
+Continued cybersecurity readiness.
+•
+Organizational readiness for capability support.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+41 
+APPENDIX 4B: CAPABILITY IMPLEMENTATION PLAN 
+4B.1. DEFINITION. 
+a. The capability implementation plan is an aggregation of the content needed by the
+program office to prepare for and manage the delivery of the capability and to support 
+statutory and regulatory requirements; it is not a specific document or set of documents. It 
+accounts for all necessary information products required to support and inform leadership 
+decisions. 
+b. Capability implementation plan information will be stored and used by the program
+office in whatever applicable format or repository is needed and information will be 
+maintained in accordance with records management procedures. Details will be maintained in 
+a transparent manner and will be made readily available for reviews as needed. 
+c. The capability implementation plan must include or reference the information
+requirements developed during early BCAC phases that support requirements validation and 
+the CMO certification process. All other implementation plan content (i.e., acquisition 
+strategy content), may be tailored to the individual needs of the program unless required by 
+statute. 
+d. The acquisition strategy content of the implementation plan may need to be
+maintained separately to compartmentalize acquisition sensitive information. Similarly, 
+technical content concerning cybersecurity may also be maintained separately. 
+e. The program may rely on external content such as portfolio procedures to govern
+technical management. In this case, the capability implementation plan content supplements 
+the portfolio procedures only as needed to tailor the program. 
+4B.2. CONTENT. 
+Although content will differ from program to program, an effective capability 
+implementation plan will include: 
+a. References to the capability requirements that the capability implementation
+plan supports. 
+b. A description of planned decision points with governance details that describe decision
+authorities, information requirements that will support the decision, and actions the decision 
+will authorize. 
+c. A description of business process actions and leaders responsible. Common
+business process actions include: 
+(1) Implementation of law, regulation, policy or business process changes, including
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+42 
+those that do not require business systems and those that must occur before the business 
+system can be acquired 
+(2) Development of training materials in support of business process changes.
+(3) Conduct of user training and deployment in support of the business system.
+d. A description of acquisition actions and leaders responsible. Common acquisition
+actions include: 
+(1) Requests for information, peer reviews, RFPs, and contract awards.
+(2) Definition and modeling of functional requirements, inputs and outputs, and
+design specifications. 
+(3) Software design, development and testing.
+(4) Developmental and operational test and evaluation.
+(5) Technical and management assessments (e.g., engineering, test, and
+program management) to identify and mitigate risks and manage issues. 
+(6) Development of training materials in support of the business system.
+(7) Coordination and approval of memoranda of agreement, interface control
+agreements and service level agreements. 
+e. The combined schedule actions needed to deliver and support the capability.
+f. A component-based representation of the decomposition of the work to be executed
+to deliver and support the capability (e.g., work breakdown structure or capability 
+roadmap). 
+g. Acquisition objectives: a description of the organizational or strategic business goals
+for the development and delivery of the business capability in terms of cost and benefits, 
+schedule, return on investment, and affordability. These should include indicators to identify 
+when a program may be at risk. 
+h. Baseline: a reference against which to measure progress of the business capability.
+The desired end state of the business system and associated business processes at the 
+program or release level, expressed in terms of cost, schedule, performance, and other 
+measures as appropriate. Baselines should be established no later than 24 months after the 
+original Solution Analysis ATP. 
+(1) If at the program level, the baseline will be set prior to the development of the
+first release/deployment. 
+(2) If at the release level, the baseline will be set prior to the development of each
+release or deployment. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+43 
+i. Tailored business system acquisition strategy.
+(1) Acquisition content: a description of the program approach to leverage
+competition to acquire the required capability at reduced cost and risk. The approach must 
+describe the business strategy, including major contracts planned, contract type(s) and 
+incentives, market research, potential sources, capability support strategy, subcontracting 
+opportunities, special contracting considerations and special clauses, the business case for or 
+against obtaining warranties, payment methods, contract management and administration, 
+intellectual property strategy, and use of COTS or reasons not to use COTS. 
+(2) Technical management content: a description of the program approach to
+leverage systems engineering, test and evaluation (T&E), cybersecurity, and data 
+management processes to reduce technical risk.  Specific T&E management content 
+requirements include: 
+(a) Test events to collect data must be defined, scheduled, and resourced in
+the capability implementation plan, including a Developmental Evaluation Framework 
+matrix. 
+(b) Cybersecurity T&E should be based on a zero-trust model and incorporate
+automated testing practices as much as practical (e.g., static/dynamic code analysis) early in 
+the lifecycle to remediate and mitigate vulnerabilities. It will include continuous monitoring 
+and will consider appropriate application of the DoD Cybersecurity Test and Evaluation 
+Guidebook for cybersecurity T&E activities. The MDA will not tailor cybersecurity T&E 
+solely to meet authority to operate requirements. For business systems on the DOT&E 
+oversight list, cybersecurity operational T&E must also include a Cyber Economic 
+Vulnerability Analysis as outlined in current DOT&E Memoranda. 
+(c) T&E planning will include mission-oriented development T&E with actual
+operators performing end-to-end scenarios in a controlled environment, which may be 
+conducted as integrated tests to also address operational test goals. 
+(d) Interoperability developmental T&E will include testing with actual
+representations of interface systems in a controlled environment. 
+(e) Business systems on the DOT&E Oversight List will document T&E
+management content in a test and evaluation master plan. 
+(f) Automated test tools and scientific test and analysis techniques should be
+considered to increase test efficiency. 
+(g) (Added)(DAF) For business systems on the T&E Oversight List, a Concept
+of Operations (CONOPS) is required. 
+(3) Other content if needed: international considerations, multiyear procurement and
+integration of intelligence assessments, and expected benefits for potential prototypes as well 
+as the approach for making them operational. 
+j. Capability Support Plan: a strategy for executing capability support activities and the
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+44 
+leaders responsible for these activities. The plan will be developed in a transparent manner 
+and will be made readily available for reviews as needed. 
+(1) The capability support plan should include:
+(a) A governance structure that provides resources, prioritizes changes, and
+establishes plans for executing changes that fall within the scope of the original 
+capability requirements. 
+(b) A plan for conducting periodic program reviews, including the frequency,
+content, and format of these reviews. 
+(c) A threshold for changes to determine whether or not the change requires re-
+entry into the BCAC process. Major capability changes that do not fall within the scope of the 
+original capability requirements will require re-initiation of the BCAC process to integrate the 
+new capability. 
+(d) Tailored capability implementation plans for each new set of capability
+requirements addressed in this phase. 
+(2) The capability support plan will be continuously maintained throughout the
+capability life cycle and will be reviewed and updated as appropriate to accommodate for 
+capability modernization or new capability requirements. 
+(3) (Added)(DAF) The capability support plan will address the process for
+deficiency reporting and tracking.  For more information on deficiency 
+reporting, refer to AFI 63-101/20-101 and DAFI 99-103.  
+k. (Added)(DAF). The Capability Implementation Plan will include and describe all
+non-material activities (but not limited to): business requirements, business process 
+engineering (BPR) results, high level schedule and resource approach, high level 
+roadmap, compliance requirements (laws, regulations, policies), acquisition plan, 
+alignment with the BMA Enterprise Architecture, funding structure, proposed systems to 
+sunset. (T-1) 
+4B.3. PROGRESSION OF CAPABILITY IMPLEMENTATION PLAN 
+CONTENT. 
+a. During early BCAC phases, the capability implementation plan will contain a low level
+of detail because knowledge is limited early in the life cycle. As the life cycle progresses, the 
+amount of information and the level of detail will mature and evolve. Each program, in 
+collaboration with the MDA, should assess the information requirements for each BCAC 
+phase and determine which ones are applicable to manage the program and inform program 
+decisions. Information requirements that support requirements validation and the CMO 
+certification process must be completed. 
+b. Table 6 describes the expected progress of capability implementation plan content
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+45 
+as a program progresses through BCAC phases and decision points. 
+Table 6.  Progression of Capability Implementation Plan Content through BCAC Phases 
+Solution Analysis 
+Information Requirements 
+•
+References to or updated requirements documentation as applicable.
+•
+High-level business capability process maps.
+•
+Results of market analysis and research that reflect engagement with other
+organizations with similar capabilities to understand their business
+processes, supporting solutions, and ability to support the capability need.
+•
+Detailed plans for any business process changes required to successfully
+deploy the needed capability.
+•
+High-level schedule and resource plans for potential acquisition actions.
+•
+High-level decomposition of work (e.g., work breakdown structure or
+capability roadmap).
+•
+Rough order of magnitude cost and cost benefit analysis for any potential
+business system.
+•
+Initial Acquisition Strategy.
+Purpose 
+•
+Determine if the required business capability can be met by leveraging
+existing business processes or solutions; or
+•
+Set the stage for a new business system by establishing program
+management and funding structure to inform Functional Requirements ATP
+decisions.
+Maturity Level 
+•
+Capability requirements and associated business processes are mature and
+documented.
+•
+Acquisition strategy and rough order of magnitude are high level, since
+business solutions have not been fully analyzed and/or selected. They
+should be only as detailed and mature as current program knowledge will
+allow and should not constrain decision making of possible business
+solutions.
+Functional Requirements and Acquisition Planning 
+Information Requirements 
+•
+Functional requirements that include enough detail to inform definition of
+potential business system solutions and evaluation criteria, but not too much
+detail that would overly constrain solution selection.
+•
+Detailed plans and resource-loaded schedules for actions required to
+implement future business processes.
+•
+Plan to obtain full funding across the FYDP to support the acquisition
+activities approved at the Acquisition ATP.
+•
+Initial capability support plan providing insight as to how future capability
+solution(s) will be supported and decision making will be governed.
+•
+A plan for baselining, updating, and managing cost, schedule, and
+performance at the program or release level as appropriate.
+•
+As appropriate, draft RFPs that align to the initial Acquisition Strategy for
+the contract actions that follow the Acquisition ATP.
+•
+Initial test plan.
+•
+CCA compliance initial approval (with limited data).
+•
+Cybersecurity Strategy initial approval.
+Purpose 
+Inform decisions regarding a solution approach and a path to meet validated 
+capability requirements. 
+Maturity Level 
+•
+Acquisition Strategy is detailed and the capability support plan includes
+high-level detail on governance and decision making for supporting the
+business capability.
+•
+All other information requirements continue to mature based on execution
+of the capability implementation plan and Acquisition Strategy.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+46 
+Acquisition, Testing, and Deployment 
+Information Requirements 
+•
+Updated documentation to reflect current plans, including Acquisition
+Strategy, cost documentation, test plans, and requirements documentation
+(as applicable).
+•
+Refined capability implementation plan that reflects most current plans and
+strategies for releases, testing, and deployments, beginning with the first
+deployment.
+•
+Updated draft RFP(s) (if needed).
+•
+Baseline(s) structured at the release or program level.
+•
+Updated capability support plan including roles and responsibilities for
+support activities, a governance structure, a threshold for changes, and a
+proposed schedule of periodic capability support reviews.
+•
+Architecture products required by DoDI 8330.01 that provide the necessary
+data to support interoperability testing. A separate information support plan
+(ISP) document is not required for business system programs following this
+guidance.
+•
+Mature and detailed decomposition of work (e.g., work breakdown structure
+or capability roadmap).
+•
+Updated test plan.
+•
+Integrated testing results.
+•
+Training materials and training reports.
+•
+Technical review results.
+•
+Cybersecurity Strategy final approval before first Limited Deployment
+ATP.
+•
+Full CCA compliance before first Limited Deployment ATP.
+•
+Updated schedule and resource plans for acquisition actions.
+Purpose 
+•
+Supports contract award, development, testing, training, deployment and
+capability support.
+•
+Baseline establishment supports effective management of the program.
+•
+At Limited Deployment and Full Deployment ATPs, training and testing
+results inform the MDA on the level of operational risk associated with the
+capability deployment.
+Maturity Level 
+During this phase, all information and documents are fully mature. 
+Capability Support 
+Information Requirements 
+Tailored capability implementation plans for each new set of requirements 
+approved by the Functional Sponsor. 
+Purpose 
+Support the business system and the continuous improvement of that solution 
+through the life cycle. 
+Maturity Level 
+•
+Original capability implementation plan information and documents are
+fully mature and are updated at least annually to ensure relevance.
+•
+New capability implementation plans that are included as annexes to the
+original capability support plan will continue to mature throughout the
+development and deployment of the new capability.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+47 
+APPENDIX 4C: CMO CERTIFICATION 
+4C.1. RESPONSIBILITIES. 
+a. OSD CIO.
+The OSD CIO): 
+(1) Provides certification for all priority business systems under Section 2222 Title
+10, U.S.C., and for other business systems as required that are not under the authority of a 
+MILDEP CMO. 
+(2) May require any business system to receive certification and may designate
+any business system as a priority business system after notifying Congress. 
+b. MILDEP CMOs.
+The MILDEP CMOs: 
+(1) Provide certification as required for any business system of their respective
+MILDEP, other than a priority business system. 
+(2) May request designation of a non-priority business system as requiring DoD
+CMO certification. 
+(3) In collaboration with the program manager, participates in the development of
+necessary certification artifacts and preparation for certification as early as practical in the 
+life cycle. 
+c. Program Manager.
+The program manager collaborates with the appropriate CMO decision authority to develop 
+necessary certification artifacts and prepare for certification as early as practical in the 
+lifecycle. This proactive approach ensures that risks and issues are addressed before the 
+Acquisition ATP. 
+4C.2.  OSD CIO CERTIFICATION. 
+a. The appropriate CMO decision authority will certify that business systems covered by
+Section 2222 of Title 10, U.S.C., meet the requirements of subsection (g)(1)(A-E) of Section 
+2222 of Title 10, U.S.C., before proceeding to development and on an annual basis thereafter, 
+for any fiscal year in which appropriated or non-appropriated funds are expended for 
+development or sustainment. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+48 
+b. The initial CMO certification is conducted no later than the Acquisition ATP. This
+can occur either at the annual review and certification of Organizational Execution Plan 
+(OEP) submissions or during an out-of-cycle review and certification. 
+c. Annual CMO certification after the initial CMO certification is conducted before
+each fiscal year in accordance with the procedures in the current DoD CMO 
+Memorandum. 
+(Added)(DAF) Note:  Chief Management Officer of the Department of Defense (DoD 
+CMO) responsibilities were reassigned to other DoD officials or organizations effective 
+October 1, 2021.  Reference section 901(b) of the William M. (Mac) Thornberry 
+National Defense Authorization Act for FY 2021 (Public Law 116-283). 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+49 
+APPENDIX 4D: BUSINESS SYSTEM SOLUTION DOCUMENTATION 
+4D.1.  FUNCTIONAL REQUIREMENTS. 
+a. Functional requirements will be linked to inputs and outputs that define how
+the functional requirements support the business processes. 
+b. Functional requirements will be linked to technical and lifecycle support requirements
+that constrain how the functional requirements support the business process. 
+4D.2.  POTENTIAL BUSINESS SYSTEM SOLUTION SELECTION. 
+a. The program manager, with support from the functional lead and the appropriate
+cost agency, establishes criteria for evaluating potential business system solutions. 
+b. Evaluation criteria must include:
+(1) Economic Analysis (cost, benefits, and return on investment).
+(2) Satisfaction of functional requirements and inputs and outputs.
+(3) Satisfaction of technical requirements and lifecycle support requirements.
+(4) Overall risk.
+c. Other criteria may also include:
+(1) Delivery schedule.
+(2) Evaluation of trade space for functional requirements.
+(3) Impacts to other programs.
+4D.3.  BUSINESS SYSTEM DESIGN SPECIFICATIONS. 
+a. Design specifications provide sufficient detail on the solution or service being acquired
+or developed to support delivery and verification of the business system. 
+b. Design specifications are not a specific document. Instead, they are the content needed
+by the program office to specify the design of the business system, as stored and used by the 
+program in whatever applicable format or repository is needed. 
+c. Design specifications must be prioritized to the extent practicable to allow for cost
+and schedule trades within scope. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+50 
+4D.4.  CONTENT OF BUSINESS SYSTEM DESIGN SPECIFICATIONS. 
+Design specifications are based upon the high-level requirements established during functional 
+requirement definition. This includes the functional requirements, along with associated inputs 
+and outputs for the functional requirements, and associated technical and lifecycle support 
+requirements.  The detailed design includes: 
+a. Task-oriented description of end user interaction with the system, e.g., use cases,
+user stories, or functional requirements statements expressed as functions that “the system 
+shall” perform. 
+b. Technical requirements, e.g., infrastructure, open architecture, data standards, data
+management, hosting and security, and lifecycle support requirements (availability, 
+scalability, maintainability, supportability, and interoperability). 
+c. System and sub-system design, user interface design, logical and physical data
+models, business rules and related architectural products. 
+d. Communication-oriented description of system interaction with other systems,
+e.g., interface control and interface design documents and related system architectural
+products.
+e. Traceability mappings from requirements through design to method of verification.
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+51 
+APPENDIX 4E: (Added)(DAF) BCAC PHASES DETAILED PROCESSES 
+4E.1.  (Added)(DAF) Background:  BCAC Phases Detailed Processes. 
+a. (Added)(DAF) Overview.  Execution of the business system process consists of
+five phases; capability initiatives enter into the Capability Need Identification phase, but 
+may transition to other phases if the intent and criteria for current phase, and readiness 
+for the next phase, is met to the satisfaction of the ATP approval authority. 
+(1) (Added)(DAF) Phases are not meant to be linear, the process is iterative and
+activities for one phase may be initiated or completed in another phase. 
+(2) (Added)(DAF) Decisions are data driven, not documentation based and are
+tailorable based on the individual capability effort. Decisions will be presented to the 
+functional portfolio board and documented in an ATP memorandum. 
+(3) (Added)(DAF) ATP decisions, including but not limited to tailoring
+considerations, compliance requirements, and other agreements, will be captured in a 
+decision memorandum.  Table 5 provides considerations for decision criteria for ATPs 1-6. 
+b. (Added)(AF) The DAF further identifies four categories (“Types”) of business
+capability requests that can enter the BCAC based on capability solution availability. Each 
+type follows a tailored path through the phases.  Note: Implementation may be limited by 
+capability of the BMA Service Catalog; contact SAF/MGB for information on BMA 
+Service Catalog availability and accessibility.   
+(1) (Added)(DAF) BCAC Capability Request Type 0 (“Use it Now”) are
+requests for specifically designated COTs/GOTs/legacy custom developed applications or 
+SaaS/aPaaS solutions which meet the unit’s need without modification or code change, are 
+affordable within local (up to MAJCOM or FLDCOM) budget constraints, and can be 
+installed using only local resources.  
+(2) (Added)(DAF) BCAC Capability Request Type 1 are requests to begin using
+a solution from the BMA Service Catalog (application, SaaS, aPaaS) that does not meet the 
+Use it Now criteria and does not require a functionality change or data migration.   
+(3) (Added)(DAF) BCAC Capability Request Type 2 are requests to begin using
+a solution from the BMA Service Catalog (application, SaaS, aPaaS) that does not meet the 
+Use it Now criteria and does not require a functionality change or data migration.  Type 2 
+is broken into migration to a solution the requestor is not currently using (2m) or 
+enhancing a solution the requestor is already using (2e). 
+(4) (Added)(DAF) BCAC Capability Request Type 3 is a request for a new
+custom-developed capability (3c), product (3p), or SaaS/aPaaS (3s), solution, not already in 
+the BMA Service Catalog, regardless of customization or modifications necessary to 
+implement. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+52 
+4E.2. (Added)(DAF) Phase 1: Capability Need Identification. 
+(a) (Added)(DAF) This Phase begins when the Functional Sponsor assigns resources
+and directs the execution of the process and ends with an ATP decision that the capability 
+requirements are adequately defined there is an executable workplan to proceed.  
+(b) (Added)(DAF) The functional sponsor leads this phase with guidance and
+support from the Deputy Chief Management Officer. The objective is to establish a clear 
+understanding of needed business capabilities so that the functional sponsor and Milestone 
+Decision Authority can decide to invest time and resources into investigating business 
+solutions. 
+Figure 3.  (Added)(DAF) Phase 1 Actions: Macro View. 
+Table 7.  (Added)(DAF) Phase 1 Breakdown: Triage and Prioritize Incoming Requests (2 
+Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Triage and prioritize requests, and as needed determine the initial request type
+(T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead/Program Manager
+2. Determine if the directed or suggested action should be treated as a spike based
+on the speed of relevance
+X
+X
+X
+X
+X
+X
+Functional Lead/ Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+53 
+Table 8.  (Added)(DAF) Phase 1 Breakdown: Validate Request Type (4 Items). 
+Table 9.  (Added)(DAF) Phase 1 Breakdown: Elaborate the Capability Need (8 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Determine if the business problem is sufficiently similar to one previously
+vetted and solved (T-0)
+X
+X
+X
+X
+X
+X
+Functional Lead & PEO BES Cross-Functional Solution Expert
+1.1. Yes (Type 1) – Decide if the requested item will be used to solve a problem 
+sufficiently similar to what the service was created for. If no, then change the 
+request to Type 2 or Type 3 
+X
+Functional Lead/Program Manager
+1.2 Yes (Type 2 and Type 3 ) - Change Type 2 or Type 3 requests to Type 0 or 
+1 and direct initiator to the corresponding solution
+X
+X
+X
+X
+X
+Functional Lead/Program Manager
+1.3 No (all types) – Continue on to the next action as either a Type 2 or Type 3 
+solution
+X
+X
+X
+X
+X
+X
+Functional Lead/Program Manager
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Develop/refine the concise business problem statement and desired end state
+(T-1)
+X
+X
+X
+X
+X
+Functional Lead
+2. Validate the need supports a business outcome aligned with Business Enterprise
+Architecture (BEA), BMA Strategy and Functional Strategies (T-1)
+X
+X
+X
+X
+X
+Functional Lead
+3. Analyze other organizations with similar capability needs to see if acceptable
+solutions already exist (T-0)
+X
+X
+X
+X
+X
+Functional Lead
+4. Define the operational impact of the business problem if not addressed, in
+business terms
+X
+X
+X
+X
+X
+Functional Lead
+5. Understand relevant laws, regulations, and policies (LRP) which constrain the
+solution
+X
+X
+X
+X
+X
+Functional Lead
+6. Make an initial determination if enhancement or new capability is likely to
+generate an Auditable Financial Transaction (AFT)
+X
+X
+X
+X
+X
+Functional Lead & SAF/FM
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+54 
+Table 10.  (Added)(DAF) BCAC Phase 1 Breakdown: Identify Potential Bill Payers (1 
+Item). 
+Table 11.  (Added)(DAF) Phase 1 Breakdown: ATP 1 (4 Items). 
+c. (Added)(DAF) Solutions Analysis ATP.  The Functional Sponsor is
+responsible for requesting a Solution Analysis ATP decision point and providing the 
+appropriate content to the decision authorities.  
+7. Define quantitative capability performance measures (target & threshold) and
+determine current values
+X
+X
+X
+X
+X
+Functional Lead
+8. Identify and prioritize future business capabilities (including changes to existing
+capability) to solve the problem across DOT_LF-P (T-1)
+X
+X
+X
+X
+X
+Functional Lead
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Identify potential bill payers to fund the need in the current year, execution
+plan, and POM
+X
+X
+X
+X
+X
+X
+Functional Lead
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Make ATP 1 (Authority to Proceed) decision to Phase 2
+X
+X
+X
+X
+X
+X
+CMO
+1.1. BCAT I - Coordinate ATP 1 decision package through FPRG and FPB to 
+the SEC
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+1.2. Obtain OSD ATP 1 decision
+X
+X
+X
+X
+X
+X
+Senior Executive Council Chair
+1.3. BCAT II and III, make ATP 1 decision to Phase 2
+X
+X
+X
+X
+X
+X
+Functional Portfolio Board Chair
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+55 
+4E.3 (Added)(DAF) Phase 2: Business Solution Analysis.  
+a. (Added)(DAF) In this Phase, the Functional Lead and subject experts identify
+the business processes necessary to fully implement the business capabilities identified in 
+Phase 1, conduct initial high-level business process reengineering and document changes 
+from the present state.  
+b. (Added)(DAF) The business process reengineering should be structured to focus
+on high-level business processes, and sufficiently identify the work to be conducted and the 
+information that will be used to perform analysis/market research, not on the supporting 
+IT solution. 
+Figure 4. (Added)(DAF)  Phase 2 Actions: Macro View. 
+4.2.1. Determine PM 
+and MDA
+4.2.2. Refine Tailored 
+CIP
+4.2.3. ATP 2: 
+Functional 
+Requirements 
+Determine Funding 
+Structure
+Perform Business 
+Process Re-engineering 
+(BPR)
+Execute Organizational  
+Change Management
+Develop Business 
+Requirements
+Develop High Level Agile 
+Schedule / Sprints
+Determine Compliance 
+Requirements (LRP)
+Recommend System 
+Disposition
+• Decision 
+Memorandum
+Conduct Prototyping 
+and Market Research 
+CIP
+v2
+• ROM Cost
+Estimate
+• Bill-payers
+• Cost Benefit 
+Analysis
+• Funding Plan
+• Capabilities
+• Performance 
+Measures
+CIP
+v2
+CIP
+v2
+CIP
+v2
+CIP
+v2
+CIP
+v2
+CIP
+v2
+CIP
+v2
+CIP
+v2
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+56 
+Table 12. (Added)(DAF)  Phase 2 Breakdown: Determine PM and MDA (2 Items). 
+Table 13. (Added)(DAF)  Phase 2 Breakdown: Refine Tailored CIP (25 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Determine if PEO BES has sufficient resources to assign a Program Manager
+for this need at the speed of relevance
+X
+X
+X
+X
+X
+X
+PEO BES HIQ & Functional Lead
+1.1. If No - Route to BMA PRG for COA (e.g. augment PEO BES, reprioritize 
+BES backlog, allow non-PEO BES Program Manager/MDA)
+X
+X
+X
+X
+X
+X
+PEO BES HIQ
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Develop/Update tailored Capability Implementation Plan (CIP) to meet the
+need (T-1)
+X
+X
+X
+X
+X
+X
+Program Manager
+2. Identify the high-level business processes that need to be improved to address
+the business problem (BPR) (T-0)
+X
+X
+X
+X
+X
+Functional Lead
+3. Develop a high-level process map to be included in the Capability Process
+Maps (As-Is State, BPR)
+X
+X
+X
+X
+X
+Functional Lead
+4. Conduct initial market research of full DOTMLPF-P including research of
+other organizations, other services USG with similar capabilities (BPR) (T-0)
+X
+X
+X
+X
+Functional Lead
+5. Identify any major changes from the current state to the re-engineered future
+state using CPI tools (BPR) (T-1)
+X
+X
+X
+X
+X
+Functional Lead
+6. Develop a re-engineered to-be process with information assets, including best
+practices from BEA & AF process libraries (BPR) (T-1)
+X
+X
+X
+X
+X
+Functional Lead
+7. If needed, conduct prototyping to support process engineering and redesign of
+the future state (BPR)
+X
+X
+X
+X
+X
+Functional Lead
+8. Provide technical assessment of proposed market research solutions (T-1)
+X
+X
+X
+X
+X
+SAF/CN
+9. Make initial elaboration of solution type to meet the need (Type 2  2m or 2e,
+Type 3  3p or 3s or 3c)
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+57 
+10. Establish business performance measures that will indicate when the process
+is being executed as intended (T-1)
+X
+X
+X
+X
+X
+Functional Lead
+11. In coordination with the CDO, determine data management requirements
+(including authoritative data sources)
+X
+X
+X
+X
+X
+Program Manager
+12. Assess potential infrastructure impact, shared services needs, cybersecurity
+overlays, and platform requirements
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+13. Identify desired/required capabilities that the proposed solution cannot provide
+X
+X
+X
+X
+X
+Program Manager
+13.1. If Capabilities Missing - Determine alternative Courses of Action (COAs)
+X
+X
+X
+X
+X
+X
+Program Manager
+14. Identify and prioritize DOT_PF-P actions required to move the current
+process to the future process (Roadmap)
+X
+X
+X
+X
+X
+Functional Lead
+15. As necessary, decompose and schedule the work through the next ATP
+X
+X
+X
+X
+X
+Functional Lead
+16. Create ROM cost estimate for all business changes (DOTMLPF-P) to achieve
+future business processes
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+17. Identify likely bill payers for an initial funding plan to resource the need with
+Current Year offsets, execution plan changes and POM commitment
+X
+X
+X
+X
+X
+X
+Functional Lead
+18. Conduct a cost-benefit analysis (including cost savings or avoidance from
+sunsetting and/or consolidation)
+X
+X
+X
+X
+X
+Functional Lead
+19. Establish affordability targets for business system with a compelling business
+case for committing organization resources
+X
+X
+X
+X
+X
+Functional Lead
+20. Make system disposition recommendation for the BMA Council decision (i.e.,
+sunset or sustain)
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+21. Determine what Airmen and processes could be impacted by the proposed
+change
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+22. Ensure funding is available for phase activities and provide funding plan for
+future phases
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+22.1. If Not Available - Determine alternative COAs
+X
+X
+X
+X
+X
+X
+Program Manager
+23. Update CIP for ATP 2 (T-1)
+X
+X
+X
+X
+X
+X
+Program Manager
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+58 
+Table 14. (Added)(DAF)  Phase 2 Breakdown: ATP 2 (6 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Make ATP 2 decisions (including approval of tailored path approval through
+ATP 3 to ATP 4) (T-0)
+X
+X
+X
+X
+X
+MDA and DCMO
+1.1. BCAT III - ROM < $1M over FYDP 
+X
+X
+X
+X
+X
+Decision Forum: Functional Lead/Program Manager
+Decision Authority: DCMO and MDA
+1.2. BCAT II, and BCAT III - ROM> $1M over FYDP 
+X
+X
+X
+X
+X
+Decision Forum: Functional Portfolio Board Chair
+Decision Authority: DCMO and MDA
+1.3. BCAT I - Coordinate ATP 2 decision package through Functional PRG and 
+Functional PB to SEC
+X
+X
+X
+X
+X
+Decision Forum: Functional Sponsor
+Decision Authority: OSD
+2. Obtain OSD ATP 1 decision
+X
+X
+X
+X
+X
+Decision Authority: OSD Chair
+3. Decision to Proceed with only non-Materiel Solution
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+59 
+4E.4. (Added)(DAF) Phase 3: Business System Functional Requirements and Acquisition 
+Planning.   
+a. (Added)(DAF) During Phase 3 the primary responsibility for completing the
+implementation of the business capabilities shifts from the Functional Sponsor to the 
+Program Manager). 
+b. (Added)(DAF) Authority to Proceed (ATP)
+(1) (Added)(DAF) At Business System Functional Requirements and Acquisition
+Planning ATP, the Milestone Decision Authority (MDA): 
+(a) (Added)(DAF) Verifies requirement is fully funded across the FYDP
+to support all acquisition activities requested for approval. 
+(b) (Added)(DAF) Authorizes execution of the acquisition strategy and
+approves continued execution of the Capability Implementation Plan. 
+(c) (Added)(DAF) Delegates to the Program Manager to continuously
+return to BCAC Phase 3, 4, and 5 for Agile development. 
+(2) (Added)(DAF) The AF Deputy Chief Management Officer and OSD
+Deputy Chief Management Officer simultaneously certify and approve funds 
+expenditure. (T-0) 
+Figure 5. (Added)(DAF)  Phase 3 Actions: Macro View. 
+4.3.1. Initiate 
+Acquisition Planning
+4.3.2. Document Business 
+Feature Backlog
+4.3.10. Document Solution 
+Architectural Features
+4.3.11. Execute 
+Acquisition Process
+4.3.3. Document Report 
+Features
+4.3.4. Document Interface 
+Features
+4.3.5. Document Data 
+Features
+4.3.6. Document 
+Infrastructure Features
+4.3.7. Document Service 
+Level Features
+4.3.8. Document 
+Operational/COOP Features
+4.3.9. Document 
+Cybersecurity Features
+CIP
+v3
+CIP
+v3
+• Solution Strategy
+• Decision Points 
+and Authorities
+4.3.12. ATP 3: 
+Acquisition ATP 
+CIP
+v3
+• Acquisition Strategy
+• Cybersecurity Strategy
+• Capability Support Plan
+• Draft RFP
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+60 
+Table 15. (Added)(DAF)  Phase 3 Breakdown: Initiate Acquisition Planning (11 
+Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Initiate and manage planning activities to build a tailored Acquisition Plan
+(T-0)
+X
+X
+X
+X
+X
+X
+Program Manager
+2. Understand user experience including potential empathy maps, customer
+journey, etc.
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Explore alternatives (market research on COTS, GOTS, aPaaS, Legacy
+Enhancements, Custom Development) via BEA and others
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+4. Consider if the AF "software factories" (i.e., Kessel Run, etc..) may be able to
+provide a business solution
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+5. Conduct Analysis of Alternatives and Economic Analysis to develop a solution
+approach (including Cost Estimates) (T-0)
+X
+X
+X
+X
+Functional Lead & Program Manager
+6. Conduct risk analysis and score alternatives against the evaluation criteria
+(T-0)
+X
+X
+X
+X
+Functional Lead & Program Manager
+7. Identify and recommend solution & approach for implementation of the
+business system (T-2)
+X
+X
+X
+X
+Functional Lead & Program Manager
+8. Update the CIP's acquisition and solution strategies with planned decision
+points and authorities (T-0)
+X
+X
+X
+X
+Program Manager
+9. Elaborate non-materiel elements into executable DOT_LPF-P actions (T-0)
+X
+X
+X
+X
+X
+Functional Lead
+10. Execute non-materiel actions and track progress against the plan (T-0)
+X
+X
+X
+X
+X
+Functional Lead
+11. Engage stakeholders on changes to schedule, scope or cost
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+61 
+Table 16. (Added)(DAF)  Phase 3 Breakdown: Document Business Feature Backlog 
+(13 Items). 
+Table 17. (Added)(DAF)  Phase 3 Breakdown: Document Report Features (4 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Identify stakeholders and gain commitment from user groups to participate in
+Agile and DevSecOps development. Identify stakeholders and gain commitment
+from user groups to participate in Model Based System Engineering Development
+as a supplement to agile SW development.
+X
+X
+X
+Functional Lead & Program Manager
+2. Collaboratively identify and capture features to deliver initial and subsequent
+business value to the customer (T-1)
+X
+X
+X
+Functional Lead & Program Manager
+3. Confirm potential business system solutions reflect traceability to features
+valued by the customer (T-0)
+X
+X
+X
+Functional Lead & Program Manager
+4. Analyze features based on cost/benefit analysis
+X
+X
+X
+Functional Lead & Program Manager
+5. Ensure potential business system includes trade space to minimize
+customization
+X
+X
+X
+Functional Lead & Program Manager
+6. Seek comments from identified stakeholders on features and initial
+prioritization
+X
+X
+X
+Functional Lead & Program Manager
+7. Establish the business value of each feature and create an initial point estimate
+for overall epic
+X
+X
+X
+Functional Lead & Program Manager
+8. Identify potentially expensive or high-risk functional requirements with
+recommended alternate approaches
+X
+X
+X
+Functional Lead & Program Manager
+9. Approve or reject features based on cost/benefit analysis
+X
+X
+X
+Functional Lead & Program Manager
+10. Place features in the parking lot or close, providing justification for feature
+status
+X
+X
+X
+Functional Lead & Program Manager
+11. As needed, update business processes to reflect any changes made
+X
+X
+X
+Functional Lead & Program Manager
+12. Create an initial prioritization of features
+X
+X
+X
+Functional Lead & Program Manager
+13. Update the CIP's non-materiel elements (T-0)
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+62 
+Table 18. (Added)(DAF)  Phase 3 Breakdown: Document Interface Features (4 Items). 
+Table 19. (Added)(DAF)  Phase 3 Breakdown: Document Data Features (5 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update users of service's reporting features
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+2. Define/update user roles and responsibilities for the service's reporting features
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Define/update access rights and access plan for users
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+4. Create/update reports features (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update interfaces and dependencies for service (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Interface Development Team
+2. Develop/update interface migration plan in accordance with the Enterprise
+Architect Strategy and Guideliness
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Write features and the initial set of stories to meet interface requirements in
+accordance with the interface migration plan (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+4. Prioritize changes to address interface and dependency issues
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update data and data sources to be used/accessed in the service (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+2. Analyze differences between current data sources and desired new data
+sources
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+3. Compare and understand the fit with enterprise and future solution architecture
+(T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+63 
+Table 20. (Added)(DAF)  Phase 3 Breakdown: Document Infrastructure Features (4 
+Items). 
+Table 21. (Added)(DAF)  Phase 3 Breakdown: Document Service Level Features (5 Items). 
+4. Define/update data migration plan
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+5. Prioritize changes to address interface and dependency issues
+X
+X
+X
+X
+X
+X
+Functional Lead & Data Development Team Lead
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Determine any service-specific or unique infrastructure requirements (to
+include Mobile Apps) (T-1)
+X
+X
+X
+Functional Lead & Program Manager
+2. Identify appropriate hosting solution (mil/commercial cloud, on-premise)
+(T-1)
+X
+X
+X
+PEO C3I&N
+3. Determine environments and tools for DevSecOps to support Agile execution
+as needed
+X
+X
+X
+PEO C3I&N
+4. Determine shared services as needed
+X
+X
+X
+X
+PEO C3I&N & PEO BES
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update desired service outcomes with Key Performance Indicators
+(KPIs) from the customer viewpoint
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+2. Identify customer and other key stakeholders to involve in Service Line
+Requirements (SLR), Service Line Agreement (SLA), Ops Line Agreement
+(OLA) Negotiations
+X
+X
+X
+X
+X
+X
+Functional Lead
+3. Draft requirements for services and mediate conflicting components
+X
+X
+X
+X
+X
+Functional Lead
+4. Create/update OLA with service owners, draft SLA with customer
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+5. Ensure Current and Future SLRs of System Owners are Identified,
+Understood, and Documented in the draft SLA
+X
+X
+X
+X
+X
+X
+Functional Lead
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+64 
+Table 22. (Added)(DAF)  Phase 3 Breakdown: Document Operational/COOP Features (5 
+Items). 
+Table 23. (Added)(DAF)  Phase 3 Breakdown: Document Cybersecurity Features (4 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update COOP/ Monitoring requirements for service (T-1)
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+2. Analyze against current COOP/Monitoring
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Determine system monitoring tools and plan for new service and systems
+(T-1)
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+4. Approve/disapprove COOP sufficiency for Cybersecurity requirements
+X
+X
+X
+X
+X
+Authorizing Official
+5. To support Organizational Change Management, determine and prepare
+necessary training materials and timelines to support change (T-0)
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Define/update cyber security requirements for service (T-1)
+X
+X
+X
+X
+X
+X
+Authorizing Official
+2. Develop/update Cybersecurity Strategy in accordance with  NIST, CIS
+Strategy and Guidance (T-1)
+X
+X
+X
+X
+X
+X
+Authorizing Official
+3. Prioritize changes to address cybersecurity issues
+X
+X
+X
+X
+X
+X
+Authorizing Official
+4. Provide Cybersecurity Strategy to support the Acquisition Plan (T-0)
+X
+X
+X
+X
+X
+X
+Authorizing Official
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+65 
+Table 24. (Added)(DAF)  Phase 3 Breakdown: Document Solution Architectural 
+Features (3 Items). 
+Table 25. (Added)(DAF)  Phase 3 Breakdown: Execute Acquisition Process (8 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Develop initial design specifications in accordance with Enterprise Architect
+and segment architecture, strategy and guidelines (T-1)
+X
+X
+X
+X
+Solution Architect
+2. Include appropriate level of Info Support Plan (ISP)-type information in the
+CIP (T-1)
+X
+X
+X
+X
+Solution Architect
+Tailored Acquisition Paths
+3. Provide information to BMA Enterprise Architect to update the BMA
+Enterprise Architecture as required (T-0)
+X
+X
+X
+X
+Solution Architect
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1, Establish criteria for evaluating solution approaches with input from the cost 
+agency and CIO
+X
+X
+X
+Functional Lead
+2. Develop solution approach (e.g. COTS, GOTS, "aaS", legacy modernization or
+new development) (T-2)
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Select solution for ATP 3 approval (T-2)
+X
+X
+X
+X
+Program Manager
+3.1. If planning to release RFP immediately after Acquisition ATP, obtain MDA 
+guidance on procurement strategy and contract type
+X
+X
+X
+X
+Program Manager
+3.2. Prepare draft RFP using MDA guidance
+X
+X
+X
+X
+Program Manager
+3.3. Build the procurement strategy based on the recommended solution approach 
+(T-0)
+X
+X
+X
+X
+Program Manager
+3.4. Develop/update funding plan to resource need with Current Year offsets, 
+execution plan changes, and POM commitment (T-0)
+X
+X
+X
+X
+Program Manager
+4. Update CIP and update/finalize Acquisition Strategy and the Capability Support
+Plan (T-0)
+X
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+66 
+Table 26. (Added)(DAF)  Phase 3 Breakdown: ATP 3 (9 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Coordinate and collect the necessary initial CMO certification artifacts (T-0)
+X
+X
+X
+X
+X
+X
+Program Manager
+2. DCMO certifies and approves funds expenditure if functionals provide
+sufficient FYDP funding plan (T-0)
+X
+X
+X
+X
+X
+X
+SAF/MG
+3. Authorize acquisition strategy execution, approve continued CIP execution and
+BCAC Phases 3, 4 and 5 free flow, delegate ATP 4 authority (T-0)
+X
+X
+X
+X
+X
+X
+MDA 
+Tailored Acquisition Paths
+3.1. Not approved - Coordinate with Functional Lead for alternate COA
+X
+X
+X
+X
+X
+X
+Program Manager
+4. Register/update IT investment in IT Investment Portfolio Suite (ITIPS)
+X
+X
+X
+X
+X
+X
+Program Manager & Portfolio Manager
+5. Initiate/update registration in DoD's Information Technology Portfolio
+Repository (DITPR)
+X
+X
+X
+X
+X
+X
+SAF/CN
+6. Register/update investment in eMASS (DISA Info Assurance Program
+Management)
+X
+X
+X
+X
+X
+X
+Program Manager
+7. Upload the IT investment to the Defense Information Technology Investment
+Portal (DITIP)
+X
+X
+X
+X
+X
+X
+SAF/CN
+8. Obtain a Unique Investment Identifier (UII)
+X
+X
+X
+SAF/CN
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+67 
+4E.5. (Added)(DAF) Phase 4:  Business System Acquisition, Testing and Deployment. 
+a. (Added)(DAF) Phase 4 leads to the deployment of a complete defense business
+capability including: non-materiel elements, materiel solutions and computing environment 
+support. This phase will drive parallel nonmateriel and materiel changes into the 
+development of a business system’s operations and Capability Support Plan. This plan 
+details content from the implementation plan and incorporates the additional content 
+referenced in Appendix 4B of this publication. (T-0)  
+b. (Added)(DAF) Limited Deployment ATP(s). The Milestone Decision Authority, in
+consultation with the Functional Sponsor will approve/disapprove deployment to limited 
+portions of the end user community based on the operational risk associated with the release 
+capability. (T-0)  
+c. (Added)(DAF) Full Deployment ATP. The Milestone Decision Authority, with support
+of the Functional Sponsor and AF Deputy Chief Management Officer will assess the results 
+documented in the Operational Test Report of all Limited Deployments and operational 
+testing and, based on operational risk, approve/disapprove deployment to the entire user 
+community. (T-0) Full Deployment requires the following criteria:  
+(1) (Added)(DAF) Maturity of developed or configured software through pre-
+production assessment of functional requirement coverage and defects impacting users. 
+(2) (Added)(DAF) Execution of change management, training and deployment plans.
+(3) (Added)(DAF) Consistency with DoD Information Enterprise policies and
+architecture. 
+(4) (Added)(DAF) Test results indicating adequate performance and cybersecurity.
+(5) (Added)(DAF) Program progress against baselined cost, schedule and
+performance. 
+(6) (Added)(DAF) Ensure CCA compliance actions necessary for capability support.
+(7) (Added)(DAF) Actions necessary for capability support.
+(8) (Added)(DAF) Determine if new/enhanced service will be Use it Now (or not) when
+listed in BMA Service Catalog. If the new/enhanced service is not User it Now, determine if 
+the service is eligible for future Type 1ez requests. 
+d. (Added)(DAF) Capability Support ATP.  At this decision point, the Functional
+Sponsor accepts full deployment of the system and approves transition to capability 
+support. (T-0) 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+68 
+Figure 6. (Added)(DAF)  Phase 4 Actions: Macro View. 
+Table 27. (Added)(DAF)  Phase 4 Breakdown: Complete Contracting (13 Items). 
+4.4.1. Complete 
+Contracting
+4.4.2. Conduct Tailored Program Execution
+4.4.3. Provision 
+Infrastructure
+4.4.4. Execute DevSecOps Process
+4.4.5. Convene Steering Committee
+4.4.9. Release 
+into Production
+4.4.6. Perform Data 
+Migration and Conversion
+4.4.7. Perform Agile 
+Testing and Evaluation
+4.4.8. Conduct Pre-
+Deployment Actions
+• Capability Support Plan
+• Cybersecurity Strategy
+CIP
+v4
+CIP
+v4
+• Acquisition Strategy
+• Sprint Schedule
+• RFP
+ATP 4: Limited/Full 
+Deployment ATP
+CIP
+v4
+• Decision 
+Memorandum
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Update Acquisition Strategy, baseline, and backlog based on ATP 3 and BMA
+Council prioritization (T-0)
+X
+X
+X
+X
+X
+X
+Program Manager
+2. Receive approved COA and Acquisition Strategy, including IT functional
+requirements, info assets, tech and life cycle requirements (T-0)
+X
+X
+X
+X
+X
+X
+Contracting Officer
+3. Determine if an existing contracting vehicle can be used to procure the needed
+development capability.
+X
+X
+X
+X
+X
+X
+Contracting Officer
+3.1. Conduct requirements management IAW Competition in Contracting Act 
+including Agile contracting elements where applicable (T-0)
+X
+X
+X
+X
+Contracting Officer
+3.2. Conduct pre-solicitation actions (T-0)
+X
+X
+X
+X
+Contracting Officer
+3.3. Conduct Solicitation management (T-0)
+X
+X
+X
+X
+Contracting Officer
+3.4. Award contract through standard source selection (T-0)
+X
+X
+X
+X
+Contracting Officer
+3.5. Prepare contract vehicle using multiple award schedules or existing IDIQ 
+contract vehicles with Task Orders (T-1)
+X
+X
+X
+X
+X
+X
+Contracting Officer
+X
+X
+X
+X
+X
+X
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+69 
+Table 28. (Added)(DAF)  Phase 4 Breakdown: Conduct Tailored Program Execution (5 
+Items). 
+Table 29. (Added)(DAF)  Phase 4 Breakdown: Provision Infrastructure (7 Items) 
+3.6. Select vendor for configuration and integration from list of pre-approved 
+integrators (T-0)
+X
+X
+X
+X
+X
+X
+Contracting Officer
+X
+X
+X
+X
+X
+X
+3.7. Award Task Order to the selected vendor
+X
+X
+X
+X
+X
+X
+Contracting Officer
+X
+X
+X
+X
+X
+X
+4. Conduct Post-Awards management
+X
+X
+X
+X
+X
+X
+Contracting Officer
+5. Conduct Contract Performance review
+X
+X
+X
+X
+X
+X
+Contracting Officer
+6. Conduct Contract Close-out
+X
+X
+X
+X
+X
+X
+Contracting Officer
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Update and execute the tailored Capability Implementation Plan to deliver
+business capabilities (T-0)
+X
+X
+X
+X
+X
+X
+Program Manager
+2. Manage cost, schedule, cybersecurity posture, and performance of vendor (T-
+0)
+X
+X
+X
+X
+X
+X
+Program Manager
+3. Perform work directed in the Performance Work Statement (PWS)
+X
+X
+X
+X
+X
+X
+Vendor
+4. Take the necessary actions to ensure on-time delivery of working code, with a
+focus on measuring observable progress
+X
+X
+X
+Delivery Manager
+5. Identify Production Support and conduct Production Support Business Case
+Analysis (sufficient to implement all Cyber C2 orders)
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Provision environments and tools for DevSecOps to support Agile execution as
+needed
+X
+X
+X
+PEO C3I&N (HNI)
+2. Provision single sign-on and IdAM/ICAM services
+X
+X
+X
+X
+X
+X
+PEO C3I&N (HNI)
+3. Provision tools for API management, Agile management and automated testing,
+and tools needed by platform users
+X
+X
+X
+PEO C3I&N (HNI)
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+70 
+Table 30. (Added)(DAF)  Phase 4 Breakdown: Execute DevSecOps Process (6 Items). 
+Table 31. (Added)(DAF)  Phase 4 Breakdown: Convene Steering Committee (5 Items). 
+4. Provision platform, including physical hardware, servers in the private, public
+and semi-public cloud
+X
+X
+X
+PEO C3I&N (HNI) & DISA
+5. Provision compute and store capacities to Delivery Manager as needed to
+support Agile development
+X
+X
+X
+PEO C3I&N (HNI)
+6. Provide adequate network connectivity (e.g., LTE, Wi-Fi, Ethernet) (T-1)
+X
+X
+X
+X
+X
+X
+ACC/A6
+7. Administer access, network security & load balancing of physical and virtual
+servers (T-1)
+X
+X
+X
+X
+X
+X
+PEO C3I&N (HNI)
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Conduct Plan Phase activities (minimize modifications to COTS, GOTS, SaaS,
+and aPaaS to use out-of-the-box capabilities) (T-1)
+X
+X
+X
+Delivery Manager
+2. Conduct Develop Phase activities (i.e., business functionality, data, reports,
+interfaces, configurations, extensions, forms, and workflow) (T-1)
+X
+X
+X
+Delivery Manager
+3. Conduct Build Phase activities
+X
+X
+X
+Delivery Manager
+4. Conduct Test Phase activities (T-0)
+X
+X
+X
+Delivery Manager
+5. Conduct Release and Deliver Phase activities
+X
+X
+X
+Delivery Manager
+6. Conduct Deploy Phase activities
+X
+X
+X
+Delivery Manager
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Gather information for presentation to Steering Committee
+X
+X
+X
+X
+X
+X
+Delivery Manager
+2. Lead Steering Committee Meeting, focusing on observable outcomes, where
+you are vs. where you should be
+X
+X
+X
+X
+X
+X
+Delivery Manager
+3. Identify which features/stories can be postponed for Spike
+X
+X
+X
+X
+X
+X
+Delivery Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+71 
+Table 32.  Phase 4 Breakdown: Perform Data Migration and Conversion (8 Items). 
+Table 33.  (Added)(DAF) Phase 4 Breakdown: Perform Agile Testing and Evaluation (5 
+Items). 
+4. Approve/disapprove recommendations, resolve issues, advise, and request
+additional information (T-1)
+X
+X
+X
+X
+X
+X
+Steering Committee
+5. Record and communicate directives and decisions
+X
+X
+X
+X
+X
+X
+Delivery Manager
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Receive approved data plan in accordance with the CDO Strategy and
+Guidelines (T-1)
+X
+X
+X
+X
+X
+Data Development Team Lead
+2. Determine what data is required by law and policy to be migrated or converted
+X
+X
+X
+X
+X
+Functional Lead
+3.With the current data owner, develop a data cleaning plan to support the data
+migration or conversion
+X
+X
+X
+X
+X
+Data Development Team Lead
+4. Determine data synchronization in accordance with the approved requirement
+X
+X
+X
+X
+X
+Data Development Team Lead
+5. Map data systems objects and fields in accordance with CDO Standards
+(design ETLs)
+X
+X
+X
+X
+X
+Data Development Team Lead
+6. Monitor data integration/migration in accordance with CDO Standards
+X
+X
+X
+X
+X
+Data Development Team Lead
+7. Monitor data integrity with system deployment in accordance with CDO
+Standards
+X
+X
+X
+X
+X
+Data Development Team Lead
+8. Gather a set of dummy/actual test data from the existing system owner to
+support testing (T-2)
+X
+X
+X
+X
+X
+Data Development Team Lead
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Using modern agile test methodology (i.e., combined Development Test and
+Operational Test) determine test criteria with Business Analysts (T-0)
+X
+X
+X
+X
+X
+Test Team Lead
+2. Conduct agile Test Phase activities
+X
+X
+X
+X
+X
+Test Team Lead
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+72 
+Table 34.  (Added)(DAF) Phase 4 Breakdown: Conduct Pre-Deployment Actions (8 
+Items). 
+Table 35.  (Added)(DAF) Phase 4 Breakdown: Release into Production (15 Items). 
+3. Evaluate program progress against baselined cost, schedule, performance, and
+cybersecurity
+X
+X
+X
+X
+X
+Test Team Lead and Authorizing Official
+4. Ensure operational software supports business process performance goals and
+technical and  lifecycle requirements
+X
+X
+X
+X
+X
+Functional Lead
+5. Ensure Security Controls Assessor (SCA) validates adequate cybersecurity
+X
+X
+X
+X
+X
+X
+Authorizing Official
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Finalize and execute Operational Level Agreements (OLAs) and SLAs with the
+Business System Owners
+X
+X
+X
+X
+X
+X
+Functional Lead
+2. Update Customer Agreement Portfolio
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+3. Make release Go/No-Go decision to release artifacts to the artifact repo for the
+Prod environment
+X
+X
+X
+X
+X
+Release Manager
+4. Push released artifacts to the artifact repository
+X
+X
+X
+X
+X
+Release Manager
+5. Replicate new release artifacts to all regional artifact repositories
+X
+X
+X
+X
+X
+Release Manager
+6. Prepare and communicate any Airmen training needed (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead
+7. Schedule and execute training to support changes to business processes (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead
+8. Monitor new training and modify as needed to support business process
+changes (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Update CIP, with a focus on its Capability Support Plan (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+2. Ensure interoperability certification in accordance with DoD and AF guidance
+(T-1)
+X
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+73 
+4E.6. (Added)(DAF) Phase 5: Capability Support Phase.  
+a. (Added)(DAF) The Functional Sponsor assumes responsibility for the business
+capability and, in consultation with the IT Portfolio Owner and Program Manager, 
+maintains the required resources and certifications for all Non-Materiel Activities.  The 
+Functional Sponsor continues process improvement in all areas of Organizational 
+Change Management while the Program Manager maintains the IT Materiel Solution in 
+support of the Functional Sponsor, which operates until subsumed or replaced.  
+(1) (Added)(DAF) Change management is governed through the BMA board
+structure including Functional Portfolio Boards and the BMA Council. 
+3. Approve/disapprove deployment of the release to limited portions of the end-
+user community
+X
+X
+X
+X
+X
+X
+MDA
+4. Deploy the release to the production (or other as appropriate) environment for
+limited release (T-1)
+X
+X
+X
+X
+X
+X
+Delivery Manager
+5. Conduct operational and cybersecurity testing
+X
+X
+X
+X
+X
+X
+Testing Team Lead & Authorizing Official
+6. Execute non-materiel elements of CIP: train user, verify DOT_LPF-P actions,
+move business operations to new system(s) (T-2)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+7. With the support of the CMO and Functional Sponsor, approve or disapprove
+deployment to the entire user community (T-0)
+X
+X
+X
+X
+X
+X
+MDA
+8. Report BMA Council metrics on "Need" to "Use"
+X
+X
+X
+X
+X
+X
+PEO BES
+9. Provide a selection of end-user devices tailored to need (e.g. tablet, phone,
+desktop, laptop)
+X
+X
+X
+X
+X
+X
+ACC/A6
+10. Build a decommissioning schedule for products or services as listed in the CIP
+X
+X
+X
+X
+X
+X
+Program Manager
+11. Deploy full functionality to all users in the Production environment in
+accordance with the CIP (T-0)
+X
+X
+X
+X
+X
+X
+Delivery Manager
+12. Complete non-materiel DOTLPF-P actions in accordance with the CIP
+X
+X
+X
+X
+X
+X
+Functional Lead and Program Manager
+13. Update the CIP's Capability Support Plan
+X
+X
+X
+X
+X
+X
+Program Manager
+14. Accept/do not accept the full deployment of the system and
+approve/disapprove transition to capability support phase
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+15. Notify Incident Management for closeout if applicable
+X
+X
+X
+X
+X
+X
+Delivery Manager
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+74 
+(2) (Added)(DAF) After the Full Deployment, the Functional Sponsor
+and Program Manager will plan and conduct a Post Implementation Review. (T-
+0).  
+b. (Added)(DAF) During the Capability Support Phase the Functional Sponsor
+and the Program Manager will: 
+(1) (Added)(DAF) Test the efficacy of the business capabilities,
+business processes, and IT Solution in resolving the original problem identified 
+in Phase 1. The results are reviewed as part of the Post Implementation Report, 
+leading to the development of the Support Plan. (T-0)  
+(2) (Added)(DAF) Develop the Support Plan to migrate responsibility
+for the IT Solution from the MDA to the Functional Sponsor. The Support Plan 
+and the Full Deployment test results are the primary inputs to the Capability 
+Support Decision Point. (T-1) 
+c. (Added)(DAF) Capability Support ATP.
+(1) (Added)(DAF) The Functional Lead in conjunction with the
+Program Manager will conduct a  Capability Support ATP for the business 
+capability as determined by the Acquisition Authority and on an event-driven 
+basis (for non-Program Executive Officer managed systems). 
+(2) (Added)(DAF) The Functional Sponsor conducts event-driven
+Decision Points when specific changes are brought forward, such as: new 
+functionality requirements; changes in platform or infrastructure; or changes 
+required in response to policy or technical mandates.    
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+75 
+Figure 7. (Added)(DAF)  Phase 5 Actions: Macro View
+BMA Functional Portfolio Capability Support
+4.5.8. Conduct Program Management
+Operations Support
+4.5.2. Conduct Post Deployment Management 
+(Production)
+4.5.3. Provide Production Support
+4.5.1. Conduct BMA Functional 
+Portfolio Management
+4.5.10. Platform
+4.5.11. Network & Security
+4.5.12. API & ESB 
+Management
+4.5.13. User Access
+4.5.14. Enterprise 
+Information Management
+4.5.15. Enterprise Services
+4.5.16. Dashboard Services
+4.5.17. Business 
+Intelligence Platform
+4.5.18. BMA Service 
+Catalog Management
+4.5.9. Manage 
+Capability Gaps
+4.1. BCAC Phase 1
+Re-entry
+4.4.4. DevSecOps
+4.5.4. Execute 
+Event 
+Management
+4.5.6. Execute 
+Problem 
+Management
+4.5.5. Execute 
+Incident 
+Management
+4.5.7. Execute 
+Cyber Risk 
+Management
+• Capability 
+Support Plan
+CIP
+v5
+CIP
+v5
+• Capability Support 
+Plan
+• Capability Changes
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+76 
+Table 36. (Added)(DAF)  Phase 5 Breakdown: Conduct BMA Functional Portfolio 
+Management (8 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Assess portfolio execution, staffing support contracts, defect resolution, change
+approval, prioritization (T-0)
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+2. Perform risk assessments for all programs in the portfolio (T-1)
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+3. Track IT compliance status for all portfolio investments
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+4. Maintain a 12-month forecast of upcoming requirements and/or acquisition for
+all programs in the portfolio
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+Tailored Acquisition Paths
+5. Perform an annual review of IT investments addressing CPIC criteria to ensure
+compliance, then document changes (T-1)
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+6. Track OEP-certified programs and milestone to ensure expected outcomes are
+realized and report Infor for certification
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+7. Align each IT investment to Mission Areas using organized Mission Area
+guidance criteria
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+8. Notify PMs of NDAA certification and IT compliance requirements and
+portfolio requirements changes
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+77 
+Table 37. (Added)(DAF)  Phase 5 Breakdown: Conduct Post Deployment Management 
+(Production) (5 Items).
+Table 38. (Added)(DAF)  Phase 5 Breakdown: Provide Production Support (9 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Update CIP's non-materiel elements with Capability Support Plan (sustainment
+activities) (T-0)
+X
+X
+X
+X
+X
+X
+Functional Lead
+2. Conduct Post Implementation Review (T-0)
+X
+X
+X
+X
+X
+X
+Functional Sponsor
+3. Execute Capability Implementation Plan for system (T-1)
+X
+X
+X
+X
+X
+X
+Functional Lead
+4. Validate with users that deployed system capabilities meet  business
+requirements and provide ROI (T-0)
+X
+X
+X
+X
+X
+X
+Functional Lead
+5. Develop tailored CIPs for changes to the capability
+X
+X
+X
+X
+X
+X
+Functional Lead
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Create a request for a standard (routine, documented, and pre-approved)
+change to infrastructure
+X
+X
+X
+X
+X
+X
+Program Manager
+2. Notify PMs, BMA EA, and BMA Governance of planned release times and
+scheduled outages
+X
+X
+X
+X
+X
+X
+Program Manager
+3. Review to approve for scheduling
+X
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+4. Route to appropriate implementation group to perform standard change
+according to procedures
+X
+X
+X
+X
+X
+X
+Program Manager
+4.1. If software upgrade, apply vendor software upgrade
+X
+X
+X
+X
+X
+X
+Program Manager
+4.2. If security patch, apply security patch
+X
+X
+X
+X
+X
+X
+Program Manager
+4.3. If security requestm, perform system and/or database backup
+X
+X
+X
+X
+X
+X
+Program Manager
+5. Use DevSecOps to make changes in the appropriate environment
+X
+X
+X
+X
+X
+X
+Program Manager
+6. Send Functional PRG update of standard changes
+X
+X
+X
+X
+X
+X
+Program Manager
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+78 
+Table 39. (Added)(DAF)  BCAC Phase 5 Breakdown: Execute Event Management (7 tems).
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Monitor and collect event management notifications
+X
+X
+X
+X
+X
+X
+Event Management Team
+2. Filter event notification and assign level of correlation (i.e., information,
+warning, and exception)
+X
+X
+X
+X
+X
+X
+Event Management Team
+3. Determine the significance of the event (i.e., information, warning, and
+exception)
+X
+X
+X
+X
+X
+X
+Event Management Team
+4. Log the event as an event record or as an entry in system log of application
+X
+X
+X
+X
+X
+X
+Event Management Team
+5. Alert human intervention (according to criteria) and escalate
+X
+X
+X
+X
+X
+X
+Event Management Team
+6. Classify event as an incident, problem, or change and close out
+X
+X
+X
+X
+X
+X
+Event Management Team
+7. Determine if the event is related to improper training of airmen
+X
+X
+X
+X
+X
+X
+Event Management Team
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+79 
+Table 40. (Added)(DAF)  Phase 5 Breakdown: Execute Incident Management (10 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Create and assign trouble ticket
+X
+X
+X
+X
+X
+X
+Incident Management Team
+Tailored Acquisition Paths
+2. Analyze incident to determine the level of severity and commonality across the
+network
+X
+X
+X
+X
+X
+X
+Incident Management Team
+3. Determine if change management is needed
+X
+X
+X
+X
+X
+X
+Incident Management Team
+3.1. If change management needed, route to change management
+X
+X
+X
+X
+X
+X
+Incident Management Team
+3.2. If change management not needed, incident request resolution made by a 
+specialist
+X
+X
+X
+X
+X
+X
+Incident Management Team
+4. Determine if escalation is required (and/or route to Problem Management for
+additional analysis), if no close incident request
+X
+X
+X
+X
+X
+X
+Incident Management Team
+4.1. If escalation required, conduct incident escalation handling and solution 
+approval
+X
+X
+X
+X
+X
+X
+Incident Management Team
+4.1.1. Route incident to DevSecOps for resolution
+X
+X
+X
+X
+X
+X
+Incident Management Team
+4.2. From Table 4.4.9, incident fix released to production
+X
+X
+X
+X
+X
+X
+Incident Management Team
+5. Close incident request
+X
+X
+X
+X
+X
+X
+Incident Management Team
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+80 
+Table 41. (Added)(DAF)  Phase 5 Breakdown: Execute Problem Management (9 
+Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Detect and report a problem (e.g., trending issues, big problems, etc.)
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+2. Review, validate and assign the problem
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+2.1. If known error found, update known errors
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+2.2. If new problem, categorize and prioritize the problem and notify impacted 
+stakeholders
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+3. Associate related incident tickets to newly detected problem ticket and
+investigate the problem
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+4. Perform root cause analysis, as needed, and diagnose the problem
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+5. Determine if DevSecOps is required
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+Tailored Acquisition Paths
+6. Determine if DevSecOps is required
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+7. Notify stakeholders of problem status and resolution
+X
+X
+X
+X
+X
+X
+PEO BES Integrated Product Office
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+81 
+Table 42. (Added)(DAF)  Phase 5 Breakdown: Execute Cyber Risk Management (15 
+Items). 
+Table 43. (Added)(DAF)  Phase 5 Breakdown: Conduct Program Management (24 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Perform cybersecurity management in accordance with DoD and AF directives
+and update Cybersecurity Strategy (T-0)
+X
+X
+X
+X
+X
+X
+Functional Lead
+2. Accept inputs (architectural or organizational)
+X
+X
+X
+X
+X
+X
+PEO BES
+3. Categorize system and develop a system security plan
+X
+X
+X
+X
+X
+X
+PEO BES 
+4. Register in eMASS
+X
+X
+X
+X
+X
+X
+PEO
+5. Identify common controls and select baseline security controls
+X
+X
+X
+X
+X
+X
+PEO BES 
+6. Develop an ISCM strategy
+X
+X
+X
+X
+X
+X
+PEO BES
+7. Approve Control Set
+X
+X
+X
+X
+X
+X
+Security Control Assessor
+8. Approve SSP and ISCM (System Security Plan and Information Security
+Continuous Monitoring)
+X
+X
+X
+X
+X
+X
+Authorizing Official
+9. Develop SAP (Security Assessment Plan)
+X
+X
+X
+X
+X
+X
+PEO BES
+10. Finalize and approve SAP
+X
+X
+X
+X
+X
+X
+Security Control Assessor
+11. Perform security assessment (per SAP)
+X
+X
+X
+X
+X
+X
+PEO BES
+12. Validate assessments and prepare SAR (Security Assessment Report)
+X
+X
+X
+X
+X
+X
+SCA Agent
+13. Initiate POA&M (Plan of action and milestones)
+X
+X
+X
+X
+X
+X
+SCA Agent
+14. Create a RAR (risk assessment report) and submit the package
+X
+X
+X
+X
+X
+X
+Security Control Assessor
+15. Continuously monitor the system's cybersecurity capabilities and evaluate risk
+and update as required
+X
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+82 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Review regular and detailed performance measurement reports to inform
+successive increments and alert PM to potential issues (T-2)
+X
+X
+X
+X
+X
+X
+Functional Lead
+2. Using KPIs, assess user satisfaction and business effectiveness of each
+program
+X
+X
+X
+X
+X
+X
+Functional Lead
+3. Assess the impact of Laws, Regulations, Policies (LRP) changes on system
+baseline
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+4. Perform an annual review of each program addressing CPIC criteria to ensure
+compliance then document changes
+X
+X
+X
+X
+X
+X
+Functional Lead
+5. Track IT compliance status for each program
+X
+X
+X
+X
+X
+X
+Functional Lead
+6. Annually review/update ITIPS to assure accuracy and completeness
+X
+X
+X
+X
+X
+X
+Functional Lead
+7. Maintain the required resources and certifications for all non-materiel activities
+X
+X
+X
+X
+X
+X
+Functional Lead
+8. Perform a risk assessment of each program
+X
+X
+X
+X
+X
+X
+Functional Lead
+9. Maintain IT materiel solution in support of Functional Sponsor, until subsumed
+or replaced
+X
+X
+X
+X
+X
+X
+Program Manager
+10. Manage IT support contracts and licenses
+X
+X
+X
+X
+X
+X
+Program Manager
+11. Assess the impact of changes to infrastructure and shared services on system
+baseline
+X
+X
+X
+X
+X
+X
+Program Manager
+12. Maintain system configuration control (defects and modifications) in
+accordance with CIP
+X
+X
+X
+X
+X
+X
+Program Manager
+13. Provide an annual report on the overall health of the  portfolio (compliance,
+cybersecurity, funding, integration)
+X
+X
+X
+X
+X
+X
+Program Manager
+14. Monitor service levels
+X
+X
+X
+X
+X
+X
+Program Manager
+15. Compare achieved service level with agreed service level targets
+X
+X
+X
+X
+X
+X
+Program Manager
+16. Publish service level report to customers and stakeholders
+X
+X
+X
+X
+X
+X
+Program Manager
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+83 
+Table 44. (Added)(DAF)  Phase 5 Breakdown: Manage Capability Gaps (14 Items). 
+17. Update applicable enterprise architecture repositories to reflect any capability
+changes
+X
+X
+X
+X
+X
+X
+Program Manager
+18. Analyze inputs and develop a recommended COA for the Functional PRG to
+address the gaps and/or mitigate risk
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+19. Evaluate the alignment of investment to business outcome achievement (ROI,
+risk, Cost Efficiency, performance)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+20. Assess Functional PRG recommendations, monitor BCAC decisions, and
+provide advice to the BMA Council
+X
+X
+X
+X
+X
+X
+Functional Portfolio Board Chair
+21. Conduct Ongoing Capability Support ATP for the business capability  -- event-
+driven or Acquisition Authority determined
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+22. Determine if the program should re-enter the BCAC (Phase 1 is the only
+entry point)
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+22.1. If no, write a new tailored CIP as an annex to the original Capability 
+Support Plan
+X
+X
+X
+X
+X
+X
+Program Manager
+23. Notify the Functional Portfolio Board of decision for the program to re-enter
+BCAC or not
+X
+X
+X
+X
+X
+X
+Functional Lead & Program Manager
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Using Measures of Effectiveness and Satisfaction, evaluate existing systems
+and identify new capability needs, escalating through the chain of command
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+2. In coordination with your Wing Process Manager (WPM), determine if
+alignment with leading practices would solve the business problem or close the
+capability gap
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+2.1. If leading practices solve the problem, work with Wing Process Manager and 
+Master Process Officer to align local business practice with leading practice and 
+reassess
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+3. Determine if the need can be solved locally with an Evaluated Product List
+(EPL) item
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+4. Determine if BMA Service Catalog has a solution(s) for your business problem
+or a problem very similar to yours
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+84 
+Table 45. (Added)(DAF)  Phase 5 Breakdown: Platform (3 Items). 
+4.1. If request not found - Submit request through BMA Service Catalog for a 
+new capability to solve business need
+X
+X
+X
+X
+X
+X
+Airman, Supervisor, CC
+4.2. If solution found without code changes - Determine if the matching solution 
+is listed as "Use It Now" and if all criteria are met
+X
+Airman, Supervisor, CC
+4.2.1. Implement the Use It Now solution
+Airman, Supervisor, CC
+4.2.2. Submit request through BMA Service Catalog for approval/resources to 
+begin using existing app/service
+X
+Airman, Supervisor, CC
+4.3. If solution found with code changes - Submit request through BMA Service 
+Catalog for enhancement of an existing app/service
+X
+X
+Airman, Supervisor, CC
+5. Apply business rules to categorize requests as Type 1, 2 or 3
+X
+X
+X
+X
+X
+X
+BMA Service Catalog Business Rules
+6. Route request through approved workflow
+X
+X
+X
+X
+X
+X
+BMA Service Catalog Business Rules
+6.1 For Types 1 and 2, assess requests to determine if the request can be fulfilled 
+within program constraints per Table 4.5.8.
+X
+X
+X
+Program Manager
+6.2. For Type 3, triage and prioritize requests per Table 4.1.1.
+X
+X
+X
+Functional Lead
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Provide life-cycle management of on-premise business IT platforms
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+2. Provide life-cycle management of commercial cloud business IT platforms
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+3. Provide life-cycle management of Gov't cloud business IT platforms
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+85 
+Table 46. (Added)(DAF)  Phase 5 Breakdown: Network and Security (3 Items). 
+Table 47. (Added)(DAF)  Phase 5 Breakdown: API and Enterprise Service Bus 
+(ESB) Management (4 Items). 
+Table 48. (Added)(DAF)  Phase 5 Breakdown: User Access (3 Items). 
+Table 49. (Added)(DAF)  Phase 5 Breakdown: Enterprise Information Management (4 
+Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Provide life-cycle management of the base information transport infrastructure
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+2. Provide adequate type and amount of network connectivity
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+Tailored Acquisition Paths
+3. Provide life-cycle management of Air Force intranet
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Administer API management tool
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+2. Track API and ESB usage and data volume
+X
+X
+X
+X
+X
+X
+API Operations
+3. Monitor interface rate limits, throttle API/ESB requests
+X
+X
+X
+X
+X
+X
+API Operations
+4. Track API/ESB errors, notify operations of critical errors
+X
+X
+X
+X
+X
+X
+API Operations
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Ensure users have access through FICAM approved list of IdPs or
+unauthenticated guest login
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+2. Receive user registration and role based access control requests for accounts
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+3. Provision approved system accounts and update IdAM data store
+X
+X
+X
+X
+X
+X
+PEO C3I&N
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+86 
+Table 50.  (Added)(DAF)  Phase 5 Breakdown: Enterprise Services (5 Items). 
+Table 51. (Added)(DAF)  Phase 5 Breakdown: Dashboard Services (1 Item). 
+Table 52. (Added)(DAF)  Phase 5 Breakdown: Business Intelligence Platform (3 Items). 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Record enterprise data operational metrics
+X
+X
+X
+X
+X
+X
+SAF/CO
+2. Maintain enterprise data dictionary, Data Catalog, service registry, and data
+search service
+X
+X
+X
+X
+X
+X
+SAF/CO
+3. Provide Authoritative Data Sources (ADS) management
+X
+X
+X
+X
+X
+X
+SAF/CO
+Tailored Acquisition Paths
+4. For replicated data, business purpose, pedigree, lineage & mods are updated in
+metadata catalog
+X
+X
+X
+X
+X
+X
+SAF/CO
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Provide office productivity tools (e.g., Office 365)
+X
+X
+X
+X
+X
+X
+ACC/A6
+2. Provide user storage services
+X
+X
+X
+X
+X
+X
+ACC/A6
+3. Provide enterprise email services
+X
+X
+X
+X
+X
+X
+ACC/A6
+4. Provide voice and video collaboration services
+X
+X
+X
+X
+X
+X
+ACC/A6
+5. Update EPL
+X
+X
+X
+X
+X
+X
+ACC/A6
+Tailored Acquisition Paths
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Collect, summarize, and render status data into user preferred view
+X
+X
+X
+X
+X
+X
+SAF/CO
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+87 
+Actions
+Type 1
+Type 2e
+Type 2m
+Type 3s
+Type 3p
+Type 3c
+1. Provide analytics platform with user tailorable business rules for data-driven
+alerts
+X
+X
+X
+X
+X
+X
+PEO BES
+2. Provide analytics dashboarding and visualization capabilities
+X
+X
+X
+X
+X
+X
+PEO BES
+3. Provide Email and Notification services for user-selected options
+X
+X
+X
+X
+X
+X
+PEO BES
+Tailored Acquisition Paths
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+88 
+GLOSSARY 
+G.1. ACRONYMS.
+ACRONYM 
+MEANING 
+aaS 
+(Added)(DAF) aPaaS 
+(Added)(DAF) API 
+ATP 
+as-a-service  
+application Platform as a Service  
+application programming interface 
+authority to proceed 
+BCAC 
+BCAT 
+BEA 
+BMA 
+(Added)(DAF) BPR 
+Business Capability Acquisition Cycle 
+Business System Category 
+Business Enterprise Architecture 
+Business Mission Area 
+Business Process Reengineering 
+CAE  
+CCA 
+(Added)(DAF) CDO 
+CIO 
+CMO 
+(Added)(DAF) COA 
+(Added)(DAF) COOP 
+COTS 
+Component Acquisition 
+Executive 
+Clinger-Cohen Act 
+chief data officer 
+chief information officer 
+chief management officer  
+course of action 
+continuity of operations plan 
+commercial off-the-shelf 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+89 
+(Added)(DAF) DISA 
+(Added)(DAF) DITIP 
+(Added)(DAF) DITPR 
+DoD CIO  
+DoD CMO DoDI 
+Defense Information Systems Agency 
+Defense Information Technology Investment Portal  
+DoD's Information Technology Portfolio Repository 
+DoD Chief Information Officer 
+Department of Defense Chief Management Officer 
+DoD Instruction 
+DOT&E 
+(Added)(DAF) DOT-LPF-P 
+Director, Operational Test & Evaluation 
+Doctrine, Organization, Training, Materiel, 
+Leadership, Personnel, Facilities, and Policy 
+(Added)(DAF) EBC 
+(Added)(DAF) ETL 
+ethernet bundle controller (EBC) 
+extract, transform, load 
+FYDP 
+Future Years Defense Program 
+GOTS 
+government off-the-shelf 
+IT 
+(Added)(DAF) IaaS  
+(Added)(DAF) IDIQ 
+ITIPS 
+information technology 
+Infrastructure as a Service 
+Indefinite delivery, indefinite quantity 
+(IT) Investment Portfolio Suite Milestone Decision 
+Authority 
+(Added)(DAF) KPI 
+key performance indicator 
+MDA 
+MILDEP 
+milestone decision authority 
+military department 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+90 
+(Added)(DAF) OEP 
+(Added)(DAF) OLA 
+(Added)(DAF) OOC 
+organizational execution plan 
+operational level agreement  
+out of cycle 
+(Added)(DAF) PaaS 
+(Added)(DAF) POA&M 
+(Added)(DAF) POM 
+Platform as a Service 
+plan of action and milestones 
+Program Objective Memorandum 
+RFP 
+Request for Proposal 
+(Added)(DAF) SaaS 
+(Added)(DAF) SAP 
+(Added)(DAF) SAR 
+(Added)(DAF) SCA 
+(Added)(DAF) SLA 
+Software as a Service 
+security assessment plan 
+security assessment report 
+Security Controls Assessor 
+service level agreement 
+T&E 
+test and evaluation 
+(Added)(DAF) UII 
+U.S.C. 
+USD(A&S) 
+Unique Investment Identifier 
+United States Code 
+Under Secretary of Defense for Acquisition and 
+Sustainment 
+(Added)(DAF) AF/TE 
+The Director, Air Force Test and Evaluation 
+(Added)(DAF) SAF/AQ 
+Assistant Secretary of the Air Force for Acquisition, 
+Technology and Logisitics 
+(Added)(DAF) SAF/CN 
+The DAF Chief Information Officer 
+(Added)(DAF) SAF/FM 
+The Assistant Secretary of the Air Force for 
+Financial Management and Comptroller 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+91 
+(Added)(DAF) SAF/MG 
+Deputy Under Secretary of the Air Force for 
+Management 
+(Added)(DAF) SAF/SQ 
+Assistant Secretary of the Air Force for Space 
+Acquisition and Integration 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+92 
+G.2. DEFINITIONS.
+These terms and their definitions are for the purpose of this issuance. 
+TERM
+DEFINITION
+baseline 
+A reference against which to measure progress of the business 
+capability. Will be included in the capability implementation plan 
+and will be used to measure cost, schedule and performance (in 
+addition to other desired measures). Measurement will begin during 
+the acquisition, testing, and deployment phase and continue through 
+capability support. The baseline can be measured at the program 
+level or release level to support agile implementation, i.e., a program 
+can carry multiple baselines. 
+business capability 
+A business capability is the core ability the organization needs to 
+deliver requisite products and services and provide value. An 
+example of a business capability is “just in time” inventory 
+management. This capability is different from other types of 
+inventory management in that it optimizes resources to minimize 
+shelf time in specific locations of the supply chain. 
+(Added)(DAF) 
+Business Capability 
+Acquisition Cycle 
+(BCAC) Request 
+Type “0” Use It Now 
+A BMA Service Catalog option for specifically designated 
+COTs/GOTs/legacy custom developed applications or 
+SaaS/aPaaS solutions which meet the unit’s need without 
+modification or code change, are affordable within local (up 
+to MAJCOM) budget constraints, and can be installed using 
+only local resources. 
+(Added)(DAF) 
+BCAC Capability 
+Request Type 1 
+A BMA Catalog request to begin using a solution from the BMA 
+Service Catalog (application, SaaS, aPaaS) that does not meet 
+the Use it Now criteria and does not require a functionality 
+change or data migration. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+93 
+(Added)(DAF)  
+BCAC Capability 
+Request Type 2 
+(Added)(DAF) BCAC 
+Capability Request 
+Type 3 
+A BMA Catalog request to change the code in an existing BMA 
+Service Catalog Solution – includes migration to a solution the 
+requestor is not currently using (2m) and enhancing a solution 
+the requestor is already using (2e). 
+A BMA Catalog request for a new custom-developed capability 
+(3c), product (3p), or SaaS/aPaaS (3s), solution, not already in 
+the BMA Service Catalog, regardless of customization or 
+modifications necessary to implement. 
+(Added)(DAF) 
+Business Mission 
+Area (BMA) 
+The BMA ensures that the right capabilities, resources, and 
+materiel are reliably delivered to our warfighters:  what they 
+need, where they need it, when they need it, anywhere in the 
+world.  In order to cost-effectively meet these requirements, the 
+DoD current business and financial management 
+infrastructure—processes, systems, and data standards—are 
+being transformed to ensure better support to the warfighter and 
+improve accountability to the taxpayer. (ref. DoDI 8115.02 E2.1.) 
+(Added)(DAF)    
+BMA Service Catalog 
+(BMA-SC) 
+The BMA Service Catalog (in development) will be the one-stop-
+shop location for business IT. The BMA-SC will be a common-
+access IT service designed to deliver BMA Enterprise solutions 
+to Airmen and Guardians, to capture business needs and 
+requests for business solutions, and to receive proposed solutions 
+from Airmen and Guardians for potential inclusion in the BMA-
+SC. Available at URL:  
+(Added)(DAF)    
+BMA Strategy 
+The BMA Strategy a product produced and published by 
+SAF/MG with annual updates. It provides DAF stakeholders a 
+clear picture and path forward for aligning the BMA with 
+Congressional, DoD and DAF direction. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+94 
+business enterprise 
+architecture 
+The business enterprise architecture is a blueprint to guide the 
+development of integrated business processes within DoD. It 
+includes architectural viewpoints that display: capabilities, activities, 
+processes, data, information exchanges, business rules, system 
+functions, services, system data exchanges, technical standards, 
+terms, and linkages to laws, regulations and policies. 
+business system 
+Business systems are information systems that are operated by, for, 
+or on behalf of the Department of Defense, including: financial 
+systems, financial data feeder systems, contracting systems, logistics 
+systems, planning and budgeting systems, installations management 
+syst ems, human resources management systems, and training and 
+security system or an information system used exclusively by and 
+within the defense commissary system or the exchange system or 
+other instrumentality of the DoD conducted for the morale, welfare, 
+and recreation of members of the armed forces using non- readiness 
+systems. A business system does not include a national security 
+sytem or non-appropriated funds. 
+change management 
+Change management is the process of proactively preparing the user 
+community for changes that will occur to an organization (because of 
+the implementation of a business system, for purposes of this 
+issuance). 
+cyber resilience 
+An entity’s ability to continuously deliver the intended outcome 
+despite adverse cyber events. 
+decision authority 
+The individual whose decision allows the program to move forward 
+in the BCAC process. 
+(Added)(DAF) 
+delivery manager 
+The person accountable for on-time delivery of working 
+software customers can use. Responsible for release and 
+sprint planning.  Removes obstacles to progress, solves 
+delivery issues, and orchestrates development teams. The 
+Delivery Manager is responsible for convening the Steering 
+Committee meeting, preparing necessary information and 
+ensuring appropriate Product Owners, Development Leads, 
+and others participate in the meeting. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+95 
+deployment 
+A deployment either introduces a new release into the 
+production environment or expands the user base of existing 
+functionality. 
+Deployment includes training and business systems 
+operations activities such as help desk support. 
+end state 
+An end state is a goal to achieve within the context of the 
+business mission area 
+(Added)(DAF) 
+Functional Portfolio 
+Owner 
+The (BMA IT) Functional Portfolio Owner is the senior IT-
+responsible individual in each HAF 2-letter organization who is 
+responsible for all business systems within their fundtional 
+portfolio. 
+information 
+requirements 
+Those pieces of information, organized and delivered in a way that 
+the program sees fit, that decision authorities need to make informed 
+decisions throughout the BCAC process. 
+IT infrastructure 
+IT infrastructure is the supporting hardware, software, 
+communication, and information security services that a 
+business system requires to operate, but that can be shared by 
+multiple business systems for scalability. 
+lifecycle support 
+requirements 
+Lifecycle support requirements are requirements for availability, 
+scalability, maintainability, supportability, and other requirements as 
+appropriate for the specific initiative. 
+MDA 
+The MDA is the program decision authority and specifies the 
+decision points and procedures for assigned programs. 
+(Added)(DAF) 
+Product Owner 
+The person accountable for development of a product that delivers 
+maximum value to stakeholders while balancing cost. The Product 
+Owner is the proxy for users, representing their interests, needs and 
+what they value. The PO works with stakeholders and development 
+teams to ensure key business features are translated into working 
+code, ensuring user stories meet users’ needs and the Definition of 
+Done. The PO’s duties most often require full-time attention. The PO 
+is a key participant in all phases of Agile, iterative development. 
+program manager 
+The qualified subject matter expert who has responsibility for 
+development, operations, and maintenance of the business system. 
+The MDA will establish procedures to identify these personnel and 
+standards by which they manage their programs. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+96 
+release 
+A release is a manageable subset of functionality that provides 
+utility in support of the engineered business processes. 
+(Added)(DAF) 
+Steering Committee 
+The Steering Committee is an agile governing body accountable 
+for steering activities to manage delivery velocity. It is stood up 
+soon after the initiation of BCAC Phase 4 and meets routinely to 
+assess program risk and determine risk mitigation actions 
+throughout the DevSecOps Process. The Steering Committee 
+has the authority to approve/disapprove recommendations, 
+resolve issues, identify work that can be postponed and escalate 
+as needed. Membership should include only those who are 
+informed and authorized to efficiently make decisions to 
+manage velocity. 
+technical 
+requirements 
+Technical requirements are requirements for infrastructure, 
+hosting, security and lifecycle support requirements. 
+(Added)(DAF) 
+Vendor Program 
+Manager (PM) 
+The vendor’s employee/contractor who is accountable for the 
+vendor team’s performance and delivery in accordance with 
+the contract. 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+97 
+REFERENCES 
+Chief Management Officer Policy Memorandum, “Defense Business Systems Investment 
+Management Process Guidance,” June 26, 2018 
+Defense Acquisition University, “Cybersecurity Test and Evaluation Guidebook,” current 
+edition Deputy Secretary of Defense Memorandum, “Reorganization of the Office of the 
+Deputy Chief 
+Management Officer,” July 11, 2014 
+Deputy Secretary of Defense Memorandum, “Establishment of the Office of the Under 
+Secretary of Defense for Research and Engineering and the Office of the Under Secretary 
+of Defense for Acquisition and Sustainment,” July 13, 2018 
+Director, Operational Test & Evaluation Policy Memorandum, “Cyber Economic 
+Vulnerability Assessments (CEVA),” April 5, 2018 
+Director, Operational Test & Evaluation Policy Memorandum, “Guidelines for Operational 
+Test and Evaluation of Information and Business Systems,” September 14, 2010 
+DoD Directive 5000.01, “The Defense Acquisition System,” May 12, 2003, as amended 
+DoD Directive 5105.53, “Director of Administration and Management (DA&M),” February 
+26, 2008 
+DoD Directive 5134.01, “Under Secretary of Defense for Acquisition, Technology, and 
+Logistics (USD(AT&L)),” December 9, 2005, as amended 
+DoD Directive 5144.02, “DoD Chief Information Officer (DoD CIO),” November 21, 2014, 
+as amended 
+DoD Directive 5105.82, “Deputy Chief Management Officer (DCMO) of the Department 
+of Defense,” October 17, 2008 
+DoD Instruction 5000.02T, “Operation of the Defense Acquisition System,” January 7, 2015, 
+as amended 
+DoD Instruction 5000.74, “Acquisition of Services”, January 5, 2016, as amended 
+DoD Instruction 7041.03, “Economic Analysis for Decision-making,” September 9, 2015 
+DoD Instruction 8330.01, “Interoperability of Information Technology (IT), Including 
+National Security Systems (NSS),” May 21, 2014, as amended 
+Public Law 114-92, Section 883(e), “Guidance on Acquisition of Business Systems,” 
+November 25, 2015 
+Public Law 106-398, Section 811, “Acquisition and Management of Information 
+Technology,” October 30, 2000 
+United States Code, Title 10 
+United States Code, Title 40, Subtitle III 
+(Added)(DAF) DoDI 5000.73, Cost Analysis Guidance and Procedures, 13 March 2020 
+ (Added)(DAF) DoDI 5000.85, Major Capability Acquisition, 4 November 2021 
+(Added)(DAF) DoDI 5000.87, Operation of the Software Acquisition Pathway, October 2, 
+2020 
+DoDI5000.75_DAFI63-144  26 JANUARY 2023 
+98 
+(Added)(DAF) AFI 17-110, Information Technology Portfolio Management and Capital 
+Information Planning Investment Control , 23 May 2018 
+(Added)(DAF) AFI 33-322, Records Management and Information Governance Program, 
+23 March 2020 
+ (Added)(DAF) AFI 63-101/20-101, Integrated Life Cycle Management, 30 June 2020 
+(Added)(DAF) AFI 63-138, Acquisition of Services, 30 September 2019  
+(Added)(DAF) AFI 65-508, Cost Analysis Guidance and Procedures, 6 December 2018 
+(Added)(DAF) DAFMAN 65-605V1, Budget Guidance and Technical Procedures, 31 
+March 2021 
+(Added)(DAF) DAFMAN 90-161, Publications and Forms Management, 15 April 2022 
+(Added)(DAF) DoDI 5000.89_DAFI 99-103, Capabilities-Based Test and Evaluation, 9 
+December 2021 
+(Added)(DAF) AFMAN 17-1402, Clinger-Cohen Act (CCA) Compliance, 20 June 2018 
+(Added)(DAF) AFMAN 65-506, Economic Analysis, 6 September 2019 
+(Added)(DAF) DBS Investment Management Guidance, version 4.1, 26 June 2018. 
+(Added)(DAF) Prescribed Forms: None 
+(Added)(DAF) Adopted Forms:  
+(Added)(DAF) AF Form 847, Recommendation for Change of Publication 
+(Added)(DAF) AF Form 679, Air Force Publication Compliance Item Waiver 
+Request/Approval 

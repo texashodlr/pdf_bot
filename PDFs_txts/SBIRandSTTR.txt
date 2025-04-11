@@ -1,0 +1,767 @@
+ 
+ 
+ 
+ 
+DEPARTMENT OF THE AIR FORCE 
+WASHINGTON, DC 
+AFI 61-102_DAFGM 2025-01 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25 FEBRUARY 2025 
+ 
+MEMORANDUM FOR  DISTRIBUTION C 
+                                         MAJCOMs/FLDCOMs/FOAs/DRUs 
+ 
+FROM:  SAF/AQ 
+              1060 Air Force Pentagon 
+              Washington, DC 20330-1060 
+ 
+ 
+SUBJECT:  Department of the Air Force Guidance Memorandum to AFI 61-102, on DAF 
+Small Business Innovation Research (SBIR) and Small Business Technology 
+Transfer (STTR) Due Diligence Program 
+ 
+By Order of the Secretary of the Air Force, this Department of the Air Force Guidance 
+Memorandum (GM) immediately changes Air Force Instruction (AFI) 61-102, Small Business 
+Innovation Research (SBIR) and Small Business Technology Transfer (STTR) Programs, which 
+will become a Department of Air Force Instruction.  Compliance with this Memorandum is 
+mandatory.  To the extent its directions are inconsistent with other Department of the Air Force 
+publications, the information herein prevails, in accordance with Department of the Air Force 
+Instruction (DAFI) 90-160, Publications and Forms Management.  This guidance applies to all 
+Regular Air Force, United States Space Force, Air National Guard, Air Force Reserve, and 
+Department of the Air Force civilian personnel. This instruction also applies to contractors if 
+included in the applicable contract or involved in the research, design, development, testing, 
+acquisition, operation, maintenance, or modification of nuclear weapons or their related systems 
+and subsystems. There are no releasability restrictions on this publication.  
+This GM immediately implements: 
+(1) the statutory requirements set forth by Section 4, Foreign Risk Management, of the 
+SBIR and STTR Extension Act of 2022, Public Law 117-183, which mandates the establishment 
+and implementation of a due diligence program to assess security risks presented by small 
+business concerns seeking a federally funded SBIR/STTR award;  
+(2) the Memorandum of the Deputy Secretary of Defense, Defense Small Business 
+Innovation Research and Small Business Technology Transfer Due Diligence Program (13 May 
+2024), which directs each DoD Component to establish an SBIR/STTR Due Diligence Program 
+subject to certain minimum standards; and  
+(3) relevant provisions of the Small Business Administration (SBA)’s SBIR Program and 
+STTR Program Policy Directive, as amended effective 03 May 2023.  
+ 
+ 
+Compliance with this Guidance Memorandum is mandatory. To the extent its directions 
+are inconsistent with other publications, the guidance herein prevails, in accordance with 
+Department of the Air Force Instruction (DAFI) 90-160, Publications and Forms Management.  
+ 
+This Guidance Memorandum is applicable to all personnel and organizations bound to 
+follow DAF policies and procedures, which are involved in the making and/or evaluation of 
+SBIR/STTR Phase I, Phase II, or Phase III awards through funding agreements (i.e., contracts, 
+grants, cooperative agreements, and other transactions) made by, on behalf of, or in support of, 
+the DAF.  
+Ensure all records generated as a result of processes prescribed in this publication adhere 
+to Air Force Instruction (AFI) 33-322, Records Management and Information Governance 
+Program, and are disposed in accordance with the Air Force Records Disposition Schedule 
+which is located in the Air Force Records Information Management System.    
+ 
+This Guidance Memorandum becomes void after one year has elapsed from the date of 
+this memorandum, or upon publication of an interim change (IC) or rewrite of the affected 
+publication, whichever is earlier. 
+ 
+ 
+DARLENE J. COSTELLO 
+Acting Assistant Secretary of the Air Force  
+   (Acquisition, Technology & Logistics) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Tab 1. AFI 61-102_DAFGM 2025-01, DAF SBIR/STTR Due Diligence Program 
+ 
+ 
+ 
+ 
+Tab 1. AFI 61-102_DAFGM 2025-01, DAF SBIR/STTR Due Diligence Program 
+ 
+ATTACHMENT 2 
+ 
+DAF SBIR/STTR DUE DILIGENCE PROGRAM 
+ 
+A2.1. Policy and Scope of Implementation. 
+ 
+A2.1.1. Due Diligence Policy.  In consideration of the significant national security risks inherent 
+in small business concerns, persons, or entities with ties to foreign countries of concern, it is the 
+Department of the Air Force (DAF) policy to utilize all available means, consistent with 
+applicable United States law and policy, to safeguard potential DAF investments, including, but 
+not limited to, the factors required by the Deputy Secretary of Defense Memorandum, Defense 
+Small Business Innovation Research and Small Business Technology Transfer Due Diligence 
+Program, 13 May 2024  (hereinafter "DEPSECDEF Memo"). The broad spectrum of risks that 
+can be considered as part of due diligence review includes: malign activity (including, but not 
+limited to, espionage, sabotage, coercion, covert influence, technology transfers or Research, 
+Development, Test, and Evaluation [RDT&E] misappropriation affecting the national security or 
+defense interests of the United States, unauthorized access to classified or controlled unclassified 
+information, etc.), direct or indirect involvement or capital investment by foreign countries of 
+concern as referenced in 15 United States Code (USC) 638(e)(17), violation of other related laws 
+or regulations (including, but not limited to, export controls and sanctions, foreign terrorism 
+prohibitions, etc.), program size or status ineligibility due to Foreign Ownership, Control, or 
+Influence (FOCI), FOCI-related deception, risk from foreign affiliation or support, 
+counterintelligence risk, supply chain risk, business relationships with companies on regulatory 
+enforcement lists and sanctions lists (e.g., Section 1260H of the National Defense Authorization 
+Act (NDAA) for Fiscal Year (FY) 2021, Section 1286 of the NDAA for FY 2019 (Public Law 
+115-232), etc.), undermining of national industrial base policies of the United States (see, e.g, 
+Presidential Memorandum, America First Investment Policy (21 February 2025), or other 
+relationships or commitments as identified in 15 USC 638(g)(15)(B) and (o)(19).  
+ 
+A2.1.2. Scope and Sequence of Due Diligence Implementation. This policy implements all 
+pertinent provisions of the Small Business Innovative Research (SBIR) Small Business 
+Technology Transfer (STTR) Extension Act of 2022. Specifically, it is DAF policy to implement 
+the Rule of Construction in Section 4(b)(5) of the Extension Act, 15 U.S.C. 638 note, which 
+confirms that the DAF is not restricted from taking due diligence measures in addition to those 
+prescribed in 15 U.S.C. 638(vv).  
+ 
+A2.1.2.1. Implementation. The DAF shall implement this policy by conducting risk-based due 
+diligence and risk decisions based on processes, inputs, information, and factors which include, 
+but are not limited to, the processes and factors specified in the DEPSECDEF Memo and any 
+successor documents, and requirements stipulated in the DODI 5000.83_DAFI 63-113, 
+Technology and Program Protection to Maintain Technological Advantage (8 Mar 2022). 
+Furthermore, in accordance with Executive Order (EO) 12333, United States Intelligence 
+Activities, DODI 5240.24, Counterintelligence Support to Research, Development, and 
+ 
+ 
+Acquisition, the Director of National Intelligence’s Intelligence Community Directive (ICD) 203, 
+Analytical Standards, and AFI 31-332, Air Force Privacy and Civil Liberties Program, the DAF 
+shall use all means, consistent with applicable Federal law and this guidance, and with full 
+consideration of the civil liberties, privacy, and other rights of United States persons, to obtain 
+reliable intelligence information to protect the United States and its interests.  
+ 
+A2.1.2.2. Further, the DAF shall implement this policy by carrying out due diligence review as 
+permitted by law and policy, including by incorporating commercially available information, 
+publicly available information, and U.S. Government data, including but not limited to Law 
+Enforcement, intelligence, and counterintelligence information and analytic products, and any 
+other agency-specific information, as appropriate.  
+ 
+A2.1.3. Due Diligence Coverage for Assisted Acquisitions. In any assisted SBIR/STTR 
+acquisitions to which the DAF is a party whether as a performing agency or as a requesting or 
+ordering agency, it is DAF policy for the DAF organizations to exercise due diligence 
+themselves or to ensure by means of a written agreement that due diligence is exercised by 
+another Federal agency or DoD Component on terms that provide materially similar safeguards 
+to the safeguards provided by the DAF SBIR/STTR Due Diligence process. This policy covers 
+assisted acquisitions made under authorities such as: 40 U.S.C. 321, 501, 11302(e), and 11314; 
+41 U.S.C. 6307; Federal Acquisition Regulation (FAR) Subparts 17.5 and 17.7, Defense FAR 
+Supplement (DFARS) Subparts 217.5 and 217.7, and DAF FAR Supplement (DAFFARS) 
+Subparts 5317.5 and 5317.7; AFI 65-118, Air Force Purchases Using Military Interdepartmental 
+Purchase Requests (MIPRs); and other similar authorities. 
+ 
+A2.1.4. Due Process for Due Diligence. It is DAF policy that SBIR/STTR Due Diligence 
+reviews and actions be accompanied by appropriate due process, consistent with any applicable 
+law, regulation, and guidance, and balancing the DAF’s interests in expanding participation in 
+SBIR/STTR Programs with paramount considerations of national defense and security.   
+ 
+A2.2. Organizational Roles and Responsibilities. 
+ 
+A2.2.1. The Assistant Secretary of the Air Force for Acquisition, Technology and Logistics 
+(SAF/AQ) shall: Approve and oversee SBIR/STTR due diligence policy the DAF. 
+ 
+A2.2.2. The Deputy Assistant Secretary of the Air Force (Science, Technology, and Engineering) 
+(SAF/AQR) shall: 
+ 
+A2.2.2.1. Serve as the DAF Point of Contact (POC) for the SBIR/STTR due diligence program, 
+responsible for communicating with OSD and other agencies. 
+ 
+A2.2.2.2. Provide oversight over the SBIR/STTR due diligence program: conduct program 
+reviews and spot checks as needed in collaboration with SAF/SB and SAF/SQT. 
+ 
+A2.2.2.3. Facilitate the adjudication of challenges to Risk Management Review Board (RMRB) 
+decisions. 
+ 
+ 
+ 
+A2.2.3. The Deputy Assistant Secretary of the Air Force (Acquisition Integration) (SAF/AQX) 
+shall:  Establish a memorandum of agreement with AFRL/RG and SAF/OCXA to formalize 
+information sharing and coordination. 
+ 
+A2.2.4. The Deputy Assistant Secretary of the Air Force (Contracting) (SAF/AQC) shall: Ensure 
+DAF contracting policy and guidance is in accordance with this memo and the referenced law. 
+ 
+A2.2.5 The Director of Science, Technology and Engineering, Office of Assistant Secretary for 
+Space Acquisition and Integration (SAF/SQT) shall:  
+ 
+A2.2.5.1. Oversee implementation of this policy within USSF and SPACEWERX.  
+ 
+A2.2.5.2. Support program reviews and spot checks as needed in collaboration with SAF/SB and 
+SAF/AQR. 
+ 
+A2.2.6. The Director, Small Business Programs (SAF/SB) shall: 
+ 
+A2.2.6.1. Collaborate with SAF/AQR and SAF/SQT to provide oversight over the SBIR/STTR 
+due diligence program; provide additional guidance as needed. 
+ 
+A2.2.6.2. Support program reviews and spot checks as needed in collaboration with SAF/SQT 
+and SAF/AQR. 
+ 
+A2.2.7. The Director, Office of Competitive Activities (SAF/OC) shall: 
+ 
+A2.2.7.1. Ensure SAF/OCXA’s execution of business reviews in support of SBIR/STTR due 
+diligence.  
+ 
+A2.2.7.1.1. SAF/OCXA shall coordinate with AFRL/RG and AFOSI to coordinate prioritization 
+and timing of requests. 
+   
+A2.2.7.1.2. SAF/OCXA shall share information related to proposing entities with SAF/AQX’s 
+Committee on Foreign Investment in the US (CFIUS) office when requested.  
+ 
+A2.2.7.2. Ensure relevant DAF Information Protection offices are providing security support 
+functions as needed or requested. 
+ 
+A2.2.8. The Commander, Air Force Materiel Command (AFMC) shall: 
+ 
+A2.2.8.1. Ensure any SBIR/STTR award made or managed by AFMC has received a due 
+diligence review.  
+ 
+A2.2.8.2. Convene a RMRB for any medium or high-risk proposals as defined in the 
+DEPSECDEF Memo and as delineated in AFWERX procedures. 
+ 
+ 
+ 
+A2.2.9. The Commander, US Space Force Systems Command (SSC) shall: 
+ 
+A2.2.9.1. Ensure any SBIR/STTR award made or managed by SSC has received a due diligence 
+review.  
+ 
+A2.2.9.2. Convene a RMRB for any medium or higher risk proposals as defined in the 
+DEPSECDEF Memo and as delineated in AFWERX procedures. 
+ 
+A2.2.10. The Commanders, US Air Force and US Space Force System Centers shall: 
+ 
+A2.2.10.1. Ensure any SBIR/STTR award within their system center has received a due diligence 
+review.  
+ 
+A2.2.10.2. Convene a RMRB for any medium or higher risk proposals as defined in the 
+DEPSECDEF Memo and as delineated in AFWERX procedures. 
+ 
+A2.2.11. The Commanders/Directors, US Air Force Major Commands (MAJCOMs), US Space 
+Force Field Commands (FLDCOMs), and Direct Reporting Units (DRUs) shall:  
+ 
+A2.2.11.1. Ensure that any SBIR/STTR program executed within their 
+MAJCOM/FLDCOM/DRU complies with this policy, the DEPSECDEF Memo, and PL 117-
+183, the SBIR and STTR Extension Act of 2022. 
+ 
+A2.2.11.2. Ensure any SBIR/STTR award made or managed by their MAJCOM/FLDCOM/DRU 
+has received a due diligence review.  Coordinate with AFRL/RG to initiate the due diligence 
+process on proposals for Phase III awards. 
+ 
+A2.2.11.3. Convene a RMRB for any medium or higher risk proposals as defined in the 
+DEPSECDEF Memo and as delineated in AFWERX procedures. 
+ 
+A2.2.12. The Commander, Air Force Research Laboratory (AFRL) shall:  
+ 
+A2.2.12.1. Ensure any SBIR/STTR award made or managed by AFRL has received a due 
+diligence review.  
+ 
+A2.2.12.2. Convene a RMRB for any medium or higher risk proposals as defined in the 
+DEPSECDEF Memo. 
+ 
+A2.2.12.3. Resource AFRL/RG as needed to comply with this policy. 
+ 
+A2.2.13. AFRL/RG (AFWERX) shall: 
+ 
+A2.2.13.1. Manage and oversee the SBIR/STTR due diligence process and associated funds for 
+the DAF. 
+ 
+A2.2.13.2. Maintain a written SBIR/STTR Due Diligence procedures guide. 
+ 
+ 
+ 
+A2.2.13.3. Refer all proposals with appropriate risk or procurement fraud indicators to AFOSI 
+for review and possible further investigative action IAW EO 12333 and DoDI 5505.02, Criminal 
+Investigations of Fraud Offenses, 14 Nov 24.   
+ 
+A2.2.14. The Commander, Air Force Office of Special Investigations (AFOSI) shall:  
+ 
+A2.2.14.1. Conduct counterintelligence analysis on SBIR/STTR proposals in coordination with 
+AFWERX and SAF/AQR.  
+ 
+A2.2.14.2. Attend RMRBs when requested. 
+ 
+A2.2.14.3. Conduct assessment, and when deemed appropriate, investigative action for proposals 
+referred by AFWERX IAW EO 12333 and DoDI 5505.02.   
+ 
+A2.2.15. The General Counsel of the Department of the Air Force (SAF/GC) and the Judge 
+Advocate General (AF/JA) shall: 
+ 
+A2.2.15.1. Provide legal review on all aspects of the DAF SBIR/STTR due diligence program, 
+and support IAW HAFMD 1-14, as appropriate and as requested 
+ 
+A2.2.15.2. Assign a representative to advise the RMRBs if requested and if available. 
+ 
+A2.2.16. Deputy Chief of Staff, Intelligence, Surveillance, and Reconnaissance and Cyber 
+Effects Operations (Cyber Operations and Warfighter communications (HAF/A2 IOO) shall: 
+Assist in the administration of intelligence oversight as required by DoDD 5148.13, Intelligence 
+Oversight. 
+ 
+A2.2.17. Contracting and Agreements Officers shall: Include language in Broad Agency 
+Announcement (BAA) or other solicitations for SBIR/STTR awards that require offerors to 
+submit and certify foreign disclosure forms, and outline relevant portions of the Due Diligence 
+process to prospective SBIR/STTR applicants. 
+      
+A2.3. Due Diligence Review Process 
+ 
+A2.3.1. Risk Mitigation Review Board (RMRB). Within DAF organizations participating in 
+SBIR or STTR Programs, SBIR/STTR Due Diligence risk evaluations of SBIR/STTR proposals 
+and related entities and personnel, as well as decisions regarding potential need to condition, 
+mitigate, or exclude from, the participation in the specific SBIR or STTR project for which the 
+proposal was submitted, shall be carried out by a duly convened RMRB. Proposals which do not 
+contain a sufficient risk level, and are eligible for award, do not require a RMRB and may be 
+awarded without further risk consideration. The risk owner shall decide whether a RMRB is 
+appropriate based on the totality of the circumstances, and taking into consideration the risk 
+rating assigned by AFWERX. The risk owner is responsible for convening and executing the 
+RMRB.  DAF organizations may request process compliance validation reviews by SAF/AQR or 
+SAF/SB as needed, such as in the event of a protest or official inquiry.  
+ 
+ 
+ 
+A2.3.2. Risk Ownership. Within the DAF, risk determinations are inherently discretional 
+judgements of military, national defense, and national security matters. The overall risk owner 
+for the DAF SBIR/STTR Programs is the Secretary of the Air Force, who delegated this 
+responsibility to SAF/AQR, through SAF/AQ. The Commander or Director of the SBIR/STTR-
+participating MAJCOM, FLDCOM, DRU, FOA, or Center, is the deemed risk owner for any 
+SBIR/STTR funding agreement awarded by, or on behalf, of such DAF organization. The 
+pertinent DAF source selection authority for the SBIR/STTR funding agreement, or, for assisted 
+acquisitions, the pertinent DAF RDT&E or acquisition program manager, acts as the authorized 
+representative and accountable designee of the MAJCOM, FLDCOM, DRU, FOA, or Center 
+Commander or Director in the exercise of risk ownership decisions.  
+ 
+A2.3.3. Central Support Process for Due Diligence Reviews. AFWERX defines and provides 
+basic due diligence process support for all DAF organizations participating in the SBIR/STTR 
+Programs, as documented in a written SBIR/STTR Due Diligence procedures guide.  
+ 
+A2.3.3.1. For SBIR/STTR projects funded by other agencies but planned to be awarded by the 
+DAF, the awarding organization may choose to accept materially similar due diligence 
+assessments carried out by other Federal agencies or DoD Components but may also request 
+additional SAF/OCXA Office of Commercial and Economic Analysis (OCEA) review or 
+counterintelligence analysis by AFOSI to support their awarding decision. If choosing to use 
+another organization’s due diligence assessment, the awarding office will maintain these records 
+as part of the procurement file and make it available for review if necessary. 
+ 
+A2.3.3.2. Contracting or Agreements Officers, Acquisition Program Managers, and other 
+acquisition planners considering the exercise of the Phase III special preference or the 
+recognition of any award as a Phase III award (e.g., by including SBIR/STTR data rights clause) 
+shall coordinate with the AFWERX due diligence office to conduct the necessary due diligence 
+on all proposals received. AFWERX shall review Due Diligence Disclosure forms associated 
+with Phase III awards by the DAF entered into the Defense SBIR/STTR Innovation Portal 
+(DSIP) and shall facilitate written analytical inputs from SAF/OCXA and AFOSI (as 
+appropriate). All Contracting and Agreements Officers will require the offerors to submit their 
+Phase III proposals through DSIP (along with all required due diligence paperwork) in addition 
+to any other submission requirements (e.g., SAM.gov) to facilitate due diligence.  
+ 
+A2.3.4. RMRB Chairmanship. All RMRBs will include functional representation as established 
+by the DEPSECDEF Memorandum, with mandatory participation by a legal advisor to the 
+RMRB Chairman, and are strongly encouraged to add representation from other parties as 
+needed to make a risk decision. The RMRB Chairman makes the award or selection 
+determination. 
+ 
+A2.3.4.1. RMRBs carried out by AFWERX. The Director, AFRL/RG (AFWERX) or their 
+designated delegate, is the source selection official and RMRB Chairman for any SBIR/STTR 
+proposals for any Phase I, Phase II, Direct to Phase II, and STRATFI or TACFI funding 
+agreements that are submitted as part of a AFWERX Broad Agency Announcement, Commercial 
+Solutions Opening, Notice of Opportunity or Request for Proposal.   
+ 
+ 
+ 
+A2.3.4.2. RMRBs for non-AFWERX awards. For Phase I, II, or III funding agreements that are 
+not part of an AFWERX Broad Agency Announcement, Commercial Solutions Opening, Notice 
+of Opportunity, or Request for Proposal and are planned to be awarded by any DAF organization 
+outside of AFWERX or SpaceWERX, the RMRB Chairman is designated by the Commander or 
+Director of the pertinent MAJCOM, FLDCOM, DRU, FOA, or Center, but cannot be lower than 
+O-5 or equivalent. AFWERX will coordinate the due diligence review—up to but not including 
+planning and executing the RMRB—within the DAF and provide any results of the review along 
+with supporting documentation to the appropriate risk owner    
+ 
+A2.3.4.3. RMRBs for Assisted Acquisitions. For assisted acquisitions where the award of an 
+SBIR/STTR funding agreement on behalf of the DAF is planned to be made by another Federal 
+agency or DoD Component, the RMRB Chairman is to be determined by written agreement 
+between the DAF and the relevant Federal agency or DoD Component prior to commitment of 
+award funds between agencies or components. If agreed upon, AFWERX will coordinate the due 
+diligence review—up to but not including planning and executing the RMRB—within the DAF 
+and provide any results of the review along with supporting documentation to the appropriate 
+risk owner.  
+ 
+A2.3.4.4. For assisted acquisitions where the DAF is making an award of an SBIR/STTR 
+funding agreement on behalf of another DoD Component or Federal agency, RMRB 
+Chairmanship and due diligence processes shall be addressed in a written agreement between the 
+DAF and the pertinent agency or Component consistent with this Guidance Memorandum and 
+the DEPSECDEF Memorandum.    
+A2.3.5. National Security Determination. The RMRB will determine whether a reasonable and 
+articulable national security risk exists to Departmental or U.S. Government interests. This 
+determination and justification will be articulated in writing if the RMRB makes a non-award 
+decision or a decision that award must be conditioned on mitigation. 
+A2.3.6. Permissible Information. While conducting its review, the RMRB may consider any 
+information available to the Board as permitted by law and policy, including by incorporating 
+commercially available information, publicly available information, and U.S. Government data, 
+including but not limited to Law Enforcement, intelligence, and counterintelligence information 
+and analytic products, and any other agency-specific information, as appropriate. The RMRB 
+will not consider any factors or grounds in violation or contradiction of law or policy, including 
+prohibited factors listed in the DEPSECDEF Memo.  
+ 
+A2.3.6.1.  All proposals shall go through SAF/OCXA to determine if there is relevant 
+information from publicly available information (PAI) or commercially available information 
+(CAI) data sources.  
+ 
+ 
+A2.3.6.2. Referral to AFOSI for additional counterintelligence analysis may be triggered by 
+either AFWERX review or SAF/OCXA review; the awarding agency is also allowed to request 
+counterintelligence analysis from AFOSI via AFWERX and subject to AFWERX prioritization.  
+ 
+A2.3.7. Mitigation considerations. DAF resourcing, administrative difficulty of monitoring 
+compliance, and the nature of the threat to national security from mitigation failure may all be 
+considered in RMRB deliberations on possible mitigation of risk.  
+ 
+A2.3.8. Monetary Threshold for Defense Counterintelligence and Security Agency (DCSA) 
+Review of SBIR/STTR funding agreements with ceiling.  For purposes of referral to DCSA once 
+available, the ceiling amount shall be compared to the $5 million referral threshold.   
+ 
+A2.3.9. Incorporation into Solicitations and Funding Agreements.  The intent of the DAF is to 
+establish a DAFFARS clause that will be incorporated in all SBIR/STTR solicitations and 
+awards capturing the requirements set forth in this document.  
+ 
+A2.3.10. Assisted Acquisitions. For SBIR/STTR assisted acquisitions: 
+ 
+A2.3.10.1. If the DAF is the funding agency but not the awarding agency, then, as part of 
+establishing the agreement for assisted acquisition, either DAF performs its own due diligence 
+and provides due process and defense of any claim or litigation subject to DAF guidance and 
+standards, or the awarding agency agrees to perform due diligence and provide due process and 
+defense of any claim or litigation consistent with DAF guidance and standards.  
+ 
+A2.3.10.2. If the DAF is the awarding agency but not the funding agency, then, as part of 
+establishing the agreement for assisted acquisition, either DAF performs its own due diligence 
+and provides due process and defense of any claim or litigation subject to DAF guidance and 
+standards (paid by the funding agency), or the funding agency agrees to perform due diligence 
+and provide due process and any claim or litigation defense consistent with DAF guidance and 
+standards.  
+ 
+A2.4. Relationships To Other Processes. 
+ 
+A2.4.1. Relationship to Other Risk Processes. All organizations involved in the SBIR/STTR due 
+diligence process shall continuously monitor other due diligence processes across the DAF and 
+the DOD to identify areas of collaboration, information sharing, and cost-saving, such as with 
+the CFIUS program. 
+ 
+A2.4.2. Relationship to Technical Merit, Procurement Responsibility, Eligibility, and Exclusion 
+Processes.  
+ 
+A2.4.2.1. RMRB risk determinations may be treated, in the Contracting or Agreements Officer’s 
+reasoned discretion, as independent elements of responsiveness or technical merit of proposal or 
+application, as elements of responsibility, or as elements of SBIR/STTR program eligibility. The 
+DAF’s authority in 15 U.S.C. 638(g)(15)(B) and (o)(19) to deny SBIR/STTR awards based on 
+certain results of due diligence analysis constitutes the authority to impose and enforce 
+ 
+ 
+regulatory requirements outside of the scope of the Certificate of Competency (CoC) Program 
+under FAR 19.601(b). If the Contracting or Agreements Officer determines that the information 
+suggests an SBIR/STTR program eligibility concern, the Contracting or Agreement Officer shall 
+refer the matter for a size and/or status protest. Restrictions on foreign ownership or control 
+under SBIR/STTR program eligibility standards in 13 Code of Federal Regulations (C.F.R.) 
+121.702 overlap, but are not co-extensive, with standards under the DAF SBIR/STTR Due 
+Diligence program.  
+ 
+A2.4.2.2. RMRB determinations, even those that result in a finding of risk without mitigation, 
+are made on case-by-case basis as per 15 USC 638(vv2), taking into account, for example, the 
+sensitivity of the proposed technology and any potential operational considerations. Further, 
+RMRB determinations apply only to particular SBIR/STTR proposals or applications for specific 
+DAF SBIR/STTR projects and with case-specific mix of participating entities and covered 
+individuals. Due to their limited scope, such risk determinations do not constitute suspension or 
+debarment under FAR Subpart 9.4, Debarment, Suspension, and Ineligibility. The Contracting or 
+Agreements Officer can make a Suspension or Debarment referral if the information supports 
+such a referral under FAR 9.4 standards. The Contracting or Agreements Officer also may make 
+referrals for civil or criminal fraud action under applicable procedures, if the information 
+supports such a referral.  
+ 
+A2.4.2.3. The SBIR/STTR Extension Act of 2022, the DEPSECDEF Memorandum, and this 
+Guidance Memorandum provide complete authority for taking all appropriate actions as a result 
+of due diligence reviews, including mitigation, denial of award or non-selection. Such actions 
+may be taken without additional findings that the proposal or application for SBIR/STTR award 
+does not merit award on other grounds, e.g., failure to tender required SAM.gov certifications, 
+proposal quality, technical innovativeness, or commercialization plans.     
+ 
+A2.5. Due Process and Access To Records In Due Diligence Reviews. 
+ 
+A2.5.1. Overview and Timing of Due Process. This section provides guidance on due process 
+afforded to applicants or offerors for SBIR/STTR awards, as well as their affiliates or covered 
+individuals (collectively, “affected parties”), to DAF RMRB determinations of risk.  
+A2.5.1.1. Due process in the DAF SBIR/STTR Due Diligence program is intended to provide 
+affected parties the following types of unclassified (protected up to Controlled Unclassified 
+Information [CUI] controls) notice of reasons for the finding of risk after the RMRB decision: 
+A2.5.1.1.1. When appropriate, an unclassified (protected up to CUI controls) notice of risk 
+factors impacting a decision to deny an award, along with those disclosable facts which 
+negatively influenced the evaluation of those factors; or  
+A2.5.1.1.2. Where necessary to protect critical defense or national security information such as 
+intelligence sources and methods, an unclassified (protected up to CUI controls) notice of the 
+general factual areas of risk to the extent such disclosures would not harm national security; or 
+ 
+ 
+A2.5.1.1.3. Other type of unclassified (protected up to CUI controls) notice in exceptional 
+situations where even the disclosure of general factual areas of risk would present risk to national 
+security.    
+A2.5.1.1.4. Where a proposal or application is not in line for award or selection based on factors 
+outside of the due diligence process, the source selection authority or the Contracting or 
+Agreements Officer have the discretion to: (1) pause or complete the diligence review process; 
+and (2) defer the resolution of due diligence issues to the potential negotiation of award and 
+inform the SBIR/STTR offeror or applicant of any grounds for rejection. 
+ 
+A2.5.1.1.5. The awarding organization must provide notice to the SBC of denial/non-selection at 
+the conclusion of RMRB proceedings, or may request supplemental information while the 
+proposal or application is pending evaluation or negotiation, as directed by the RMRB Chairman 
+and upon legal, SAF/OCXA, and/or AFOSI reviews.    
+ 
+A2.5.2. Preparation of Classified and Unclassified Documents for RMRB Consideration. The 
+following documentation requirements apply to all DAF RMRBs:  
+ 
+A2.5.2.1. When classified information forms a basis for award denial, non-selection, or risk 
+mitigation requirements, that information will be shared with appropriately cleared members of 
+the RMRB. Classified information will not be shared in whole or in part with any Applicant, or 
+attorney representing applicant, whether or not either or any party is cleared. When classified 
+information is utilized, prior to the RMRB, SAF/OCXA and/or AFOSI will review to determine 
+the possibility of an unclassified summary to be released to the RMRB. The RMRB will prepare 
+an unclassified basis for the denial that outlines the reasons for denial without disclosing 
+sensitive sources and methods or any classified information. Consistent with national security, 
+the unclassified summary should contain enough information for due process; a copy of this 
+summary shall be provided to SAF/GC for further review. Upon determination that the 
+substitution affords the applicant a substantially similar opportunity to respond, the RMRB 
+Chairman will approve the unclassified basis for the denial and approve it to be released to the 
+affected party in accordance with DoDI 5200.48, Controlled Unclassified Information, 6 Mar 
+2020. 
+ 
+A2.5.2.2. Upon request of government counsel, AFOSI will share the classified information that 
+formed a material basis for the RMRB’s denial decision with reviewing authorities (including, 
+but not limited to the Court of Federal Claims, the Government Accountability Office, and any 
+internal reviewing authorities) as appropriate and authorized.  For compelling national security 
+reasons, the Director, Office of Competitive Special Security (SAF/OCS), may deny the release 
+of classified information to reviewing authorities. 
+ 
+A2.5.2.3. Classified information used to inform a RMRB’s denial or mitigation decision may be 
+shared with the U.S. Government Contracting or Agreements Officer of any active proposals and 
+contracts between the government and Applicant as appropriate and authorized.  U.S. 
+Government Contracting or Agreements Officers are not bound by the prior RMRB decision and 
+are responsible for making their own determination based on the provided information and their 
+internal policies and procedures. 
+ 
+ 
+ 
+A2.6. Resourcing. Nonavailability of funds shall not excuse compliance with the requirement of 
+a due diligence review. Awarding agencies are required to provide the resources to execute the 
+RMRB. AFRL/RG (AFWERX) shall not provide reimbursement for non-AFWERX RMRB 
+implementation and/or execution. 
+ 
+A2.7. Due Diligence Program Updates and Review. The AFWERX Director (AFRL/RG), in 
+collaboration with the Commander, AFOSI, and the Director, SAF/OC OCXA, shall provide 
+annual updates, at a minimum, to SAF/AQ, SAF/SQ, and SAF/SB on the issues and trends in the 
+DAF SBIR/STTR Due Diligence program. Each fiscal year, SAF/AQ, SAF/SQ, and SAF/SB, 
+with assistance from SAF/GC and SAF/OC, will conduct an annual SBIR/STTR Due Diligence 
+program review.  
+ 
+ 
+BY ORDER OF THE  
+SECRETARY OF THE AIR FORCE 
+ 
+AIR FORCE INSTRUCTION 61-102 
+16 NOVEMBER 2012 
+Scientific/Research, and Development 
+SMALL BUSINESS INNOVATION 
+RESEARCH (SBIR) AND SMALL BUSINESS 
+TECHNOLOGY TRANSFER (STTR) 
+PROGRAMS 
+COMPLIANCE WITH THIS PUBLICATION IS MANDATORY 
+ACCESSIBILITY: Publications and forms are available for downloading or ordering on the e-
+Publishing website at:  www.e-publishing.af.mil 
+RELEASABILITY: There are no releasability restrictions on this publication. 
+OPR:  SAF/AQRT 
+ 
+ 
+Certified by: SAF/AQR 
+(Dr. David E. Walker) 
+Pages: 6  
+ 
+This instruction provides guidance concerning effective management and integration of the 
+Small Business Innovation Research and Small Business Technology Transfer (SBIR/STTR) 
+Program in support of the Air Force mission.  This instruction implements Air Force Policy 
+Directive (AFPD) 61-1, Management of Science and Technology, and is consistent with Air 
+Force Policy Directive 61-1, Management of Science and Technology, AFPD 90-18, Small 
+Business Programs, AFPD 63-1, Acquisition Sustainment Life Cycle Management and AFI 63-
+101/20-101, Integrated Life Cycle Management.  It also implements 15 United States Code, 
+Section 638, the Small Business Administration SBIR and STTR Policy Directive, and is 
+consistent with DoD Directive 5000.01, The Defense Acquisition System, and DoD Instruction 
+5000.02, Operation of the Defense Acquisition System.  This Instruction applies to Air Force 
+military and civilian members involved in Small Business research and technology transfer 
+initiatives.  This publication does not apply to Air Force Reserve Command or the Air National 
+Guard units.  Ensure that all records created as a result of processes prescribed in this publication 
+are maintained in accordance with Air Force Manual (AFMAN) 33-363, Management of 
+Records, and disposed of in accordance with the Air Force Records Disposition Schedule (RDS) 
+maintained in the Air Force Records Information System (AFRIMS) located at  
+https://www.my.af.mil/afrims/afrims/afrims/rims.cfm.  Refer recommended changes and 
+questions about this publication to the Office of Primary Responsibility (OPR) using the AF 
+Form 847, Recommendation for Change of Publication; route AF Forms 847s from the field 
+through the appropriate  functional chain of command.  After coordination with SAF/AQR, this 
+publication may be supplemented by Air Force organizations having SBIR/STTR financial or 
+management responsibilities. 
+ 
+  2  
+AFI61-102  16 NOVEMBER 2012 
+1.  Goals and Objectives.  The goals of the Air Force SBIR/STTR Program are to: 1) stimulate 
+small businesses to conduct research, development, and demonstration of technological 
+innovation and 2) transition SBIR/STTR-developed technologies and processes into operational 
+and/or commercial use in support of Air Force needs. 
+2.  General.  The Air Force will: 
+2.1.  Focus SBIR/STTR funding on technology innovation and development activities 
+consistent with Air Force strategic planning goals and priorities as identified in the Air Force 
+Straegic Plan. 
+2.2.  Establish and execute the SBIR/STTR Program in full compliance with governing 
+statutes, directives, and other regulatory and policy guidance. 
+2.3.  Develop and select research and development topics (i.e., technology areas) based on 
+their potential to meet recognized Air Force mission capability needs and technology 
+opportunities. 
+2.4.  Competitively select the best proposals from industry and award contracts in a manner 
+consistent with Air Force small business and technology development goals. 
+3.1.  The Assisstant Secretary of the Air Force for Budget (SAF/FM):  Reviews and 
+validates the SBIR/STTR extramural budgets and the application of the statutory 
+percentages. 
+3.2.  The Deputy Assistant Secretary for Science, Technology, and Engineering 
+(SAF/AQR): 
+3.2.1.  Serves as the Air Force OPR for the Air Force SBIR/STTR Programs and liaison 
+with the Air Force Small Business Office (SAF/SB) and the United States Small Business 
+Administration (SBA), through the Office of the Secretary of Defense (OSD) Office of 
+Small Business Programs (OSBP). 
+3.2.2.  Appoints a Program Element Monitor (PEM) for the SBIR/STTR Program. 
+3.2.3.  Submits annual SBIR, STTR, and other required reports to Congress or the U.S. 
+Small Business Administration (SBA) through the Office of Secretary of Defense (OSD) 
+Office of Small Business Programs (OSBP). 
+3.2.4.  Is the primary Air Force representative at Department of Defense and Federal 
+SBIR/STTR meetings. 
+3.2.5.  Drafts, coordinates, and promulgates SBIR/STTR Program policy and guidance. 
+3.2.6.  Coordinates with Air Force Office of Small Business Programs (SAF/SB) on 
+reports to OSD/OSBP and the SBA, as appropriate, and on other relevant programmatic 
+activity. 
+3.3.  The Air Force Technology Executive Officer (TEO): 
+3.4.1.  Oversees the execution of Air Force SBIR/STTR Program. 
+3.4.2.  Develops and approves all SBIR/STTR topic (i.e., technology areas)  allocations 
+and topic selections, and ensures topics comply with OSD criteria/guidance and meet 
+AFI61-102  16 NOVEMBER 2012 
+  3  
+recognized Air Force mission capability needs and technology opportunities consistent 
+with documented capability needs. 
+3.4.3.  Prior to the release of SBIR/STTR funds to the executing organization, ensure 
+appropriate staffing and procedures are in place to support timely and effective execution 
+of those funds in support of the Air Force SBIR/STTR Program objectives and goals. 
+3.4.4.  Integrates SBIR/STTR Research and Development (R&D) into strategic 
+technology planning processes, including Core Function Master Plans, and: 
+3.4.4.1.  Includes SBIR/STTR technologies on roadmaps for capability development 
+areas, and incorporate them into core Science and Technology (S&T) programs, when 
+applicable. 
+3.4.5.  Conducts an annual AF SBIR/STTR program review with SAF/AQR, to evaluate 
+how all SBIR/STTR program funds are being used in  a cost-effective manner in support 
+of Air Force technology needs.  As a minimum, the review should include program and 
+financial management, fraud, waste and abuse, etc. 
+3.4.6.  Approves SBIR/STTR pilot activities to improve program execution and 
+effectiveness. 
+3.4.7.  Appoints, in writing, an Air Force SBIR/STTR Program Manager (PM) and 
+provides program support staff. 
+3.4.8.  Ensures all reports required by statute or regulation, including annual Program 
+reports, are submitted to SAF/AQR in a timely manner. 
+3.4.9.  Maintains and, on a quaraterly basis, validates the accuracy of databases for 
+compiling reports to Congress, to minimize the risks of Fraud, Waste, and Abuse, etc. 
+3.5.  The Air Force Small Business Program Office (SAF/SB):  Monitors the SBIR/STTR 
+Program and leverages Program results and Air Force relevant technologies developed by 
+small businesses, to meet prime and subcontracting goals, when appropriate. 
+3.6.  Air Force Materiel Command: 
+3.6.1.  Appoints, in writing a lead SBIR/STTR technology manager to coordinate 
+development of approved topics with Air Force Research Laboratory (AFRL) Subject 
+Matter Experts (SMEs) and assists in transition of technologies into their programs, as 
+appropriate.  A single SBIR/STTR technology manager may support multiple offices, 
+where appropriate. 
+3.6.2.  Provides and retains a designated Sponsor Point of Contact (SPOC) for each topic. 
+3.6.3.  Ensures topics continue to align with, and support, programs throughout the 
+acquisition lifecycle.  Should a topic lose relevanace, takes corrective action (amendment, 
+recommendation for termination, etc.) as appropriate. 
+3.6.4.  Ensures PEOs and acquisistion program managers and personnel receive 
+SBIR/STTR training and information so that they may identify and give favorable 
+consideration to transitioning SBIR/STTR technologies into programs in all phases of the 
+acquisition lifecycle. 
+  4  
+AFI61-102  16 NOVEMBER 2012 
+3.6.5.  Provides information to AFRL on the extent to which SBIR/STTR technologies 
+have been considered and incorporated into capability concepts or pre-acquisition 
+programs.  This information will be incorporated into the annual SBIR/STTR Program 
+Review. 
+3.6.6.  Ensures PEOs and acquisition program managers plan and budget for SBIR 
+efforts, including developing and coordinating POM inputs, as appropriate. 
+3.7.  Air Force Space Command: 
+3.7.1.  Designates, in writing, a lead SBIR/STTR technology manager to coordinate 
+development of relevant topics with AFRL Subject Matter Experts (SMEs), and assist in 
+transitioning technologies.  A single SBIR/STTR technology manager may support 
+multiple offices where appropriate. 
+3.7.2.  Provides, assigns, and reassigns as necessary, or until operational acceptance, a 
+designated Sponsor Point of Contact (SPOC) for each topic. 
+3.7.3.  Ensures topics are aligned with or support one or more programs in any phase of 
+the acquisition lifecycle. 
+3.7.4.  Identifies and, as appropriate, transitions SBIR/STTR technologies into programs 
+throughout all phases of an acquisition lifecycle. 
+3.7.5.  Provides information to AFRL on the extent to which SBIR/STTR technologies 
+have been considered and/or incorporated into capability concepts or pre-acquisition 
+programs.  This information will be incorporated into the annual SBIR/STTR Program 
+Review. 
+ 
+CHARLES R. DAVIS, Lt Gen, USAF 
+Military Deputy, Office of the Assistant Secretary 
+of the Air Force (Acquisition) 
+AFI61-102  16 NOVEMBER 2012 
+  5  
+Attachment 1 
+GLOSSARY OF REFERENCES AND SUPPORTING INFORMATION 
+References 
+15 United States Code, Section 638 (“The Small Business Act”) 
+Small Business Administration, Small Business Innovation Research Policy Directive, 
+September 24, 2002 
+Small Business Administration, Small Business Technology Transfer Policy Directive, 
+December 16, 2005. 
+DoD Directive 5000.01, The Defense Acquisition System, May 12, 2003  
+DoD Instruction 5000.02, Operation of the Defense Acquisition System, December 8, 2008   
+Air Force Policy Directive 61-1, Management of Science and Technology, August 18, 2011 
+Air Force Policy Directive 63-1, Inteegrated Life Cycle Management, July 3, 2012 
+Air Force Instruction 63-101, Acquisition and Sustainment Lifecycle Management, April 8, 2009 
+Air Force Policy Directive 90-18, Small Business Programs, March 23, 2011 
+Air Force Manual 33-363, Management of Records, March 1, 2008 
+Adopted Forms 
+Air Force Form 847, Recommendation for Change of Publication 
+Abbreviations and Acronyms 
+AFPD—Air Force Policy Directive 
+AFRL—Air Force Research Laboratory 
+DOD—Department of Defense 
+OPR—Office of Primary Responsibility 
+OSBP—Office of Small Business Programs 
+OSD—Office of the Secretary of Defense 
+PEM—Program Element Monitor 
+PM—Program Manager 
+POM—Program Objective Memorandum 
+R&D—Research and Development 
+SAF/AQ—Assistant Secretary of the Air Force for Acquisition 
+SAF/AQR—Deputy Assistant Secretary for Science, Technology, and Engineering 
+SAF/SB—Air Force Office of Small Business Programs 
+SBA—U. S. Small Business Administration 
+  6  
+AFI61-102  16 NOVEMBER 2012 
+SBIR—Small Business Innovation Research 
+SME—Subject Matter Expert 
+SPOC—Sponsor Point of Contact 
+STTR—Small Business Technology Transfer 
+TEO—Technology Executive Officer 
+TRL—Technology Readiness Level 
+ 
