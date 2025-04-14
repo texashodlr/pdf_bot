@@ -9,4 +9,21 @@ A RAG consists of:
 2. Generator (the local LLM or in the Browning Bot case; Ollama)  
   
 The general workflow looks like:
-Collection of PDFs --> Chunk the PDFs --> Embedding of the Chunks --> Aggregation into a Vector DB --> Querying of the Vector DB --> Retrieving of the relevant vectors --> Feeding vectors into the local LLM --> Answer!
+Collection of PDFs --> Chunk the PDFs --> Embedding of the Chunks --> Aggregation into a Vector DB --> Querying of the Vector DB --> Retrieving of the relevant vectors --> Feeding vectors into the local LLM --> Answer!  
+  
+  
+## What are embeddings?
+From huggingface:  
+>"An embedding is a numerical representation of a piece of information, for example, text, documents, images, audio, etc. The representation captures the semantic meaning of what is being embedded..."
+  [https://huggingface.co/blog/getting-started-with-embeddings]
+  
+We're currently using Sentence Transformers [https://www.sbert.net/] and their **all-MiniLM-L6-v2** semantic search model.  
+ 
+The loop looks like this:  
+1. PDFs/Documents are chunked (e.g., 500 words/chunk).  
+2. Each chunk is passed through the semantic search model to produce a 384-dimensional semantic vector.  
+3. Vectors go into a FAISS index.  
+4. User then asks a question:  
+ - Question is embedded with the same model.  
+ - FAISS finds the most similar document chunks using vector distance.  
+ - These vectors are passed as context to our selected chat model (e.g., LLaMA 3) via ollama.  
