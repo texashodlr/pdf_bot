@@ -103,7 +103,8 @@ faiss_index = FAISS.from_documents(documents, embedding)
 print(f"\n\n FAISS index contains {faiss_index.index.ntotal} vectors.\n")
 
    
-llm = Ollama(model="llama3") #Ollama Is running locally
+#llm = Ollama(model="llama3") #Ollama Is running locally
+llm = Ollama(model="deepseek-r1")
 retriever = faiss_index.as_retriever(search_kwargs={"k":3})
 
 qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
