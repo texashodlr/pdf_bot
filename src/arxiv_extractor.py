@@ -9,6 +9,7 @@ Documentation: https://info.arxiv.org/help/arxiv_identifier.html
                https://pypi.org/project/arxiv/
 """
 import arxiv
+from pyvis.network import Network
 import time
 from collections import defaultdict
 from typing import Dict, List, Iterable
@@ -37,30 +38,46 @@ def authors_from_arxiv_id(arxiv_ids: List[str]) -> Dict[str, List[tuple[str,str]
     print(f"Paper and authors found in {toc-tic:0.4f} seconds")
     print('+'*50)
     return dict(out)
-""" 
-   new_researchers_dict = {}
-    print(f"Initiating paper search for these IDs...\n{arxiv_ids}\n")
-    print('+'*50)
-    for arxiv_id in arxiv_ids:
-        print(f"Paper ID: {arxiv_id}\n")
-        tic = time.perf_counter()
-        paper_id = arxiv.Search(id_list=[arxiv_id])
-        paper_id_results = next(client.results(paper_id))
-        paper_title = str(paper_id_results.title)
-        paper_authors = [a.name for a in paper_id_results.authors]
-        toc = time.perf_counter()
-        # print(f"Paper found: {paper_id} !")
-        # print(f"\tPaper title: {paper_title}\n")
-        # print(f"\tPaper authors: {paper_authors}\n")
-        print(f"Paper and authors found in {toc-tic:0.4f} seconds")
-        print('+'*50)
-        for paper_author in paper_authors:
-            new_researchers_dict[paper_author] = (arxiv_id, paper_title)
-        #return [a for a in paper_id_results.authors]
-    #print(f"Printing return dict...\n\n{new_researchers_dict}")
-    return new_researchers_dict
-"""
 
+def author_paper_network(author_index, html_path="author_paper_network.html"):
+
+    net = Network(height="800px", width="100%", bgcolor="#111", font_color="#eee", notebook=False, directed=False)
+    net.barnes_hut()
+
+    for author, papers in author_index.items():
+        net.add_node(
+            f"a::{author}",
+            label=author,
+            title=f"Author: {author}",
+            shape="dot",
+            color="#4fc3f7",
+            size=16
+        )
+        for arxiv_id, title in papers:
+            paper_node_id = f"p::{arxiv_id}"
+            net.add_node(
+                paper_node_id,
+                label=arxiv_id,
+                title=f"{title}<br><i>{arxiv_id}</i>",
+                shape="box",
+                color="#ffcc80",
+                size=12
+            )
+            net.add_edge(f"a::{author}", paper_node_id, color="#888", width=1)
+    # General UI Formatting
+    net.set_options("""
+    const options = {
+      nodes: { borderWidth: 1, shadow: true },
+      edges: { smooth: { type: "dynamic" } },
+      physics: {
+        stabilization: { iterations: 150, fit: true },
+        barnesHut: { gravitationalConstant: -4000, centralGravity: 0.2, springLength: 120, springConstant: 0.04 }
+      },
+      interaction: { hover: true, tooltipDelay: 120, navigationButtons: true, zoomView: true }
+    }
+    """)
+    net.show(html_path)
+    webbrowser.open_new_tab(str(Path(html_path).resolve()))
 
 # test_id = "2510.04871"
 # test_id = "2509.26217"
@@ -68,3 +85,4 @@ test_id_list = ["2509.25853", "2509.21271", "2509.12232", "2508.20653", "2508.10
 researchers_dict = authors_from_arxiv_id(test_id_list)
 for k in researchers_dict:
     print(f"Author: {k}, {researchers_dict[k]}\n")
+author_paper_network(researchers_dict)
