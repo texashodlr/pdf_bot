@@ -10,6 +10,8 @@ Documentation: https://info.arxiv.org/help/arxiv_identifier.html
 """
 import arxiv
 from pyvis.network import Network
+import webbrowser
+from pathlib import Path
 import time
 from collections import defaultdict
 from typing import Dict, List, Iterable
@@ -40,8 +42,8 @@ def authors_from_arxiv_id(arxiv_ids: List[str]) -> Dict[str, List[tuple[str,str]
     return dict(out)
 
 def author_paper_network(author_index, html_path="author_paper_network.html"):
-
-    net = Network(height="800px", width="100%", bgcolor="#111", font_color="#eee", notebook=False, directed=False)
+    net = Network(height="800px", width="100%", bgcolor="#111", font_color="#eee",
+                  notebook=False, directed=False)
     net.barnes_hut()
 
     for author, papers in author_index.items():
@@ -54,35 +56,28 @@ def author_paper_network(author_index, html_path="author_paper_network.html"):
             size=16
         )
         for arxiv_id, title in papers:
-            paper_node_id = f"p::{arxiv_id}"
+            pid = f"p::{arxiv_id}"
             net.add_node(
-                paper_node_id,
+                pid,
                 label=arxiv_id,
                 title=f"{title}<br><i>{arxiv_id}</i>",
                 shape="box",
                 color="#ffcc80",
                 size=12
             )
-            net.add_edge(f"a::{author}", paper_node_id, color="#888", width=1)
-    # General UI Formatting
-    net.set_options("""
-    const options = {
-      nodes: { borderWidth: 1, shadow: true },
-      edges: { smooth: { type: "dynamic" } },
-      physics: {
-        stabilization: { iterations: 150, fit: true },
-        barnesHut: { gravitationalConstant: -4000, centralGravity: 0.2, springLength: 120, springConstant: 0.04 }
-      },
-      interaction: { hover: true, tooltipDelay: 120, navigationButtons: true, zoomView: true }
-    }
-    """)
-    net.show(html_path)
-    webbrowser.open_new_tab(str(Path(html_path).resolve()))
+            net.add_edge(f"a::{author}", pid, color="#888", width=1)
+
+    # Use the non-notebook template explicitly
+    out = Path(html_path).resolve()
+    net.write_html(str(out), open_browser=False, notebook=False)
+    webbrowser.open_new_tab(out.as_uri())
 
 # test_id = "2510.04871"
 # test_id = "2509.26217"
-test_id_list = ["2509.25853", "2509.21271", "2509.12232", "2508.20653", "2508.10481", "2509.26217"]
+test_id_list = ["2508.03016", "2506.23025", "2506.09758", "2509.25853", "2509.21271", "2509.12232", "2508.20653", "2508.10481", "2509.26217"]
 researchers_dict = authors_from_arxiv_id(test_id_list)
+
 for k in researchers_dict:
     print(f"Author: {k}, {researchers_dict[k]}\n")
+
 author_paper_network(researchers_dict)
