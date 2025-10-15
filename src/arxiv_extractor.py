@@ -56,11 +56,14 @@ def author_paper_network(author_index, html_path="author_paper_network.html"):
             size=16
         )
         for arxiv_id, title in papers:
+            pdf_url = f"https://arxiv.org/pdf/{arxiv_id}.pdf"
             pid = f"p::{arxiv_id}"
+            tooltip = f"""{title}<br><i>{arxiv_id}</i><br>
+                          <a href="{pdf_url}" target="_blank" rel="noopener">Open PDF</a>"""
             net.add_node(
                 pid,
                 label=arxiv_id,
-                title=f"{title}<br><i>{arxiv_id}</i>",
+                title= tooltip, #f"{title}<br><i>{arxiv_id}</i>",
                 shape="box",
                 color="#ffcc80",
                 size=12
