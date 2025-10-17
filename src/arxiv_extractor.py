@@ -15,6 +15,7 @@ from pathlib import Path
 import time
 from collections import defaultdict
 from typing import Dict, List, Iterable
+import argparse
 
 
 def authors_from_arxiv_id(arxiv_ids: List[str]) -> Dict[str, List[tuple[str,str]]]:
@@ -75,12 +76,36 @@ def author_paper_network(author_index, html_path="author_paper_network.html"):
     net.write_html(str(out), open_browser=False, notebook=False)
     webbrowser.open_new_tab(out.as_uri())
 
-# test_id = "2510.04871"
-# test_id = "2509.26217"
-test_id_list = ["2508.03016", "2506.23025", "2506.09758", "2509.25853", "2509.21271", "2509.12232", "2508.20653", "2508.10481", "2509.26217"]
-researchers_dict = authors_from_arxiv_id(test_id_list)
+def create_network():
+    test_id_list = ["2412.16720","2410.21276", "2406.04093", "2312.09390", "2303.08774", "2303.01469"]
+    researchers_dict = authors_from_arxiv_id(test_id_list)
+    for k in researchers_dict:
+        print(f"Author: {k}, {researchers_dict[k]}\n")
+    author_paper_network(researchers_dict)
 
-for k in researchers_dict:
-    print(f"Author: {k}, {researchers_dict[k]}\n")
+def main(extraction_tool: int):
+    match extraction_tool:
+        case 1:
+            return create_network()
+        case 2:
+            print("Apple")
+        case _:
+            print("Orange")
 
-author_paper_network(researchers_dict)
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Arxiv Knowledge and Influencer Mapper')
+    parser.add_argument('extraction_tool', type=int, default=1, help='The tool you want to use')
+    args = parser.parse_args()
+    main(args.extraction_tool)
+
+
+"""
+
+General Test Cases:
+test_id = "2510.04871"
+test_id = "2509.26217"
+CPUs: test_id_list = ["2508.03016", "2506.23025", "2506.09758", "2509.25853", "2509.21271", "2509.12232", "2508.20653", "2508.10481", "2509.26217"]
+AI: test_id_list = ["2412.16720","2410.21276", "2406.04093", "2312.09390", "2303.08774", "2303.01469"]
+
+"""
