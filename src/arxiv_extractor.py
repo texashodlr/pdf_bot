@@ -81,6 +81,7 @@ def create_network():
     researchers_dict = authors_from_arxiv_id(test_id_list)
     for k in researchers_dict:
         print(f"Author: {k}, {researchers_dict[k]}\n")
+    Path("./authors").mkdir(parents=True, exist_ok=True)
     author_paper_network(researchers_dict)
 
 def main(extraction_tool: int):
@@ -94,6 +95,10 @@ def main(extraction_tool: int):
 
 
 if __name__ == '__main__':
+    root_dir = Path(__file__).resolve().parent.parent
+
+    # More relative pathing work here
+
     parser = argparse.ArgumentParser(description='Arxiv Knowledge and Influencer Mapper')
     parser.add_argument('extraction_tool', type=int, default=1, help='The tool you want to use')
     args = parser.parse_args()
