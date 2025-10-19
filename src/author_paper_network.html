@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #111;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+             /* position absolute is important and the container has to be relative or absolute as well. */
+          div.popup {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 display:none;
+                 background-color:#f5f4ed;
+                 -moz-border-radius: 3px;
+                 -webkit-border-radius: 3px;
+                 border-radius: 3px;
+                 border: 1px solid #808074;
+                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          }
+
+          /* hide the original tooltip */
+          .vis-tooltip {
+            display:none;
+          }
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Kaihao Ma", "label": "Kaihao Ma", "shape": "dot", "size": 16, "title": "Author: Kaihao Ma"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2508.03016v2", "label": "2508.03016v2", "shape": "box", "size": 12, "title": "KBest: Efficient Vector Search on Kunpeng CPU\u003cbr\u003e\u003ci\u003e2508.03016v2\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2508.03016v2.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Meiling Wang", "label": "Meiling Wang", "shape": "dot", "size": 16, "title": "Author: Meiling Wang"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Senkevich Oleg", "label": "Senkevich Oleg", "shape": "dot", "size": 16, "title": "Author: Senkevich Oleg"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Zijian Li", "label": "Zijian Li", "shape": "dot", "size": 16, "title": "Author: Zijian Li"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Daihao Xue", "label": "Daihao Xue", "shape": "dot", "size": 16, "title": "Author: Daihao Xue"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Dmitriy Malyshev", "label": "Dmitriy Malyshev", "shape": "dot", "size": 16, "title": "Author: Dmitriy Malyshev"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yangming Lv", "label": "Yangming Lv", "shape": "dot", "size": 16, "title": "Author: Yangming Lv"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Shihai Xiao", "label": "Shihai Xiao", "shape": "dot", "size": 16, "title": "Author: Shihai Xiao"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Xiao Yan", "label": "Xiao Yan", "shape": "dot", "size": 16, "title": "Author: Xiao Yan"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Radionov Alexander", "label": "Radionov Alexander", "shape": "dot", "size": 16, "title": "Author: Radionov Alexander"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Weidi Zeng", "label": "Weidi Zeng", "shape": "dot", "size": 16, "title": "Author: Weidi Zeng"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yuanzhan Gao", "label": "Yuanzhan Gao", "shape": "dot", "size": 16, "title": "Author: Yuanzhan Gao"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Zhiyu Zou", "label": "Zhiyu Zou", "shape": "dot", "size": 16, "title": "Author: Zhiyu Zou"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Xin Yao", "label": "Xin Yao", "shape": "dot", "size": 16, "title": "Author: Xin Yao"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Lin Liu", "label": "Lin Liu", "shape": "dot", "size": 16, "title": "Author: Lin Liu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Junhao Wu", "label": "Junhao Wu", "shape": "dot", "size": 16, "title": "Author: Junhao Wu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yiding Liu", "label": "Yiding Liu", "shape": "dot", "size": 16, "title": "Author: Yiding Liu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yaoyao Fu", "label": "Yaoyao Fu", "shape": "dot", "size": 16, "title": "Author: Yaoyao Fu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Gongyi Wang", "label": "Gongyi Wang", "shape": "dot", "size": 16, "title": "Author: Gongyi Wang"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Gong Zhang", "label": "Gong Zhang", "shape": "dot", "size": 16, "title": "Author: Gong Zhang"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Fei Yi", "label": "Fei Yi", "shape": "dot", "size": 16, "title": "Author: Fei Yi"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yingfan Liu", "label": "Yingfan Liu", "shape": "dot", "size": 16, "title": "Author: Yingfan Liu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Tejas Vaidhya", "label": "Tejas Vaidhya", "shape": "dot", "size": 16, "title": "Author: Tejas Vaidhya"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2506.23025v1", "label": "2506.23025v1", "shape": "box", "size": 12, "title": "Spectra 1.1: Scaling Laws and Efficient Inference for Ternary Language Models\u003cbr\u003e\u003ci\u003e2506.23025v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2506.23025v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Ayush Kaushal", "label": "Ayush Kaushal", "shape": "dot", "size": 16, "title": "Author: Ayush Kaushal"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Vineet Jain", "label": "Vineet Jain", "shape": "dot", "size": 16, "title": "Author: Vineet Jain"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Francis Couture Harpin", "label": "Francis Couture Harpin", "shape": "dot", "size": 16, "title": "Author: Francis Couture Harpin"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Prashant Shishodia", "label": "Prashant Shishodia", "shape": "dot", "size": 16, "title": "Author: Prashant Shishodia"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Majid Behbahani", "label": "Majid Behbahani", "shape": "dot", "size": 16, "title": "Author: Majid Behbahani"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Yuriy Nevmyvaka", "label": "Yuriy Nevmyvaka", "shape": "dot", "size": 16, "title": "Author: Yuriy Nevmyvaka"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Irina Rish", "label": "Irina Rish", "shape": "dot", "size": 16, "title": "Author: Irina Rish"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Zikai Liu", "label": "Zikai Liu", "shape": "dot", "size": 16, "title": "Author: Zikai Liu"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2506.09758v2", "label": "2506.09758v2", "shape": "box", "size": 12, "title": "Mainframe-Style Channel Controllers for Modern Disaggregated Memory Systems\u003cbr\u003e\u003ci\u003e2506.09758v2\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2506.09758v2.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Jasmin Schult", "label": "Jasmin Schult", "shape": "dot", "size": 16, "title": "Author: Jasmin Schult"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Pengcheng Xu", "label": "Pengcheng Xu", "shape": "dot", "size": 16, "title": "Author: Pengcheng Xu"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Timothy Roscoe", "label": "Timothy Roscoe", "shape": "dot", "size": 16, "title": "Author: Timothy Roscoe"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Jingyao Zhang", "label": "Jingyao Zhang", "shape": "dot", "size": 16, "title": "Author: Jingyao Zhang"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2509.25853v1", "label": "2509.25853v1", "shape": "box", "size": 12, "title": "SAIL: SRAM-Accelerated LLM Inference System with Lookup-Table-based GEMV\u003cbr\u003e\u003ci\u003e2509.25853v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2509.25853v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Jaewoo Park", "label": "Jaewoo Park", "shape": "dot", "size": 16, "title": "Author: Jaewoo Park"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Jongeun Lee", "label": "Jongeun Lee", "shape": "dot", "size": 16, "title": "Author: Jongeun Lee"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Elaheh Sadredini", "label": "Elaheh Sadredini", "shape": "dot", "size": 16, "title": "Author: Elaheh Sadredini"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Xinyu Lian", "label": "Xinyu Lian", "shape": "dot", "size": 16, "title": "Author: Xinyu Lian"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2509.21271v1", "label": "2509.21271v1", "shape": "box", "size": 12, "title": "SuperOffload: Unleashing the Power of Large-Scale LLM Training on Superchips\u003cbr\u003e\u003ci\u003e2509.21271v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2509.21271v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Masahiro Tanaka", "label": "Masahiro Tanaka", "shape": "dot", "size": 16, "title": "Author: Masahiro Tanaka"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Olatunji Ruwase", "label": "Olatunji Ruwase", "shape": "dot", "size": 16, "title": "Author: Olatunji Ruwase"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Minjia Zhang", "label": "Minjia Zhang", "shape": "dot", "size": 16, "title": "Author: Minjia Zhang"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Gianmarco Accordi", "label": "Gianmarco Accordi", "shape": "dot", "size": 16, "title": "Author: Gianmarco Accordi"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2509.12232v1", "label": "2509.12232v1", "shape": "box", "size": 12, "title": "Towards High-Performance and Portable Molecular Docking on CPUs through Vectorization\u003cbr\u003e\u003ci\u003e2509.12232v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2509.12232v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Jens Domke", "label": "Jens Domke", "shape": "dot", "size": 16, "title": "Author: Jens Domke"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Theresa Pollinger", "label": "Theresa Pollinger", "shape": "dot", "size": 16, "title": "Author: Theresa Pollinger"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Davide Gadioli", "label": "Davide Gadioli", "shape": "dot", "size": 16, "title": "Author: Davide Gadioli"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Gianluca Palermo", "label": "Gianluca Palermo", "shape": "dot", "size": 16, "title": "Author: Gianluca Palermo"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Alperen Bolat", "label": "Alperen Bolat", "shape": "dot", "size": 16, "title": "Author: Alperen Bolat"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2508.20653v1", "label": "2508.20653v1", "shape": "box", "size": 12, "title": "Microarchitecture Design and Benchmarking of Custom SHA-3 Instruction for RISC-V\u003cbr\u003e\u003ci\u003e2508.20653v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2508.20653v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Sakir Sezer", "label": "Sakir Sezer", "shape": "dot", "size": 16, "title": "Author: Sakir Sezer"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Kieran McLaughlin", "label": "Kieran McLaughlin", "shape": "dot", "size": 16, "title": "Author: Kieran McLaughlin"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Henry Hui", "label": "Henry Hui", "shape": "dot", "size": 16, "title": "Author: Henry Hui"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Adrien Cassagne", "label": "Adrien Cassagne", "shape": "dot", "size": 16, "title": "Author: Adrien Cassagne"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2508.10481v1", "label": "2508.10481v1", "shape": "box", "size": 12, "title": "Dalek: An Unconventional and Energy-Aware Heterogeneous Cluster\u003cbr\u003e\u003ci\u003e2508.10481v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2508.10481v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#ffcc80", "font": {"color": "#eee"}, "id": "p::2509.26217v1", "label": "2509.26217v1", "shape": "box", "size": 12, "title": "Benchmarking Deep Learning Convolutions on Energy-constrained CPUs\u003cbr\u003e\u003ci\u003e2509.26217v1\u003c/i\u003e\u003cbr\u003e\n                          \u003ca href=\"https://arxiv.org/pdf/2509.26217v1.pdf\" target=\"_blank\" rel=\"noopener\"\u003eOpen PDF\u003c/a\u003e"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::No\u00e9 Amiot", "label": "No\u00e9 Amiot", "shape": "dot", "size": 16, "title": "Author: No\u00e9 Amiot"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Manuel Bouyer", "label": "Manuel Bouyer", "shape": "dot", "size": 16, "title": "Author: Manuel Bouyer"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Enrique Galvez", "label": "Enrique Galvez", "shape": "dot", "size": 16, "title": "Author: Enrique Galvez"}, {"color": "#4fc3f7", "font": {"color": "#eee"}, "id": "a::Alix Munier", "label": "Alix Munier", "shape": "dot", "size": 16, "title": "Author: Alix Munier"}]);
+                  edges = new vis.DataSet([{"color": "#888", "from": "a::Kaihao Ma", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Meiling Wang", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Senkevich Oleg", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Zijian Li", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Daihao Xue", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Dmitriy Malyshev", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Yangming Lv", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Shihai Xiao", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Xiao Yan", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Radionov Alexander", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Weidi Zeng", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Yuanzhan Gao", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Zhiyu Zou", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Xin Yao", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Lin Liu", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Junhao Wu", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Yiding Liu", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Yaoyao Fu", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Gongyi Wang", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Gong Zhang", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Fei Yi", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Yingfan Liu", "to": "p::2508.03016v2", "width": 1}, {"color": "#888", "from": "a::Tejas Vaidhya", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Ayush Kaushal", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Vineet Jain", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Francis Couture Harpin", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Prashant Shishodia", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Majid Behbahani", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Yuriy Nevmyvaka", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Irina Rish", "to": "p::2506.23025v1", "width": 1}, {"color": "#888", "from": "a::Zikai Liu", "to": "p::2506.09758v2", "width": 1}, {"color": "#888", "from": "a::Jasmin Schult", "to": "p::2506.09758v2", "width": 1}, {"color": "#888", "from": "a::Pengcheng Xu", "to": "p::2506.09758v2", "width": 1}, {"color": "#888", "from": "a::Timothy Roscoe", "to": "p::2506.09758v2", "width": 1}, {"color": "#888", "from": "a::Jingyao Zhang", "to": "p::2509.25853v1", "width": 1}, {"color": "#888", "from": "a::Jaewoo Park", "to": "p::2509.25853v1", "width": 1}, {"color": "#888", "from": "a::Jongeun Lee", "to": "p::2509.25853v1", "width": 1}, {"color": "#888", "from": "a::Elaheh Sadredini", "to": "p::2509.25853v1", "width": 1}, {"color": "#888", "from": "a::Xinyu Lian", "to": "p::2509.21271v1", "width": 1}, {"color": "#888", "from": "a::Masahiro Tanaka", "to": "p::2509.21271v1", "width": 1}, {"color": "#888", "from": "a::Olatunji Ruwase", "to": "p::2509.21271v1", "width": 1}, {"color": "#888", "from": "a::Minjia Zhang", "to": "p::2509.21271v1", "width": 1}, {"color": "#888", "from": "a::Gianmarco Accordi", "to": "p::2509.12232v1", "width": 1}, {"color": "#888", "from": "a::Jens Domke", "to": "p::2509.12232v1", "width": 1}, {"color": "#888", "from": "a::Theresa Pollinger", "to": "p::2509.12232v1", "width": 1}, {"color": "#888", "from": "a::Davide Gadioli", "to": "p::2509.12232v1", "width": 1}, {"color": "#888", "from": "a::Gianluca Palermo", "to": "p::2509.12232v1", "width": 1}, {"color": "#888", "from": "a::Alperen Bolat", "to": "p::2508.20653v1", "width": 1}, {"color": "#888", "from": "a::Sakir Sezer", "to": "p::2508.20653v1", "width": 1}, {"color": "#888", "from": "a::Kieran McLaughlin", "to": "p::2508.20653v1", "width": 1}, {"color": "#888", "from": "a::Henry Hui", "to": "p::2508.20653v1", "width": 1}, {"color": "#888", "from": "a::Adrien Cassagne", "to": "p::2508.10481v1", "width": 1}, {"color": "#888", "from": "a::Adrien Cassagne", "to": "p::2509.26217v1", "width": 1}, {"color": "#888", "from": "a::No\u00e9 Amiot", "to": "p::2508.10481v1", "width": 1}, {"color": "#888", "from": "a::Manuel Bouyer", "to": "p::2508.10481v1", "width": 1}, {"color": "#888", "from": "a::Manuel Bouyer", "to": "p::2509.26217v1", "width": 1}, {"color": "#888", "from": "a::Enrique Galvez", "to": "p::2509.26217v1", "width": 1}, {"color": "#888", "from": "a::Alix Munier", "to": "p::2509.26217v1", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -80000,
+            "springConstant": 0.001,
+            "springLength": 250
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+                  // make a custom popup
+                      var popup = document.createElement("div");
+                      popup.className = 'popup';
+                      popupTimeout = null;
+                      popup.addEventListener('mouseover', function () {
+                          console.log(popup)
+                          if (popupTimeout !== null) {
+                              clearTimeout(popupTimeout);
+                              popupTimeout = null;
+                          }
+                      });
+                      popup.addEventListener('mouseout', function () {
+                          if (popupTimeout === null) {
+                              hidePopup();
+                          }
+                      });
+                      container.appendChild(popup);
+
+
+                      // use the popup event to show
+                      network.on("showPopup", function (params) {
+                          showPopup(params);
+                      });
+
+                      // use the hide event to hide it
+                      network.on("hidePopup", function (params) {
+                          hidePopup();
+                      });
+
+                      // hiding the popup through css
+                      function hidePopup() {
+                          popupTimeout = setTimeout(function () { popup.style.display = 'none'; }, 500);
+                      }
+
+                      // showing the popup
+                      function showPopup(nodeId) {
+                          // get the data from the vis.DataSet
+                          var nodeData = nodes.get([nodeId]);
+                          popup.innerHTML = nodeData[0].title;
+
+                          // get the position of the node
+                          var posCanvas = network.getPositions([nodeId])[nodeId];
+
+                          // get the bounding box of the node
+                          var boundingBox = network.getBoundingBox(nodeId);
+
+                          //position tooltip:
+                          posCanvas.x = posCanvas.x + 0.5 * (boundingBox.right - boundingBox.left);
+
+                          // convert coordinates to the DOM space
+                          var posDOM = network.canvasToDOM(posCanvas);
+
+                          // Give it an offset
+                          posDOM.x += 10;
+                          posDOM.y -= 20;
+
+                          // show and place the tooltip.
+                          popup.style.display = 'block';
+                          popup.style.top = posDOM.y + 'px';
+                          popup.style.left = posDOM.x + 'px';
+                      }
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
